@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "CuspFlow — Dental Practice Management Software",
   description:
     "CuspFlow gives every dentist, nurse, and receptionist a real-time view of every patient — from check-in to payment. Built for modern dental clinics.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "CuspFlow — Dental Practice Management Software",
     description:

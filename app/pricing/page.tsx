@@ -144,7 +144,7 @@ export default function PricingPage() {
                     ))}
                   </ul>
                   <Link
-                    href="https://app.cuspflow.co/"
+                    href="https://app.cuspflow.co/signup"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`text-center py-3 rounded-xl text-sm font-semibold transition-colors flex items-center justify-center gap-2 ${

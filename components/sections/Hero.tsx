@@ -110,7 +110,7 @@ export default function Hero() {
           </ul>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="https://app.cuspflow.co/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-teal-600 text-white font-semibold hover:bg-teal-700 transition-colors shadow-lg shadow-teal-600/20 text-sm">
+            <Link href="https://app.cuspflow.co/signup" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-teal-600 text-white font-semibold hover:bg-teal-700 transition-colors shadow-lg shadow-teal-600/20 text-sm">
               Start Free Trial <ArrowRight size={15} />
             </Link>
             <Link href="/features" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition-colors text-sm">

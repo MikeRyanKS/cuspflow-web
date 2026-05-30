@@ -91,7 +91,7 @@ export default function PricingPreview() {
                 ))}
               </ul>
               <Link
-                href="https://app.cuspflow.co/"
+                href="https://app.cuspflow.co/signup"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`text-center py-2.5 rounded-xl text-sm font-semibold transition-colors ${

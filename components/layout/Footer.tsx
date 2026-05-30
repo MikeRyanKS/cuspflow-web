@@ -8,7 +8,7 @@ const cols = [
     links: [
       { href: "/features", label: "Features" },
       { href: "/pricing", label: "Pricing" },
-      { href: "https://app.cuspflow.co/", label: "Free Trial" },
+      { href: "https://app.cuspflow.co/signup", label: "Free Trial" },
     ],
   },
   {
