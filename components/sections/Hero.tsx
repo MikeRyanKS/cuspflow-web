@@ -67,9 +67,9 @@ function WaitingRoomMockup() {
 export default function Hero() {
   return (
     <section className="relative flex items-center pt-16 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-white via-sky-50/40 to-teal-50/60 -z-10" />
-      <div className="absolute top-1/3 right-0 w-96 h-96 bg-teal-100/30 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-sky-100/30 rounded-full blur-3xl -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50/80 to-teal-50/20 -z-10" />
+      <div className="absolute top-1/3 right-0 w-96 h-96 bg-teal-100/15 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-sky-100/15 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-6xl mx-auto px-5 sm:px-6 py-12 sm:py-16 md:py-20 w-full grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
@@ -110,8 +110,8 @@ export default function Hero() {
           </ul>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-teal-600 text-white font-semibold hover:bg-teal-700 transition-colors shadow-lg shadow-teal-600/20 text-sm">
-              Book a Free Demo <ArrowRight size={15} />
+            <Link href="https://app.cuspflow.co/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-teal-600 text-white font-semibold hover:bg-teal-700 transition-colors shadow-lg shadow-teal-600/20 text-sm">
+              Start Free Trial <ArrowRight size={15} />
             </Link>
             <Link href="/features" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition-colors text-sm">
               See Features

@@ -91,14 +91,16 @@ export default function PricingPreview() {
                 ))}
               </ul>
               <Link
-                href="/contact"
+                href="https://app.cuspflow.co/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`text-center py-2.5 rounded-xl text-sm font-semibold transition-colors ${
                   tier.highlight
                     ? "bg-white text-teal-700 hover:bg-teal-50"
                     : "border border-slate-200 text-slate-700 hover:bg-slate-50"
                 }`}
               >
-                Get early access
+                Start Free Trial
               </Link>
             </div>
           ))}

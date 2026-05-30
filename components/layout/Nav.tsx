@@ -55,10 +55,12 @@ export default function Nav() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/contact"
+            href="https://app.cuspflow.co/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-medium px-4 py-2 rounded-lg bg-teal-600 text-white hover:bg-teal-700 transition-colors"
           >
-            Book a Demo
+            Free Trial
           </Link>
         </div>
 
@@ -86,11 +88,13 @@ export default function Nav() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="https://app.cuspflow.co/"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="text-sm font-medium px-4 py-2 rounded-lg bg-teal-600 text-white text-center"
           >
-            Book a Demo
+            Free Trial
           </Link>
         </div>
       )}

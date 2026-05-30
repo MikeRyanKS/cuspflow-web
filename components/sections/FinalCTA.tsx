@@ -12,15 +12,17 @@ export default function FinalCTA() {
           Ready to transform your practice?
         </h2>
         <p className="text-slate-400 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-xl mx-auto">
-          Book a 30-minute demo and see CuspFlow running with your clinic&apos;s actual workflow.
-          No sales pressure — just a clear picture of what&apos;s possible.
+          Start your free trial today and see CuspFlow running with your clinic&apos;s actual workflow.
+          No credit card required — up and running in minutes.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <Link
-            href="/contact"
+            href="https://app.cuspflow.co/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-teal-500 text-white font-semibold hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/25 text-sm"
           >
-            Book a Free Demo
+            Start Free Trial
             <ArrowRight size={15} />
           </Link>
           <Link href="/features" className="text-sm text-slate-400 hover:text-white transition-colors">

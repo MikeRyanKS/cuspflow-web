@@ -144,14 +144,16 @@ export default function PricingPage() {
                     ))}
                   </ul>
                   <Link
-                    href="/contact"
+                    href="https://app.cuspflow.co/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`text-center py-3 rounded-xl text-sm font-semibold transition-colors flex items-center justify-center gap-2 ${
                       tier.highlight
                         ? "bg-white text-teal-700 hover:bg-teal-50"
                         : "border border-slate-200 text-slate-700 hover:bg-slate-50"
                     }`}
                   >
-                    Get early access <ArrowRight size={14} />
+                    Start Free Trial <ArrowRight size={14} />
                   </Link>
                 </div>
               ))}
