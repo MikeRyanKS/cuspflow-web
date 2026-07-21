@@ -4,40 +4,41 @@ import { CheckCircle } from "lucide-react";
 const tiers = [
   {
     name: "Starter",
-    description: "Perfect for a single-location clinic just getting started.",
+    price: "$49",
+    annual: "$39",
+    description: "For a single-location clinic getting started.",
     highlight: false,
-    features: [
-      "1 branch",
-      "Up to 5 staff accounts",
-      "Waiting room & appointments",
-      "Treatment plans & billing",
-      "Email support",
+    specs: [
+      "Up to 5 staff seats",
+      "15 GB imaging storage",
+      "1 location",
+      "Full platform — every feature included",
     ],
   },
   {
     name: "Growth",
-    description: "For established clinics ready to scale their operations.",
+    price: "$99",
+    annual: "$79",
+    description: "For established clinics ready to scale.",
     highlight: true,
-    features: [
-      "Up to 3 branches",
-      "Up to 20 staff accounts",
-      "Everything in Starter",
-      "Lab case management",
-      "Patient portal",
-      "Priority support",
+    specs: [
+      "Up to 15 staff seats",
+      "50 GB imaging storage",
+      "Multi-branch",
+      "Full platform — every feature included",
     ],
   },
   {
-    name: "Enterprise",
-    description: "For dental groups managing multiple clinic locations.",
+    name: "Clinic Pro",
+    price: "$199",
+    annual: "$159",
+    description: "For busy, high-volume multi-branch practices.",
     highlight: false,
-    features: [
-      "Unlimited branches",
-      "Unlimited staff",
-      "Everything in Growth",
-      "Custom integrations",
-      "Dedicated account manager",
-      "SLA guarantee",
+    specs: [
+      "Up to 35 staff seats",
+      "120 GB imaging storage",
+      "Multi-branch",
+      "Full platform — every feature included",
     ],
   },
 ];
@@ -51,10 +52,11 @@ export default function PricingPreview() {
             Pricing
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4">
-            Simple, transparent pricing
+            Every feature, on every plan
           </h2>
-          <p className="text-slate-500 max-w-md mx-auto text-sm sm:text-base">
-            We&apos;re launching soon. Book a demo to be among the first clinics on CuspFlow and get early-access rates.
+          <p className="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">
+            No feature gating, ever. Plans differ only by staff seats, storage, and branches —
+            not by what your clinic can do. Every plan starts with a 30-day free trial.
           </p>
         </div>
 
@@ -79,11 +81,15 @@ export default function PricingPreview() {
               <p className={`text-xs sm:text-sm mb-5 leading-relaxed ${tier.highlight ? "text-teal-100" : "text-slate-500"}`}>
                 {tier.description}
               </p>
-              <p className={`text-sm sm:text-base font-semibold mb-6 ${tier.highlight ? "text-teal-100" : "text-slate-400"}`}>
-                Pricing on request
-              </p>
+              <div className="mb-6">
+                <span className={`text-3xl font-bold ${tier.highlight ? "text-white" : "text-slate-900"}`}>{tier.price}</span>
+                <span className={`text-sm font-medium ${tier.highlight ? "text-teal-100" : "text-slate-400"}`}>/mo</span>
+                <p className={`text-xs mt-1 ${tier.highlight ? "text-teal-100" : "text-slate-400"}`}>
+                  or {tier.annual}/mo billed annually
+                </p>
+              </div>
               <ul className="space-y-2 flex-1 mb-6">
-                {tier.features.map((f) => (
+                {tier.specs.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs sm:text-sm">
                     <CheckCircle size={13} className={tier.highlight ? "text-teal-200 shrink-0" : "text-teal-500 shrink-0"} />
                     <span className={tier.highlight ? "text-teal-50" : "text-slate-600"}>{f}</span>
@@ -107,7 +113,15 @@ export default function PricingPreview() {
         </div>
 
         <p className="text-center text-xs text-slate-400">
-          All plans include a free onboarding session and data migration support.
+          Running a group of 35+ seats?{" "}
+          <Link href="/pricing" className="text-teal-600 font-medium hover:underline">
+            Enterprise
+          </Link>{" "}
+          is custom-quoted. See{" "}
+          <Link href="/pricing" className="text-teal-600 font-medium hover:underline">
+            full pricing &amp; add-ons
+          </Link>
+          .
         </p>
       </div>
     </section>

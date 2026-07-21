@@ -40,9 +40,9 @@ const categories = [
     icon: CalendarDays,
     color: "bg-sky-50 text-sky-600",
     features: [
-      { title: "Appointment Scheduling", desc: "Book, reschedule, and cancel appointments with dentist and chair assignment." },
-      { title: "Online Booking via Patient Portal", desc: "Patients can request appointments online 24/7, reducing front-desk call volume." },
-      { title: "Availability Management", desc: "Set clinic hours, chair availability, and dentist schedules per branch." },
+      { title: "Appointment Scheduling", desc: "Book, reschedule, and cancel appointments with doctor and chair assignment." },
+      { title: "Multi-Provider Calendar", desc: "See every doctor, chair, and room in one calendar — filter by branch or provider." },
+      { title: "Availability Management", desc: "Set clinic hours, chair availability, and doctor schedules per branch." },
       { title: "Multi-Chair Support", desc: "Manage multiple dental chairs across multiple rooms — all visible from the same calendar." },
     ],
   },
@@ -93,7 +93,7 @@ const categories = [
       { title: "Family Groups", desc: "Link patients into family units for easier billing and appointment management." },
       { title: "Insurance Information", desc: "Store insurance provider, policy number, and claim references per patient." },
       { title: "Custom Fields", desc: "Add clinic-specific fields to patient records, appointments, and treatment plans." },
-      { title: "Patient Portal Access", desc: "Grant patients a secure login to view their records, book appointments, and sign digital forms." },
+      { title: "Medical History & Allergies", desc: "Structured medical history, current medications, and allergy flags surfaced across the record." },
     ],
   },
   {
@@ -101,7 +101,7 @@ const categories = [
     icon: FileText,
     color: "bg-indigo-50 text-indigo-600",
     features: [
-      { title: "Digital Consent Forms", desc: "Patients sign consent forms digitally — from the clinic or via the patient portal before their visit." },
+      { title: "Digital Consent Forms", desc: "Patients sign consent forms digitally on-screen at the clinic. Every signature is captured against the visit." },
       { title: "Medical History Forms", desc: "Structured medical history collection with full audit trail." },
       { title: "Form History", desc: "All signed forms are stored against the patient record and treatment plan." },
     ],
@@ -138,13 +138,34 @@ const categories = [
     ],
   },
   {
-    name: "Portal & Access",
+    name: "Staff, Payroll & HR",
+    icon: UserRound,
+    color: "bg-pink-50 text-pink-600",
+    features: [
+      { title: "Staff Directory", desc: "Every team member with role, staff code, branch, login status, and active state in one place." },
+      { title: "Payroll & Remuneration", desc: "Track base salary, hourly rates, and commission rates per staff member." },
+      { title: "Attendance & Commissions", desc: "Record attendance and attribute commissions to the staff who earned them." },
+      { title: "Qualifications & Documents", desc: "Store qualifications, certifications, and documents against each staff record." },
+    ],
+  },
+  {
+    name: "Data & Migration",
+    icon: FileText,
+    color: "bg-slate-100 text-slate-600",
+    features: [
+      { title: "CSV Data Migration Wizard", desc: "Bring patients, appointments, and records across from your old system during onboarding." },
+      { title: "Full Data Export", desc: "Export your clinic's complete data to CSV at any time — no lock-in, no hostage backups." },
+      { title: "Complete Audit Trail", desc: "Every clinical and financial change is timestamped and attributed to an authenticated user." },
+    ],
+  },
+  {
+    name: "Access & Security",
     icon: Globe,
     color: "bg-fuchsia-50 text-fuchsia-600",
     features: [
-      { title: "Patient Portal", desc: "A branded patient-facing portal for appointment booking, form signing, and record access." },
-      { title: "Role-Based Access", desc: "Owner, Dentist, Nurse, Receptionist — each role sees exactly what they need, nothing more." },
-      { title: "Secure Authentication", desc: "Staff log in with clinic-scoped credentials. Every action is tied to an authenticated user." },
+      { title: "8 Staff Roles", desc: "Owner, Administrator, Finance, HR, Receptionist, Doctor, Nurse, and Support Staff — each sees exactly what they need." },
+      { title: "Per-Staff Permissions", desc: "Fine-tune access with custom permission overrides on top of each staff member's role." },
+      { title: "Secure Authentication", desc: "Staff log in with clinic-scoped credentials. Each clinic's data is fully isolated from every other clinic." },
     ],
   },
   {

@@ -117,6 +117,10 @@ export default function Hero() {
               See Features
             </Link>
           </div>
+
+          <p className="text-xs text-slate-400 mt-4">
+            30-day free trial · no credit card required · every feature included
+          </p>
         </div>
 
         <div className="hidden lg:block">

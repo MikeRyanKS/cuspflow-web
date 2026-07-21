@@ -15,7 +15,7 @@ export default function PrivacyPage() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="py-12 border-b border-slate-100 mb-10">
             <h1 className="text-3xl font-bold text-slate-900 mb-2">Privacy Policy</h1>
-            <p className="text-sm text-slate-400">Last updated: May 2026</p>
+            <p className="text-sm text-slate-400">Last updated: July 2026</p>
           </div>
 
           <div className="prose prose-slate max-w-none text-sm text-slate-600 leading-relaxed space-y-8">
@@ -55,8 +55,10 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-lg font-semibold text-slate-900 mb-3">5. Data Retention</h2>
               <p>
-                Clinic data is retained for the duration of the subscription and for 90 days after cancellation,
-                during which time clinics can export their full data. After this window, data is permanently deleted.
+                Clinic data is retained for the duration of the subscription. If a subscription lapses or is
+                cancelled, the clinic enters a 60-day view-only window during which all records remain readable
+                and can be exported in full at any time. If the subscription is not reactivated within that
+                window, the clinic&apos;s data is permanently deleted.
               </p>
             </section>
 

@@ -15,7 +15,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="py-12 border-b border-slate-100 mb-10">
             <h1 className="text-3xl font-bold text-slate-900 mb-2">Terms of Service</h1>
-            <p className="text-sm text-slate-400">Last updated: May 2026</p>
+            <p className="text-sm text-slate-400">Last updated: July 2026</p>
           </div>
 
           <div className="prose prose-slate max-w-none text-sm text-slate-600 leading-relaxed space-y-8">
@@ -68,8 +68,10 @@ export default function TermsPage() {
             <section>
               <h2 className="text-lg font-semibold text-slate-900 mb-3">6. Termination</h2>
               <p>
-                Either party may terminate the service agreement with 30 days written notice. Upon termination,
-                clinic data is retained for 90 days for export, then permanently deleted.
+                Either party may terminate the service agreement with 30 days written notice. Upon termination
+                or lapse of the subscription, the clinic enters a 60-day view-only window during which its data
+                remains readable and fully exportable. If the subscription is not reactivated within that window,
+                the data is permanently deleted.
               </p>
             </section>
 

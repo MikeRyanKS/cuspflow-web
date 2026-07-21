@@ -4,7 +4,7 @@ import {
   Receipt,
   FlaskConical,
   Building2,
-  Globe,
+  Users,
 } from "lucide-react";
 
 const features = [
@@ -39,9 +39,9 @@ const features = [
     color: "bg-rose-50 text-rose-600",
   },
   {
-    icon: Globe,
-    title: "Patient Portal",
-    description: "Online appointment booking and digital intake forms reduce front-desk load before the patient even arrives.",
+    icon: Users,
+    title: "Staff, Payroll & HR",
+    description: "Staff directory, payroll, attendance, and commissions in one place — with role-based access for all 8 staff roles.",
     color: "bg-emerald-50 text-emerald-600",
   },
 ];
