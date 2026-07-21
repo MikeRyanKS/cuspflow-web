@@ -20,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "Features — CuspFlow",
   description:
-    "A complete feature breakdown: waiting room, treatment plans, billing, lab cases, patient portal, and multi-branch management.",
+    "A complete feature breakdown: waiting room, treatment plans, billing, lab cases, payroll & HR, and multi-branch management.",
 };
 
 const categories = [
