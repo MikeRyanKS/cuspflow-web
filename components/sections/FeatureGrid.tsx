@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   MonitorDot,
   ClipboardList,
@@ -5,6 +6,8 @@ import {
   FlaskConical,
   Building2,
   Users,
+  Upload,
+  ArrowRight,
 } from "lucide-react";
 
 const features = [
@@ -78,6 +81,30 @@ export default function FeatureGrid() {
               </div>
             );
           })}
+        </div>
+
+        {/* Highlighted: free built-in data import tool */}
+        <div className="mt-4 sm:mt-6 bg-white rounded-2xl p-5 sm:p-7 border border-teal-200 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+          <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0">
+            <Upload size={18} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-sm sm:text-base font-semibold text-slate-900 mb-1.5">
+              Switching systems? Bring your data yourself — free.
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+              CuspFlow includes a free, built-in data import tool. Move your patients, appointments,
+              staff and inventory across from your old system with column auto-mapping and a validation
+              dry-run before anything is saved — no migration fees, no waiting on us. Most clinics are up
+              and running the same day.
+            </p>
+          </div>
+          <Link
+            href="/docs/getting-started/importing-your-data"
+            className="shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-teal-600 hover:text-teal-700"
+          >
+            See how it works <ArrowRight size={14} />
+          </Link>
         </div>
       </div>
     </section>

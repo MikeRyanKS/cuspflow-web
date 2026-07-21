@@ -3,67 +3,12 @@ import Link from "next/link";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import PricingPlans from "@/components/pricing/PricingPlans";
 
 export const metadata: Metadata = {
   title: "Pricing — CuspFlow",
   description: "Simple, transparent pricing for dental clinics of all sizes. Every feature on every plan — pay only for seats, storage, and branches.",
 };
-
-const tiers = [
-  {
-    name: "Starter",
-    price: "$49",
-    annual: "$39",
-    tagline: "For a single-location clinic just getting started.",
-    highlight: false,
-    badge: null,
-    specs: [
-      "Up to 5 staff seats",
-      "15 GB imaging storage",
-      "1 location",
-    ],
-  },
-  {
-    name: "Growth",
-    price: "$99",
-    annual: "$79",
-    tagline: "For established clinics ready to scale their operations.",
-    highlight: true,
-    badge: "Most popular",
-    specs: [
-      "Up to 15 staff seats",
-      "50 GB imaging storage",
-      "Multi-branch",
-    ],
-  },
-  {
-    name: "Clinic Pro",
-    price: "$199",
-    annual: "$159",
-    tagline: "For busy, high-volume practices and small groups.",
-    highlight: false,
-    badge: null,
-    specs: [
-      "Up to 35 staff seats",
-      "120 GB imaging storage",
-      "Multi-branch",
-    ],
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    annual: null,
-    tagline: "For dental groups running large networks of clinics.",
-    highlight: false,
-    badge: null,
-    specs: [
-      "35+ staff seats",
-      "Custom storage",
-      "Unlimited branches",
-      "Dedicated account manager & onboarding",
-    ],
-  },
-];
 
 const includedFeatures = [
   "Live waiting room & patient journey tracking",
@@ -75,7 +20,7 @@ const includedFeatures = [
   "Financial analytics & reconciliation",
   "Staff directory, payroll, attendance & commissions",
   "Family / household groups",
-  "CSV data migration & full data export",
+  "Free built-in data import tool & full data export",
   "Role-based access (8 staff roles)",
   "Multi-branch data isolation",
 ];
@@ -133,73 +78,7 @@ export default function PricingPage() {
         {/* Tiers */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-6xl mx-auto px-5 sm:px-6">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-6">
-              {tiers.map((tier) => (
-                <div
-                  key={tier.name}
-                  className={`rounded-2xl p-6 border flex flex-col ${
-                    tier.highlight
-                      ? "bg-teal-600 border-teal-600 shadow-2xl shadow-teal-600/20 lg:scale-[1.03]"
-                      : "bg-white border-slate-200"
-                  }`}
-                >
-                  {tier.badge ? (
-                    <span className="text-xs font-semibold bg-white/20 text-white rounded-full px-3 py-1 self-start mb-4">
-                      {tier.badge}
-                    </span>
-                  ) : (
-                    <span className="h-[1.75rem] mb-4" />
-                  )}
-                  <h2 className={`text-xl font-bold mb-2 ${tier.highlight ? "text-white" : "text-slate-900"}`}>
-                    {tier.name}
-                  </h2>
-                  <p className={`text-xs mb-5 leading-relaxed min-h-[2.5rem] ${tier.highlight ? "text-teal-100" : "text-slate-500"}`}>
-                    {tier.tagline}
-                  </p>
-                  <div className="mb-6">
-                    <span className={`text-3xl font-bold ${tier.highlight ? "text-white" : "text-slate-900"}`}>{tier.price}</span>
-                    {tier.annual && (
-                      <span className={`text-sm font-medium ${tier.highlight ? "text-teal-100" : "text-slate-400"}`}>/mo</span>
-                    )}
-                    <p className={`text-xs mt-1 ${tier.highlight ? "text-teal-100" : "text-slate-400"}`}>
-                      {tier.annual ? `or ${tier.annual}/mo billed annually` : "Tailored to your network"}
-                    </p>
-                  </div>
-                  <ul className="space-y-2.5 flex-1 mb-8">
-                    {tier.specs.map((f) => (
-                      <li key={f} className="flex items-start gap-2.5 text-sm">
-                        <CheckCircle size={14} className={`shrink-0 mt-0.5 ${tier.highlight ? "text-teal-200" : "text-teal-500"}`} />
-                        <span className={tier.highlight ? "text-teal-50" : "text-slate-600"}>{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  {tier.name === "Enterprise" ? (
-                    <Link
-                      href="/contact"
-                      className={`text-center py-3 rounded-xl text-sm font-semibold transition-colors flex items-center justify-center gap-2 border border-slate-200 text-slate-700 hover:bg-slate-50`}
-                    >
-                      Contact Sales <ArrowRight size={14} />
-                    </Link>
-                  ) : (
-                    <Link
-                      href="https://app.cuspflow.co/signup"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`text-center py-3 rounded-xl text-sm font-semibold transition-colors flex items-center justify-center gap-2 ${
-                        tier.highlight
-                          ? "bg-white text-teal-700 hover:bg-teal-50"
-                          : "border border-slate-200 text-slate-700 hover:bg-slate-50"
-                      }`}
-                    >
-                      Start Free Trial <ArrowRight size={14} />
-                    </Link>
-                  )}
-                </div>
-              ))}
-            </div>
-            <p className="text-center text-xs text-slate-400">
-              All plans include a free onboarding session, data migration support, and a full 30-day trial.
-            </p>
+            <PricingPlans />
           </div>
         </section>
 

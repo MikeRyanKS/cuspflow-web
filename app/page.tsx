@@ -138,6 +138,52 @@ function BillingVisual() {
   );
 }
 
+/* ── Data Import Visual ──────────────────────────────────────────────────── */
+function DataImportVisual() {
+  const mappings = [
+    ["First Name", "first_name", "ok"],
+    ["Mobile", "phone", "ok"],
+    ["DOB", "date_of_birth", "ok"],
+    ["Notes", "— skip —", "skip"],
+  ] as const;
+
+  return (
+    <div className="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
+      <div className="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
+        <div>
+          <p className="text-sm font-semibold text-slate-900">Import patients</p>
+          <p className="text-xs text-slate-400">patients-export.csv · 486 rows</p>
+        </div>
+        <span className="text-xs font-medium bg-teal-50 text-teal-700 border border-teal-200 rounded-full px-2.5 py-1">Step 2 of 4</span>
+      </div>
+      <div className="px-5 py-4 bg-slate-50/60 border-b border-slate-100">
+        <p className="text-xs text-slate-400 mb-3 font-medium">Column mapping (auto-detected)</p>
+        <div className="space-y-1.5">
+          {mappings.map(([from, to, state]) => (
+            <div key={from} className="flex items-center gap-2 text-xs">
+              <span className="flex-1 bg-white border border-slate-200 rounded-md px-2.5 py-1.5 text-slate-600 truncate">{from}</span>
+              <span className="text-slate-300">→</span>
+              <span className={`flex-1 rounded-md px-2.5 py-1.5 truncate border ${state === "skip" ? "bg-slate-50 border-slate-200 text-slate-400" : "bg-teal-50 border-teal-200 text-teal-700 font-medium"}`}>{to}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="p-4">
+        <p className="text-xs text-slate-400 mb-3 font-medium">Validation dry-run</p>
+        <div className="grid grid-cols-3 gap-2">
+          {[["482", "Valid", "text-green-600 bg-green-50"], ["3", "Warnings", "text-amber-600 bg-amber-50"], ["1", "Error", "text-rose-600 bg-rose-50"]].map(([n, l, c]) => (
+            <div key={l} className={`rounded-xl px-3 py-2.5 text-center ${c.split(" ")[1]}`}>
+              <p className={`text-lg font-bold ${c.split(" ")[0]}`}>{n}</p>
+              <p className="text-[11px] text-slate-500">{l}</p>
+            </div>
+          ))}
+        </div>
+        <button className="mt-3 w-full py-2 rounded-lg bg-teal-600 text-white text-xs font-semibold">Import 482 patients</button>
+      </div>
+    </div>
+  );
+}
+
 /* ── Page ────────────────────────────────────────────────────────────────── */
 export default function Home() {
   return (
@@ -187,6 +233,20 @@ export default function Home() {
             "Full payment history per patient, per visit, per branch",
           ]}
           visual={<BillingVisual />}
+        />
+
+        <DeepDive
+          badge="Switch in a day"
+          headline="Bring your data across yourself — for free."
+          description="Moving from another system shouldn't cost you weeks or a migration fee. CuspFlow's free, built-in data import tool lets your team bring patients, appointments, staff and inventory across from a spreadsheet — with column auto-mapping and a validation dry-run that catches problems before anything is saved."
+          bullets={[
+            "Imports patients, appointments, families, staff, chairs and inventory",
+            "Column auto-mapping — CuspFlow guesses the fields, you confirm",
+            "Validation dry-run flags every warning and error, row by row, before import",
+            "Assisted onboarding if you want a hand — but the tool is yours, free, any time",
+          ]}
+          visual={<DataImportVisual />}
+          reversed
         />
 
         <MultiBranchCallout />

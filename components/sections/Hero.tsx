@@ -5,6 +5,7 @@ const bullets = [
   "Live waiting room — every chair, every status",
   "Treatment plans linked to billing automatically",
   "Multi-branch, one login",
+  "Free built-in data import — switch systems in a day",
 ];
 
 const mobilePatients = [

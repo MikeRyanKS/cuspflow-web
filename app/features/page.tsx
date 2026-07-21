@@ -153,7 +153,7 @@ const categories = [
     icon: FileText,
     color: "bg-slate-100 text-slate-600",
     features: [
-      { title: "CSV Data Migration Wizard", desc: "Bring patients, appointments, and records across from your old system during onboarding." },
+      { title: "Free Built-in Data Import Tool", desc: "Bring patients, appointments, staff, and inventory across from your old system yourself — a free, built-in import wizard with column auto-mapping and a validation dry-run before anything is saved. No waiting on us, no migration fees." },
       { title: "Full Data Export", desc: "Export your clinic's complete data to CSV at any time — no lock-in, no hostage backups." },
       { title: "Complete Audit Trail", desc: "Every clinical and financial change is timestamped and attributed to an authenticated user." },
     ],
