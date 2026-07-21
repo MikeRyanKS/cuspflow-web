@@ -12,9 +12,16 @@ const cols = [
     ],
   },
   {
+    heading: "Resources",
+    links: [
+      { href: "/docs", label: "Documentation" },
+      { href: "/docs/reference/faq", label: "FAQ" },
+      { href: "/contact", label: "Contact" },
+    ],
+  },
+  {
     heading: "Company",
     links: [
-      { href: "/contact", label: "Contact" },
       { href: "/privacy", label: "Privacy Policy" },
       { href: "/terms", label: "Terms of Service" },
     ],
@@ -24,7 +31,7 @@ const cols = [
 export default function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 py-10 sm:py-14 grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 py-10 sm:py-14 grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-10">
         {/* Brand */}
         <div className="col-span-2">
           <Link href="/" className="flex items-center gap-2 font-semibold text-lg mb-3">

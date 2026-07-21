@@ -109,18 +109,6 @@ const faqs = [
     q: "How does annual billing work?",
     a: "Annual billing saves you roughly 20% versus paying monthly. You're billed once per year at the discounted rate shown on each plan.",
   },
-  {
-    q: "Is our patient data secure?",
-    a: "All data is encrypted in transit and at rest. Each clinic's data is completely isolated from every other clinic using database-level row-level security. We follow HIPAA-aligned security practices.",
-  },
-  {
-    q: "Do you support multiple currencies?",
-    a: "Yes — your clinic's patient-facing invoices, receipts and payments use your own currency and locale, set during onboarding. (CuspFlow subscriptions themselves are billed in USD.)",
-  },
-  {
-    q: "What happens to our data if we cancel or don't renew?",
-    a: "Your clinic enters a 60-day view-only window. Every record stays readable and fully exportable the whole time — you can download your complete data at any point, free. Reactivating restores full access instantly. Only if no one returns within those 60 days is the data permanently deleted.",
-  },
 ];
 
 export default function PricingPage() {
@@ -275,6 +263,17 @@ export default function PricingPage() {
                 </div>
               ))}
             </div>
+            <p className="text-center text-sm text-slate-500 mt-8">
+              Looking for more answers?{" "}
+              <Link href="/docs/reference/faq" className="text-teal-600 font-medium hover:text-teal-700">
+                Read the full FAQ
+              </Link>{" "}
+              or browse the{" "}
+              <Link href="/docs" className="text-teal-600 font-medium hover:text-teal-700">
+                documentation
+              </Link>
+              .
+            </p>
           </div>
         </section>
 

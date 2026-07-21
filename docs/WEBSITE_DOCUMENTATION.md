@@ -4,33 +4,25 @@
 **Location:** `/Users/mac/cuspflow-web/`  
 **Live Domain:** `cuspflow.co`  
 **App Domain:** `app.cuspflow.co` (the Dental PMS application)  
-**Last Updated:** 2026-05-31 (moved here from the `dental-pms` repo, 2026-07-21)
+**Last Updated:** 2026-07-21
 
-> ### ⚠️ Pricing on this site is out of date
-> The app now has a **built, self-serve Stripe subscription system** with public
-> pricing, which this site does not yet reflect. These pages currently show
-> **Starter / Growth / Enterprise with no prices** ("contact us for pricing"),
-> but the product has moved to published, self-serve pricing:
+> ### ✅ Pricing is now published (4 tiers + add-ons)
+> `/pricing` shows the full self-serve pricing that matches the app's Stripe
+> catalogue: **Starter $49/$468 · Growth $99/$948 · Clinic Pro $199/$1,908 ·
+> Enterprise (contact sales)**, plus add-ons — **Additional Staff Seat $12/mo**,
+> **Storage Block (50 GB) $10/mo** (both recurring), and one-time SMS packs
+> ($15 / $30 / $55). Every feature is included on every tier; plans differ only
+> by staff seats, storage and branches.
 >
-> | Tier | Monthly | Yearly |
-> |---|---|---|
-> | Starter | $49 | $468 |
-> | Growth | $99 | $948 |
-> | **Clinic Pro** — *new 4th tier, missing from this site* | $199 | $1,908 |
-> | Enterprise | contact sales | — |
->
-> Plus add-ons: **Additional Staff Seat $12/mo** and **Storage Block (50 GB)
-> $10/mo** (both recurring), and one-time SMS packs ($15 / $30 / $55). Every
-> feature is included on every tier — plans differ only by staff seats and
-> storage.
->
-> **Update this site only once the Stripe catalogue exists**, so the published
-> figures and Stripe agree exactly. Note that "contact us for pricing" is
-> incompatible with self-serve Checkout — this is a strategy change, not just a
-> missing pricing card.
->
-> Authoritative source: `dental-pms` → `docs/STRIPE_PAYMENTS.md` §2a.
-> Tracked in `dental-pms` → `docs/HANDOVER.md` §3.4.
+> Keep these figures in sync with the authoritative source: `dental-pms` →
+> `docs/STRIPE_PAYMENTS.md` §2a. If prices change there, update `/pricing` and
+> the docs FAQ/subscription articles here so all three agree.
+
+> ### 📚 Documentation section added (`/docs`)
+> A full public docs system now lives under `app/docs/**`, driven by Markdown in
+> `content/docs/*.md` via `lib/docs.ts`. See [the Documentation section](#documentation-docs)
+> below. When you **add or rename an article**, the sitemap updates automatically,
+> but `llms.txt` content and any hand-written cross-links do not — review them.
 
 ---
 
@@ -166,6 +158,51 @@ Lead generation form with fields: Name, Clinic Name, Email, Phone (optional), Me
 
 - `/privacy` — Privacy Policy
 - `/terms` — Terms of Service
+
+### Documentation (`/docs`)
+
+The public self-help documentation. Content-driven and fully statically
+generated (real, crawlable URLs — good for SEO).
+
+**How it works**
+
+- **Content:** Markdown files with frontmatter (`title, description, category,
+  order, updated`) in `content/docs/*.md`. Non-developers can add/edit articles
+  here without touching code.
+- **Loader:** `lib/docs.ts` is the single source of truth — parses frontmatter,
+  renders Markdown → HTML at build time (remark/rehype, with `rehype-slug` +
+  autolink for heading ids and an extracted table of contents), and exposes
+  `getAllArticles / getArticleBySlug / getArticlesByCategory / getCategories /
+  getAdjacentArticles`. Ordered categories live in `DOC_CATEGORIES`.
+- **Routes:**
+  - `/docs` — index, articles grouped by category (`app/docs/page.tsx`).
+  - `/docs/[category]` — category landing (`app/docs/[category]/page.tsx`).
+  - `/docs/[category]/[slug]` — article (`app/docs/[category]/[slug]/page.tsx`),
+    with in-page TOC, prev/next, and breadcrumbs.
+  - All use `generateStaticParams()` + `generateMetadata()` (per-page title,
+    description, canonical, OpenGraph).
+- **Components:** `components/docs/` — `DocsShell`, `DocsSidebar`, `Breadcrumbs`
+  (emits `BreadcrumbList` JSON-LD), `TableOfContents`. Article pages also emit
+  `TechArticle` JSON-LD. Prose styling: `.docs-prose` in `app/globals.css`.
+- **URL helpers:** `lib/docs-routes.ts` (client-safe, no `fs`) — `articleHref`,
+  `categoryHref`, `absoluteArticleUrl`, `SITE_URL`.
+- **SEO/discovery:** `app/sitemap.ts` enumerates `/docs`, every category and
+  every article. `app/llms.txt/route.ts` emits a machine-readable index for AI
+  crawlers.
+
+**Adding an article:** drop a new `.md` in `content/docs/` with valid
+frontmatter and an existing `category` id. The sidebar, index, category page,
+sitemap and llms.txt pick it up automatically. Hand-written cross-links between
+articles are not validated — check them.
+
+**Relationship to in-app help:** the CuspFlow app (`dental-pms`) has an in-app
+help panel whose quick-guides link out to these articles at
+`https://cuspflow.co/docs/<category>/<slug>`. If you rename or move an article,
+update the matching `articlePath` in `dental-pms` → `src/components/help/guides.ts`.
+
+**FAQ:** `/docs/reference/faq` is the single source of truth for FAQs. The
+`/pricing` page keeps only a few pricing-specific questions and links here —
+don't duplicate the full FAQ in two places.
 
 ---
 
