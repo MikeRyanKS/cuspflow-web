@@ -28,9 +28,6 @@ const includedFeatures = [
 const addons = [
   { name: "Additional staff seat", price: "$12/mo", desc: "One extra staff login on top of your plan's seats. Add or remove any time." },
   { name: "Storage block", price: "$10/mo", desc: "Adds 50 GB of diagnostic imaging storage. Stack as many blocks as you need." },
-  { name: "SMS Pack — Bronze", price: "$15", desc: "500 SMS credits for appointment and payment reminders. One-time top-up." },
-  { name: "SMS Pack — Silver", price: "$30", desc: "1,200 SMS credits. One-time top-up." },
-  { name: "SMS Pack — Gold", price: "$55", desc: "2,500 SMS credits. One-time top-up." },
 ];
 
 const faqs = [
@@ -113,7 +110,7 @@ export default function PricingPage() {
               <p className="text-sm font-semibold text-teal-600 uppercase tracking-wider mb-3">Add-ons</p>
               <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Scale up without changing plans</h2>
               <p className="text-sm text-slate-500 max-w-lg mx-auto">
-                Need a few more seats, extra imaging storage, or SMS reminder credits? Add them to any plan.
+                Need a few more seats or extra imaging storage? Add them to any plan.
               </p>
             </div>
             <div className="space-y-3">

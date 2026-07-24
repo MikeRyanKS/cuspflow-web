@@ -48,4 +48,4 @@ A quick reference for the terminology you'll see across CuspFlow.
 - **Storage** — your imaging/document storage quota. You can't drop below what you're already using.
 - **Trial** — a 30-day free period for a new clinic, with no card required.
 - **View-only window** — if a subscription lapses, the clinic enters a 60-day period where all data stays readable and fully exportable, but new changes pause until billing is fixed. See [Billing lifecycle](/docs/account-subscription/billing-lifecycle-trials-and-data-export).
-- **Add-on** — extra capacity billed alongside your plan: recurring seats and storage blocks, or one-time SMS credit packs.
+- **Add-on** — extra capacity billed alongside your plan: recurring staff seats and storage blocks.

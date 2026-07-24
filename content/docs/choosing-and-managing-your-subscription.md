@@ -25,9 +25,8 @@ Need a bit more without changing plans? Add capacity that's billed alongside you
 
 - **Additional staff seat** — $12/mo each. Add or remove any time.
 - **Storage block (50 GB)** — $10/mo each. Stack as many as you need.
-- **SMS credit packs** — one-time top-ups for appointment and payment reminders: **Bronze** $15 (500 credits), **Silver** $30 (1,200 credits), **Gold** $55 (2,500 credits).
 
-Adding recurring capacity is charged only for the days left in the current period; removing it takes effect at the end of the period you've already paid for. SMS packs are one-off purchases.
+Adding recurring capacity is charged only for the days left in the current period; removing it takes effect at the end of the period you've already paid for.
 
 ## Seats and storage
 

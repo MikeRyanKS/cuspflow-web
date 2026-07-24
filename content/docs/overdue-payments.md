@@ -19,7 +19,7 @@ From **Financials → Patient Overdue Payments** you can:
 
 ## Payment reminders
 
-If your clinic has reminders enabled, you can prompt patients about outstanding balances by SMS or email. Reminder behaviour is configured under **Settings → Payment Reminders**. SMS reminders use your SMS credit balance — see [add-ons](/docs/account-subscription/choosing-and-managing-your-subscription) for topping up credits.
+If your clinic has reminders enabled, you can prompt patients about outstanding balances by WhatsApp or email. Reminder behaviour is configured under **Settings → Payment Reminders**. WhatsApp reminders send from your clinic's own WhatsApp Business connection (set up under **Settings → WhatsApp**), and patients who aren't on WhatsApp fall back to email automatically.
 
 ## Keeping balances accurate
 
