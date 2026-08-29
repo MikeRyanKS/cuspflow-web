@@ -3,7 +3,7 @@ title: Initial clinic setup
 description: Set up your branches, dental chairs and first staff members so the rest of CuspFlow works the way your clinic does.
 category: getting-started
 order: 2
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
 A little setup up front makes everything else run smoothly. This guide covers the essentials to configure before you start seeing patients. You'll do most of this in **Settings**, which is available to Owners and Administrators.
@@ -38,6 +38,12 @@ Assign each person a [role](/docs/core-concepts/roles-and-permissions), which co
 ## 5. Staff schedules
 
 Set each staff member's weekly working hours per branch under **HR → Staff Schedules**. These hours drive appointment availability, so the booking form only offers slots when a doctor is actually working.
+
+## 6. Patient messaging (optional)
+
+- **WhatsApp** — connect your clinic's WhatsApp Business account under **Settings → WhatsApp** so appointment and balance reminders can go out over WhatsApp (with email as a fallback).
+- **Notifications** — under **Settings → Notifications**, choose which reminders are active and when they're sent.
+- **Online booking** — under **Settings → Online Booking**, turn on the public booking link if you want patients to request appointments themselves. See [Online booking](/docs/patients-scheduling/online-booking).
 
 ## Next steps
 

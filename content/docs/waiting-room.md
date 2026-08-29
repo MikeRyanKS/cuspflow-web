@@ -3,10 +3,10 @@ title: Check-in & the Waiting Room
 description: Run the clinic's live operations board — track patients through Waiting, In Treatment, Billing and Discharged, with wait-time alerts and emergency prioritisation.
 category: patients-scheduling
 order: 4
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
-The Waiting Room is the clinic's live operations board. It shows every patient currently in the building, what stage of their visit they're in, how long they've been there, and which chair they're in. It updates in real time across every open screen.
+The Waiting Room is the clinic's live operations board. It shows every patient currently checked in **at the branch you're working in**, what stage of their visit they're in, how long they've been there, and which chair they're in. It updates in real time across every open screen. Switch branches from the dropdown at the top of the app to see another branch's board.
 
 ## The four stages
 

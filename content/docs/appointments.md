@@ -1,9 +1,9 @@
 ---
 title: Booking & managing appointments
-description: Book pre-scheduled and walk-in appointments, use the multi-doctor calendar, and handle check-ins, reschedules, cancellations and no-shows.
+description: Book pre-scheduled and walk-in appointments, take requests through your online booking link, use the multi-doctor calendar, and handle check-ins, reschedules, cancellations and no-shows.
 category: patients-scheduling
 order: 3
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
 Appointments are the foundation of the clinic's day. Every visit — booked ahead or walk-in — has an appointment attached, tying together the patient, the doctor, the chair and the treatment that follows.
@@ -15,6 +15,15 @@ From the **calendar** or directly from a patient's profile, book a patient for a
 ## Walk-ins
 
 When a patient arrives without a booking, create a walk-in on the spot. CuspFlow creates the appointment, checks the patient in, and places them in the queue automatically. From there, walk-ins behave exactly like booked patients.
+
+## Online booking
+
+Each clinic has a public **booking link** (turn it on and configure it under **Settings → Online Booking**) that you can share on your website, on social media or over WhatsApp. A patient enters what they need and picks a slot from the doctor's real availability.
+
+- If CuspFlow **recognises the patient** — the phone number or email matches an existing record — the appointment is **confirmed automatically** and appears on the calendar.
+- If it doesn't, the request goes to a **Booking Requests** card on the Reception dashboard. Staff review it and **Confirm** or **Decline**. Nothing is added to the calendar or the patient list until someone confirms, and confirming sends the patient an email with the details.
+
+An unrecognised contact is **never turned into a patient record automatically** — a real person always reviews new patients first.
 
 ## The calendar
 

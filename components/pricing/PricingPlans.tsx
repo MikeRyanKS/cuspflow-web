@@ -21,10 +21,10 @@ const tiers: Tier[] = [
     name: "Starter",
     monthly: 49,
     annualMonthly: 39,
-    tagline: "For a single-location clinic just getting started.",
+    tagline: "For a clinic just getting started.",
     highlight: false,
     badge: null,
-    specs: ["Up to 5 staff seats", "15 GB imaging storage", "1 location"],
+    specs: ["Up to 5 staff seats", "15 GB imaging storage", "Unlimited branches"],
   },
   {
     name: "Growth",
@@ -33,7 +33,7 @@ const tiers: Tier[] = [
     tagline: "For established clinics ready to scale their operations.",
     highlight: true,
     badge: "Most popular",
-    specs: ["Up to 15 staff seats", "50 GB imaging storage", "Multi-branch"],
+    specs: ["Up to 15 staff seats", "50 GB imaging storage", "Unlimited branches"],
   },
   {
     name: "Clinic Pro",
@@ -42,7 +42,7 @@ const tiers: Tier[] = [
     tagline: "For busy, high-volume practices and small groups.",
     highlight: false,
     badge: null,
-    specs: ["Up to 35 staff seats", "120 GB imaging storage", "Multi-branch"],
+    specs: ["Up to 35 staff seats", "120 GB imaging storage", "Unlimited branches"],
   },
   {
     name: "Enterprise",

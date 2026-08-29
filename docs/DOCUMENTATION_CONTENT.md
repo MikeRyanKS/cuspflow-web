@@ -11,11 +11,11 @@ describes — click through to see it live.
 *(Marketing / non-docs website copy lives in [`WEBSITE_CONTENT.md`](./WEBSITE_CONTENT.md).
 Build/architecture details live in [`WEBSITE_DOCUMENTATION.md`](./WEBSITE_DOCUMENTATION.md).)*
 
-**Last updated:** 2026-07-21
+**Last updated:** 2026-08-29
 
 ---
 
-## Help centre — 9 categories, 27 articles
+## Help centre — 9 categories, 29 articles
 
 Home: **<https://cuspflow.co/docs>**
 
@@ -26,7 +26,7 @@ Home: **<https://cuspflow.co/docs>**
 |---|---|
 | [Getting Started with CuspFlow](https://cuspflow.co/docs/getting-started/getting-started) | Guided tour / map of the whole system; the patient-journey path (register → book/check-in → waiting room → treatment plan → payment → discharge); "where things live" table. |
 | [Initial clinic setup](https://cuspflow.co/docs/getting-started/initial-clinic-setup) | Clinic details (name, currency/locale, tax, print format A4/thermal, invoice/receipt prefixes), branches, dental chairs, first staff, weekly schedules. |
-| [Importing your existing data](https://cuspflow.co/docs/getting-started/importing-your-data) | The free built-in Data Migration wizard: 7 entity types, CSV upload, column auto-mapping, validation dry-run, duplicate detection, up to 5,000 rows. |
+| [Importing your existing data](https://cuspflow.co/docs/getting-started/importing-your-data) | Data Migration wizard v2: template-first, 7 entities in dependency order, fuzzy header matching, validation dry-run, **rejects rather than guesses** + re-uploadable rejects report, per-import Reports tab, 7-day rollback, migrated-data tagging, up to 5,000 rows. |
 
 ### Core Concepts
 *The terminology and roles that run through CuspFlow.* — <https://cuspflow.co/docs/core-concepts>
@@ -34,7 +34,7 @@ Home: **<https://cuspflow.co/docs>**
 | Article | What it covers |
 |---|---|
 | [Glossary of terms](https://cuspflow.co/docs/core-concepts/glossary) | Definitions of all domain terms (full list below). |
-| [Roles & permissions](https://cuspflow.co/docs/core-concepts/roles-and-permissions) | The 8 roles, how access is decided, custom permission overrides; key rules (only Owner changes roles; Owner is never locked out). |
+| [Roles & permissions](https://cuspflow.co/docs/core-concepts/roles-and-permissions) | The 8 roles, how access is decided, custom permission overrides; **per-page Financials access** (front-desk = Overdue + Reconciliation only; summary totals gated by "view financial summaries"); key rules (only Owner changes roles; Owner is never locked out). |
 
 ### Patients & Scheduling
 *Records, families, appointments and the waiting room.* — <https://cuspflow.co/docs/patients-scheduling>
@@ -43,8 +43,10 @@ Home: **<https://cuspflow.co/docs>**
 |---|---|
 | [Patient records & medical history](https://cuspflow.co/docs/patients-scheduling/patient-records) | Demographics, patient code (MRN), instant search, structured medical history (Medical/Dental/Allergy/Medication), adult phone rule. |
 | [Families & household billing](https://cuspflow.co/docs/patients-scheduling/families) | Family groups, Head of Family, household balance, under-18 phone exemption. |
-| [Booking & managing appointments](https://cuspflow.co/docs/patients-scheduling/appointments) | Pre-booked & walk-in, multi-doctor calendar, statuses (Scheduled → Checked-In → Completed / Cancelled / No-Show), emergencies, availability. |
-| [Check-in & the Waiting Room](https://cuspflow.co/docs/patients-scheduling/waiting-room) | Live Kanban board (Waiting → In Treatment → Billing → Discharged), 30-min wait alerts, emergency priority, discharge-until-finalised gate. |
+| [Booking & managing appointments](https://cuspflow.co/docs/patients-scheduling/appointments) | Pre-booked & walk-in, online-booking summary, multi-doctor calendar, statuses (Scheduled → Checked-In → Completed / Cancelled / No-Show), emergencies, availability. |
+| [Online booking & the request queue](https://cuspflow.co/docs/patients-scheduling/online-booking) | Public booking link (Settings → Online Booking), auto-confirm for recognised patients (phone/email match), Booking Requests review card on the Reception dashboard, no auto-created patient records. |
+| [Patient reminders](https://cuspflow.co/docs/patients-scheduling/patient-reminders) | Appointment + overdue-balance reminders over WhatsApp (BYO WhatsApp Business, billed by Meta) with email fallback, Settings → Notifications config, per-patient exclusion. SMS retired. |
+| [Check-in & the Waiting Room](https://cuspflow.co/docs/patients-scheduling/waiting-room) | Live Kanban board scoped to your working branch (Waiting → In Treatment → Billing → Discharged), 30-min wait alerts, emergency priority, discharge-until-finalised gate. |
 
 ### Clinical
 *Treatment plans, charting, lab cases and templates.* — <https://cuspflow.co/docs/clinical>
@@ -63,8 +65,8 @@ Home: **<https://cuspflow.co/docs>**
 |---|---|
 | [Checkout & taking payment](https://cuspflow.co/docs/billing-payments/checkout-and-taking-payment) | Review invoice, discounts, payment methods (Cash/Card/Mobile Money/Insurance/Waived), finalise & discharge gate, clinic currency. |
 | [Installments & receipts](https://cuspflow.co/docs/billing-payments/installments-and-receipts) | Partial payments (Unpaid → Partial → Paid), A4/thermal receipts, gap-free numbering, refunds. |
-| [Overdue payments & follow-up](https://cuspflow.co/docs/billing-payments/overdue-payments) | Outstanding-balance list, per-patient & per-family balances, payment reminders (SMS credits). |
-| [Insurance claims](https://cuspflow.co/docs/billing-payments/insurance-claims) | Claim lifecycle (Pending → Submitted → Approved/Rejected), carriers & policies, Insurance as a payment method. |
+| [Overdue payments & follow-up](https://cuspflow.co/docs/billing-payments/overdue-payments) | Outstanding-balance list, per-patient & per-family balances, WhatsApp/email payment reminders. |
+| [Insurance claims](https://cuspflow.co/docs/billing-payments/insurance-claims) | Claim lifecycle (Draft → Submitted → Approved/Rejected → Paid), amount claimed vs approved + shortfall, carriers & policies, printable/exportable claims report, Insurance as a payment method. |
 
 ### Operations
 *Inventory, price catalog, branches and chairs.* — <https://cuspflow.co/docs/operations>
@@ -89,8 +91,8 @@ Home: **<https://cuspflow.co/docs>**
 
 | Article | What it covers |
 |---|---|
-| [Choosing & managing your subscription](https://cuspflow.co/docs/account-subscription/choosing-and-managing-your-subscription) | Plans, seats, storage, add-ons, plan changes, Settings → Billing. Pricing figures mirror the pricing page. |
-| [Billing lifecycle, trials & data export](https://cuspflow.co/docs/account-subscription/billing-lifecycle-trials-and-data-export) | 30-day trial, payment-lapse flow, 60-day view-only window, free full export, security note. |
+| [Choosing & managing your subscription](https://cuspflow.co/docs/account-subscription/choosing-and-managing-your-subscription) | Plans, seats, storage, add-ons, plan changes, Settings → Billing. **Unlimited branches on every plan**; two-devices-per-login cap. Pricing figures mirror the pricing page. |
+| [Billing lifecycle, trials & data export](https://cuspflow.co/docs/account-subscription/billing-lifecycle-trials-and-data-export) | 30-day trial, payment-lapse flow, 60-day view-only window, free full export, **per-record deletion lifecycle** (soft-delete → 30-day Trash → archival → retention-driven erasure), security note. |
 
 ### Reference
 *FAQ, reporting and quick answers.* — <https://cuspflow.co/docs/reference>
@@ -98,7 +100,7 @@ Home: **<https://cuspflow.co/docs>**
 | Article | What it covers |
 |---|---|
 | [Frequently asked questions](https://cuspflow.co/docs/reference/faq) | Canonical FAQ (full list below). |
-| [Reports & analytics](https://cuspflow.co/docs/reference/reports-and-analytics) | Financials dashboard, Reports tabs, load-once-then-refresh behaviour, CSV export. |
+| [Reports & analytics](https://cuspflow.co/docs/reference/reports-and-analytics) | Financials dashboard, Reports tabs, load-once-then-refresh behaviour, "exclude migrated data" toggle, per-page Financials access, CSV export. |
 
 ---
 

@@ -3,10 +3,10 @@ title: Choosing & managing your subscription
 description: How CuspFlow plans, seats, storage and add-ons work, and how to change your plan, add capacity and view invoices under Settings → Billing.
 category: account-subscription
 order: 1
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
-CuspFlow is sold as a subscription, and you manage it yourself under **Settings → Billing**. Every plan includes **every feature** — plans differ only by how many staff **seats** and how much **storage** they include, plus how many branches they cover.
+CuspFlow is sold as a subscription, and you manage it yourself under **Settings → Billing**. Every plan includes **every feature** and an **unlimited number of branches** — plans differ only by how many staff **seats** and how much file **storage** they include.
 
 ## Plans
 
@@ -32,6 +32,11 @@ Adding recurring capacity is charged only for the days left in the current perio
 
 - A **seat** is a staff login. During your [trial](/docs/account-subscription/billing-lifecycle-trials-and-data-export) you can add as many staff as you like; if you then pick a plan with fewer seats than you have logins, nobody is deleted — the most recently added logins are locked and you choose who to keep. Freeing a seat (deactivating someone, buying a seat, or upgrading) releases a locked colleague immediately. **The Owner is never locked out.**
 - **Storage** works the other way: because stored files cost money every month, you can't drop to a plan (or remove a storage block) that holds less than the files you already have. CuspFlow refuses the change and shows the actual numbers so you can free space first. **Clinical files are never deleted automatically.**
+- **Branches are unlimited** on every plan, including Starter. Location count isn't something you pay for — seats are.
+
+## One login, two devices
+
+Each set of login credentials can be signed in on **at most two devices at the same time**. If someone signs in on a third, the least-recently-used session is signed out automatically (that device shows a short message explaining why). This keeps a single paid seat from being quietly shared across a whole front desk. If you need more people working at once, add a seat.
 
 ## What you can do under Settings → Billing
 

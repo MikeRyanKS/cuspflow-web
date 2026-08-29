@@ -7,7 +7,7 @@ import PricingPlans from "@/components/pricing/PricingPlans";
 
 export const metadata: Metadata = {
   title: "Pricing — CuspFlow",
-  description: "Simple, transparent pricing for dental clinics of all sizes. Every feature on every plan — pay only for seats, storage, and branches.",
+  description: "Simple, transparent pricing for dental clinics of all sizes. Every feature on every plan, with unlimited branches — pay only for seats and storage.",
 };
 
 const includedFeatures = [
@@ -22,7 +22,7 @@ const includedFeatures = [
   "Family / household groups",
   "Free built-in data import tool & full data export",
   "Role-based access (8 staff roles)",
-  "Multi-branch data isolation",
+  "Unlimited branches, with per-branch data isolation",
 ];
 
 const addons = [
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Do all plans really include every feature?",
-    a: "Yes. There's no feature gating in CuspFlow. Every plan unlocks the full product — waiting room, treatment plans, billing, lab cases, payroll, analytics, everything. Plans differ only by how many staff seats, how much imaging storage, and how many branches they cover.",
+    a: "Yes. There's no feature gating in CuspFlow. Every plan unlocks the full product — waiting room, treatment plans, billing, lab cases, payroll, analytics, online booking, everything — with unlimited branches. Plans differ only by how many staff seats and how much imaging storage they include.",
   },
   {
     q: "What if I need more seats or storage than my plan includes?",
@@ -66,8 +66,8 @@ export default function PricingPage() {
               Simple, transparent pricing
             </h1>
             <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
-              Every feature is included on every plan. You only pay for staff seats, storage, and
-              branches. Every plan starts with a 30-day free trial — no credit card required.
+              Every feature is included on every plan. You only pay for staff seats and storage, and every plan
+              includes unlimited branches. Every plan starts with a 30-day free trial — no credit card required.
             </p>
           </div>
         </section>

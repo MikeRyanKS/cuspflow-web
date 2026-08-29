@@ -3,7 +3,7 @@ title: Reports & analytics
 description: Understand the Financials dashboard and Reports — revenue, collections, outstanding balances, doctor workload, clinic flow — and export to CSV.
 category: reference
 order: 2
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
 CuspFlow turns your day-to-day activity into numbers you can act on, across two areas: **Financials** and **Reports**.
@@ -26,6 +26,14 @@ CuspFlow turns your day-to-day activity into numbers you can act on, across two 
 ## How reports load
 
 To stay fast, report and analytics pages **load once and hold their data** rather than constantly re-fetching. Use the **Refresh** button to pull fresh numbers when you want them. Each Reports tab loads only when you open it.
+
+## Excluding imported data
+
+If you brought historical records in through the [Data Migration wizard](/docs/getting-started/importing-your-data), the reports that show trends over time — Financial Reports, the Financials and Reports dashboards, Staff Commissions, Overdue Payments — have an **"exclude migrated data"** checkbox. Tick it and a large one-off import stops distorting your month-on-month figures. The choice is remembered across pages and reloads.
+
+## Who can see the financials
+
+Financials access is [per-page](/docs/core-concepts/roles-and-permissions#financials-access). Owner, Administrator and Finance see everything. Front-desk roles see only Overdue Payments and Cash Reconciliation, and on those the clinic-wide summary totals are hidden unless specifically granted. Doctors and nurses have no Financials access.
 
 ## Exporting
 

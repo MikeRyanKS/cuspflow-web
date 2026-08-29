@@ -3,7 +3,7 @@ title: Treatment plans & the teeth chart
 description: Chart a visit end to end — procedures, prescriptions, the FDI teeth chart, clinical notes, X-rays and the care team — inside a treatment plan.
 category: clinical
 order: 1
-updated: 2026-07-21
+updated: 2026-08-29
 ---
 
 A **treatment plan** is the complete record of a single visit. It's created automatically when a patient is checked in — from a booking or a walk-in — and stays on file permanently. Open it from the patient's [Waiting Room](/docs/patients-scheduling/waiting-room) card or their profile.
@@ -37,7 +37,11 @@ Each plan needs a **Main Doctor** — checkout is blocked until one is assigned.
 
 ## Status
 
-A plan is **Ongoing** while the visit is active, and becomes **Completed** or **Cancelled**. Billing has its own separate finalised state — see [Checkout & taking payment](/docs/billing-payments/checkout-and-taking-payment).
+A plan is **Ongoing** while the visit is active, and becomes **Finalized** or **Cancelled**. The invoice has its own separate paid/finalised state — see [Checkout & taking payment](/docs/billing-payments/checkout-and-taking-payment).
+
+## The Treatment Plans list
+
+The **Treatment Plans** item in the sidebar is a clinic-wide view of every plan, newest first — searchable by patient and filterable by treatment status, payment status and doctor. Open any row to jump straight into that plan.
 
 ## Needs a lab?
 

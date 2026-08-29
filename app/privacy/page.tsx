@@ -60,6 +60,14 @@ export default function PrivacyPage() {
                 and can be exported in full at any time. If the subscription is not reactivated within that
                 window, the clinic&apos;s data is permanently deleted.
               </p>
+              <p className="mt-3">
+                Individual records that clinic staff delete within the platform (for example a patient,
+                appointment, or catalogue item) are removed from active use immediately and kept in a
+                recoverable state for 30 days, during which the clinic can restore them. After that period they
+                are moved to archival storage and are eventually erased in line with the data-retention
+                requirements applicable in the clinic&apos;s jurisdiction. This per-record process is separate
+                from, and additional to, the clinic-wide deletion described above.
+              </p>
             </section>
 
             <section>
