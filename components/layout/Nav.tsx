@@ -54,7 +54,15 @@ export default function Nav() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-2">
+          <Link
+            href="https://app.cuspflow.co/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium px-3 py-2 rounded-lg text-slate-700 hover:text-teal-600 hover:bg-slate-100 transition-colors"
+          >
+            Log in
+          </Link>
           <Link
             href="https://app.cuspflow.co/signup"
             target="_blank"
@@ -88,6 +96,15 @@ export default function Nav() {
               {l.label}
             </Link>
           ))}
+          <Link
+            href="https://app.cuspflow.co/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="text-sm font-medium text-slate-700 hover:text-teal-600"
+          >
+            Log in
+          </Link>
           <Link
             href="https://app.cuspflow.co/signup"
             target="_blank"
