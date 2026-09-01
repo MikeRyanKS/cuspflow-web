@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, Mail } from "lucide-react";
 import DocsShell from "@/components/docs/DocsShell";
 import Breadcrumbs from "@/components/docs/Breadcrumbs";
 import TableOfContents from "@/components/docs/TableOfContents";
+import VideoEmbed from "@/components/docs/VideoEmbed";
 import {
   getAllArticles,
   getArticleBySlug,
@@ -92,6 +93,8 @@ export default async function ArticlePage({
           </h1>
           <p className="text-lg text-slate-500 leading-relaxed">{article.description}</p>
         </header>
+
+        {article.video && <VideoEmbed url={article.video} title={article.title} />}
 
         <div
           className="docs-prose"

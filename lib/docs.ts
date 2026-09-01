@@ -93,6 +93,8 @@ export interface DocFrontmatter {
   category: string;
   order: number;
   updated?: string;
+  /** Optional YouTube URL or video id — renders an embed under the article header. */
+  video?: string;
 }
 
 export interface DocArticle extends DocFrontmatter {
@@ -141,6 +143,7 @@ function parseFrontmatter(slug: string, raw: string): { data: DocFrontmatter; co
       category: fm.category,
       order: fm.order,
       updated: fm.updated,
+      video: fm.video,
     },
     content,
   };
