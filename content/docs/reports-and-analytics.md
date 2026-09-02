@@ -1,6 +1,6 @@
 ---
 title: Reports & analytics
-description: Understand the Financials dashboard and Reports — revenue, collections, outstanding balances, doctor workload, clinic flow — and export to CSV.
+description: Understand the Financials dashboard and Reports, revenue, collections, outstanding balances, doctor workload, clinic flow, and export to CSV.
 category: reference
 order: 2
 updated: 2026-08-29
@@ -13,16 +13,16 @@ CuspFlow turns your day-to-day activity into numbers you can act on, across two 
 
 **Financials** gives owners and finance staff a live picture: revenue for the period, amount collected, outstanding balances and patient counts, plus recent transactions and a list of patients who still owe money. Beyond the dashboard it also includes:
 
-- **[Overdue Payments](/docs/billing-payments/overdue-payments)** — patients with an outstanding balance.
-- **Financial Reports** — deeper analytics over a chosen date range.
-- **[Insurance Claims](/docs/billing-payments/insurance-claims)** — claims through their lifecycle.
-- **Cash Reconciliation** — reconciling cash takings at the end of a shift or day.
-- **Staff Commissions** — commission earned per staff member (see [Payroll](/docs/staff-hr/payroll)).
-- **Clinic Expenses** — recording your operating costs.
+- **[Overdue Payments](/docs/billing-payments/overdue-payments)**, patients with an outstanding balance.
+- **Financial Reports**, deeper analytics over a chosen date range.
+- **[Insurance Claims](/docs/billing-payments/insurance-claims)**, claims through their lifecycle.
+- **Cash Reconciliation**, reconciling cash takings at the end of a shift or day.
+- **Staff Commissions**, commission earned per staff member (see [Payroll](/docs/staff-hr/payroll)).
+- **Clinic Expenses**, recording your operating costs.
 
 ## The Reports dashboard
 
-**Reports** brings together operational and financial analytics across several tabs — patients seen, doctor workload and utilisation, revenue trends and clinic flow. Managers use these to understand how the clinic is running.
+**Reports** brings together operational and financial analytics across several tabs, patients seen, doctor workload and utilisation, revenue trends and clinic flow. Managers use these to understand how the clinic is running.
 
 ## How reports load
 
@@ -30,7 +30,7 @@ To stay fast, report and analytics pages **load once and hold their data** rathe
 
 ## Excluding imported data
 
-If you brought historical records in through the [Data Migration wizard](/docs/getting-started/importing-your-data), the reports that show trends over time — Financial Reports, the Financials and Reports dashboards, Staff Commissions, Overdue Payments — have an **"exclude migrated data"** checkbox. Tick it and a large one-off import stops distorting your month-on-month figures. The choice is remembered across pages and reloads.
+If you brought historical records in through the [Data Migration wizard](/docs/getting-started/importing-your-data), the reports that show trends over time, Financial Reports, the Financials and Reports dashboards, Staff Commissions, Overdue Payments, have an **"exclude migrated data"** checkbox. Tick it and a large one-off import stops distorting your month-on-month figures. The choice is remembered across pages and reloads.
 
 ## Who can see the financials
 

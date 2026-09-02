@@ -6,7 +6,7 @@ order: 5
 updated: 2026-08-29
 ---
 
-Online booking lets patients request an appointment themselves, from a link you share — without anyone at the front desk having to pick up the phone. It's off until you turn it on.
+Online booking lets patients request an appointment themselves, from a link you share, without anyone at the front desk having to pick up the phone. It's off until you turn it on.
 
 ## Turning it on
 
@@ -20,7 +20,7 @@ You get a **public link** to share on your website, your Google listing, social 
 
 ## What the patient sees
 
-The patient opens the link, enters their details and what they need, and picks a time. The form only offers slots when a doctor is actually working — it reads the same [schedules](/docs/getting-started/initial-clinic-setup) the internal booking form uses, so patients can never request an impossible time.
+The patient opens the link, enters their details and what they need, and picks a time. The form only offers slots when a doctor is actually working, it reads the same [schedules](/docs/getting-started/initial-clinic-setup) the internal booking form uses, so patients can never request an impossible time.
 
 ## What happens next
 
@@ -33,8 +33,8 @@ CuspFlow checks whether it already knows the patient, by **phone number or email
 
 On the Reception dashboard, the **Booking Requests** card lists every pending request. For each one, staff can:
 
-- **Confirm** — CuspFlow creates the patient record (if needed) and the appointment, and emails the patient the confirmed details.
-- **Decline** — the request is cleared with no record created.
+- **Confirm**, CuspFlow creates the patient record (if needed) and the appointment, and emails the patient the confirmed details.
+- **Decline**, the request is cleared with no record created.
 
 This keeps spam and mistyped bookings out of your patient list. A real person always reviews a new patient before they're added.
 

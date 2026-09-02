@@ -13,11 +13,11 @@ A little setup up front makes everything else run smoothly. This guide covers th
 
 Open **Settings → General** and set:
 
-- **Clinic name, contact details and logo** — these appear on receipts and printed documents.
-- **Currency and locale** — your clinic's own currency symbol and number format. Patient invoices, receipts and payments all use this; nothing is hardcoded, so a clinic in Nairobi and one in Dubai each see their own formatting.
-- **Tax rate** — used where tax applies.
-- **Print format** — full **A4** or narrow **thermal** (till-roll) receipts, depending on your printer.
-- **Invoice and receipt prefixes** — for example `RCP-`, which produces gap-free numbers like `RCP-00001`.
+- **Clinic name, contact details and logo**, these appear on receipts and printed documents.
+- **Currency and locale**, your clinic's own currency symbol and number format. Patient invoices, receipts and payments all use this; nothing is hardcoded, so a clinic in Nairobi and one in Dubai each see their own formatting.
+- **Tax rate**, used where tax applies.
+- **Print format**, full **A4** or narrow **thermal** (till-roll) receipts, depending on your printer.
+- **Invoice and receipt prefixes**, for example `RCP-`, which produces gap-free numbers like `RCP-00001`.
 
 ## 2. Branches
 
@@ -31,8 +31,8 @@ CuspFlow tracks **chairs** rather than rooms, so staff always know which seats a
 
 Add your team under **HR**. A staff member has two parts:
 
-- A **staff record** — their HR profile (name, role, salary, qualifications). This can exist on its own.
-- A **login** — granting system access sends an email invitation. A person can have a full HR record long before (or without) being given a login.
+- A **staff record**, their HR profile (name, role, salary, qualifications). This can exist on its own.
+- A **login**, granting system access sends an email invitation. A person can have a full HR record long before (or without) being given a login.
 
 Assign each person a [role](/docs/core-concepts/roles-and-permissions), which controls what they can see and do. See [Staff management](/docs/staff-hr/staff-management) for the full workflow.
 
@@ -42,9 +42,9 @@ Set each staff member's weekly working hours per branch under **HR → Staff Sch
 
 ## 6. Patient messaging (optional)
 
-- **WhatsApp** — connect your clinic's WhatsApp Business account under **Settings → WhatsApp** so appointment and balance reminders can go out over WhatsApp (with email as a fallback).
-- **Notifications** — under **Settings → Notifications**, choose which reminders are active and when they're sent.
-- **Online booking** — under **Settings → Online Booking**, turn on the public booking link if you want patients to request appointments themselves. See [Online booking](/docs/patients-scheduling/online-booking).
+- **WhatsApp**, connect your clinic's WhatsApp Business account under **Settings → WhatsApp** so appointment and balance reminders can go out over WhatsApp (with email as a fallback).
+- **Notifications**, under **Settings → Notifications**, choose which reminders are active and when they're sent.
+- **Online booking**, under **Settings → Online Booking**, turn on the public booking link if you want patients to request appointments themselves. See [Online booking](/docs/patients-scheduling/online-booking).
 
 ## Next steps
 

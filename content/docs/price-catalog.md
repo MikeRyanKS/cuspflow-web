@@ -15,7 +15,7 @@ Create an item with a **name** and **price**. Items can be procedures (fillings,
 
 ## Prices lock at checkout
 
-Editing a catalog item only affects **future** visits. Once an item has been added to a plan and payment has begun, its price is locked on that plan — so changing your catalog never rewrites a patient's existing bill. See [Treatment plans](/docs/clinical/treatment-plans) for how price-locking works.
+Editing a catalog item only affects **future** visits. Once an item has been added to a plan and payment has begun, its price is locked on that plan, so changing your catalog never rewrites a patient's existing bill. See [Treatment plans](/docs/clinical/treatment-plans) for how price-locking works.
 
 ## Bill of Materials
 

@@ -7,7 +7,7 @@ updated: 2026-08-29
 video: https://youtu.be/hpMHEQuC8oI
 ---
 
-CuspFlow is sold as a subscription, and you manage it yourself under **Settings → Billing**. Every plan includes **every feature** and an **unlimited number of branches** — plans differ only by how many staff **seats** and how much file **storage** they include.
+CuspFlow is sold as a subscription, and you manage it yourself under **Settings → Billing**. Every plan includes **every feature** and an **unlimited number of branches**, plans differ only by how many staff **seats** and how much file **storage** they include.
 
 ## Plans
 
@@ -16,24 +16,24 @@ CuspFlow is sold as a subscription, and you manage it yourself under **Settings 
 | **Starter** | Up to 5 | 15 GB | $49 | $468/yr |
 | **Growth** | Up to 15 | 50 GB | $99 | $948/yr |
 | **Clinic Pro** | Up to 35 | 120 GB | $199 | $1,908/yr |
-| **Enterprise** | 35+ | Custom | Custom | — |
+| **Enterprise** | 35+ | Custom | Custom |, |
 
-Annual billing saves roughly 20% versus monthly. Subscriptions are billed in **USD**. (Your patient-facing invoices and receipts always use your own clinic [currency](/docs/getting-started/initial-clinic-setup) — only the CuspFlow subscription itself is in USD.)
+Annual billing saves roughly 20% versus monthly. Subscriptions are billed in **USD**. (Your patient-facing invoices and receipts always use your own clinic [currency](/docs/getting-started/initial-clinic-setup), only the CuspFlow subscription itself is in USD.)
 
 ## Add-ons
 
 Need a bit more without changing plans? Add capacity that's billed alongside your subscription:
 
-- **Additional staff seat** — $12/mo each. Add or remove any time.
-- **Storage block (50 GB)** — $10/mo each. Stack as many as you need.
+- **Additional staff seat**, $12/mo each. Add or remove any time.
+- **Storage block (50 GB)**, $10/mo each. Stack as many as you need.
 
 Adding recurring capacity is charged only for the days left in the current period; removing it takes effect at the end of the period you've already paid for.
 
 ## Seats and storage
 
-- A **seat** is a staff login. During your [trial](/docs/account-subscription/billing-lifecycle-trials-and-data-export) you can add as many staff as you like; if you then pick a plan with fewer seats than you have logins, nobody is deleted — the most recently added logins are locked and you choose who to keep. Freeing a seat (deactivating someone, buying a seat, or upgrading) releases a locked colleague immediately. **The Owner is never locked out.**
+- A **seat** is a staff login. During your [trial](/docs/account-subscription/billing-lifecycle-trials-and-data-export) you can add as many staff as you like; if you then pick a plan with fewer seats than you have logins, nobody is deleted, the most recently added logins are locked and you choose who to keep. Freeing a seat (deactivating someone, buying a seat, or upgrading) releases a locked colleague immediately. **The Owner is never locked out.**
 - **Storage** works the other way: because stored files cost money every month, you can't drop to a plan (or remove a storage block) that holds less than the files you already have. CuspFlow refuses the change and shows the actual numbers so you can free space first. **Clinical files are never deleted automatically.**
-- **Branches are unlimited** on every plan, including Starter. Location count isn't something you pay for — seats are.
+- **Branches are unlimited** on every plan, including Starter. Location count isn't something you pay for, seats are.
 
 ## One login, two devices
 
@@ -52,6 +52,6 @@ Each set of login credentials can be signed in on **at most two devices at the s
 
 ## Changing plans
 
-You can upgrade or downgrade whenever you like and your data moves with you — nothing is lost. Upgrades apply immediately (prorated); downgrades take effect at your next renewal.
+You can upgrade or downgrade whenever you like and your data moves with you, nothing is lost. Upgrades apply immediately (prorated); downgrades take effect at your next renewal.
 
 For trials, payment lapses and data export, see [Billing lifecycle, trials & data export](/docs/account-subscription/billing-lifecycle-trials-and-data-export).

@@ -7,11 +7,11 @@ updated: 2026-07-21
 video: https://youtu.be/xT6ywwQ-GMo
 ---
 
-Payroll calculates what each staff member is owed for a period — salary plus commission, with tax handled — and produces printable payslips. Find it under **HR → Payroll**.
+Payroll calculates what each staff member is owed for a period, salary plus commission, with tax handled, and produces printable payslips. Find it under **HR → Payroll**.
 
 ## Running a pay run
 
-1. **Create a pay run** — choose the period and the staff to include.
+1. **Create a pay run**, choose the period and the staff to include.
 2. CuspFlow calculates each person's **base salary** (if salaried) or **hourly pay** (from clocked [attendance](/docs/staff-hr/attendance)), their **commission**, and **tax**.
 3. **Review** the per-staff entries.
 4. **Approve** the run and **print payslips**, individually or in a batch.

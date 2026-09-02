@@ -1,6 +1,6 @@
 ---
 title: Staff management & roles
-description: Add staff, grant system logins, assign roles and set schedules — the HR profile and login are deliberately separate.
+description: Add staff, grant system logins, assign roles and set schedules, the HR profile and login are deliberately separate.
 category: staff-hr
 order: 1
 updated: 2026-07-21
@@ -11,10 +11,10 @@ The HR module manages your workforce. It's built on a deliberate split between a
 
 ## Staff records vs. logins
 
-- A **staff record** is an HR profile — name, role, salary, qualifications. It can exist on its own.
+- A **staff record** is an HR profile, name, role, salary, qualifications. It can exist on its own.
 - A **user** is a staff member who has also been granted a system login. Granting access sends an email invitation.
 
-So a staff member can have a full HR record long before — or without — being given a login. Not everyone on the payroll needs to sign in.
+So a staff member can have a full HR record long before, or without, being given a login. Not everyone on the payroll needs to sign in.
 
 ## Adding a staff member
 

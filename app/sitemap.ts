@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles, getCategories } from "@/lib/docs";
 import { articleHref, categoryHref } from "@/lib/docs-routes";
+import { getAllPosts } from "@/lib/blog";
 
 export const dynamic = "force-static";
 
@@ -9,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   // Marketing pages
-  const marketing = ["/", "/features", "/pricing", "/contact", "/privacy", "/terms"].map(
+  const marketing = ["/", "/features", "/pricing", "/about", "/contact", "/privacy", "/terms"].map(
     (path) => ({
       url: `${base}${path}`,
       lastModified: now,
@@ -17,6 +18,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: path === "/" ? 1 : 0.8,
     }),
   );
+
+  // Blog — index + one entry per post
+  const blogIndex = {
+    url: `${base}/blog`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  };
+
+  const posts = getAllPosts().map((p) => ({
+    url: `${base}/blog/${p.slug}`,
+    lastModified: new Date(`${p.date}T00:00:00Z`),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
 
   // Docs — index, one entry per category, one per article. Real crawlable URLs.
   const docsIndex = {
@@ -47,5 +63,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...marketing, docsIndex, tutorials, ...categories, ...articles];
+  return [...marketing, blogIndex, ...posts, docsIndex, tutorials, ...categories, ...articles];
 }

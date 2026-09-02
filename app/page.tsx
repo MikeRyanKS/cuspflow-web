@@ -11,10 +11,56 @@ import PricingPreview from "@/components/sections/PricingPreview";
 import FinalCTA from "@/components/sections/FinalCTA";
 import BrowserFrame from "@/components/ui/BrowserFrame";
 
+const SITE_URL = "https://cuspflow.co";
+
+/** Structured data for the homepage: the organization, the site, and the product. */
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: "CuspFlow",
+      url: SITE_URL,
+      logo: `${SITE_URL}/favicon.svg`,
+      description:
+        "Cloud dental practice management software for clinics in Asia, South America and Africa.",
+      email: "support@cuspflow.co",
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: SITE_URL,
+      name: "CuspFlow",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+    {
+      "@type": "SoftwareApplication",
+      name: "CuspFlow",
+      applicationCategory: "BusinessApplication",
+      applicationSubCategory: "Dental Practice Management Software",
+      operatingSystem: "Web",
+      url: SITE_URL,
+      description:
+        "Cloud dental practice management software: live waiting room, appointments, treatment plans, billing, lab cases, inventory, HR/payroll and reporting. Multi-branch, every feature on every plan.",
+      offers: {
+        "@type": "Offer",
+        price: "39",
+        priceCurrency: "USD",
+        description: "Plans from $39/mo per clinic. 30-day free trial, no card required.",
+      },
+    },
+  ],
+};
+
 /* ── Page ────────────────────────────────────────────────────────────────── */
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Nav />
       <main>
         <Hero />

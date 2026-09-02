@@ -19,9 +19,10 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Features | CuspFlow",
+  title: "Dental Practice Management Features | CuspFlow",
   description:
-    "A complete feature breakdown: waiting room, treatment plans, billing, lab cases, payroll & HR, and multi-branch management.",
+    "Explore CuspFlow's dental software features: live waiting room, appointment scheduling, FDI treatment planning, billing and payments, insurance claims, lab cases, inventory, staff and payroll, analytics, and multi-branch management.",
+  alternates: { canonical: "https://cuspflow.co/features" },
 };
 
 const categories = [

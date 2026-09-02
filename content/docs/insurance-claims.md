@@ -23,7 +23,7 @@ so you always know which claims are still with the carrier, which have been sett
 
 ## The shortfall
 
-When a claim is **Approved** for less than the amount claimed, record the **approved amount** — CuspFlow shows the **shortfall** the patient still owes, so it doesn't get lost. Print or export the claims report to send to a carrier.
+When a claim is **Approved** for less than the amount claimed, record the **approved amount**, CuspFlow shows the **shortfall** the patient still owes, so it doesn't get lost. Print or export the claims report to send to a carrier.
 
 ## Carriers and policies
 

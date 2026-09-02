@@ -6,8 +6,10 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 import PricingPlans from "@/components/pricing/PricingPlans";
 
 export const metadata: Metadata = {
-  title: "Pricing | CuspFlow",
-  description: "Simple, transparent pricing for dental clinics of all sizes. Every feature on every plan, with unlimited branches. Pay only for seats and storage.",
+  title: "Pricing | CuspFlow Dental Practice Management Software",
+  description:
+    "Simple, transparent pricing for dental clinics of all sizes. Every feature on every plan, with unlimited branches. Pay only for staff seats and storage. 30-day free trial, no card required.",
+  alternates: { canonical: "https://cuspflow.co/pricing" },
 };
 
 const includedFeatures = [

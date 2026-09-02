@@ -8,26 +8,44 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CuspFlow — Dental Practice Management Software",
+  title: {
+    default: "CuspFlow: Dental Practice Management Software for Growing Clinics",
+    template: "%s",
+  },
   description:
-    "CuspFlow gives every dentist, nurse, and receptionist a real-time view of every patient — from check-in to payment. Built for modern dental clinics.",
+    "CuspFlow is cloud dental practice management software: live waiting room, appointments, treatment plans, billing, lab cases, inventory and reporting in one system. Built for dental clinics in Asia, South America and Africa. Every feature on every plan, unlimited branches, 30-day free trial.",
+  applicationName: "CuspFlow",
+  keywords: [
+    "dental practice management software",
+    "dental clinic software",
+    "dental software",
+    "dental appointment scheduling",
+    "dental billing software",
+    "treatment planning software",
+    "multi-branch dental practice",
+    "cloud dental software",
+    "dental clinic management system",
+  ],
+  authors: [{ name: "CuspFlow" }],
+  alternates: { canonical: "https://cuspflow.co" },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "CuspFlow — Dental Practice Management Software",
+    title: "CuspFlow: Dental Practice Management Software for Growing Clinics",
     description:
-      "Real-time patient flow, treatment plans, billing, and lab cases — all in one place.",
+      "Live waiting room, treatment plans, billing, lab cases and reporting in one system. Built for dental clinics in Asia, South America and Africa.",
     url: "https://cuspflow.co",
     siteName: "CuspFlow",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CuspFlow — Dental Practice Management Software",
-    description: "Real-time patient flow, treatment plans, billing, and lab cases — all in one place.",
+    title: "CuspFlow: Dental Practice Management Software",
+    description:
+      "Live waiting room, treatment plans, billing and reporting in one system, built for dental clinics in Asia, South America and Africa.",
   },
   metadataBase: new URL("https://cuspflow.co"),
 };

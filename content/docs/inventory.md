@@ -7,7 +7,7 @@ updated: 2026-07-21
 video: https://youtu.be/mlvzW-zejbQ
 ---
 
-The Inventory module tracks the physical items your clinic owns and consumes — medicines, consumables and equipment. Find it under **Inventory**.
+The Inventory module tracks the physical items your clinic owns and consumes, medicines, consumables and equipment. Find it under **Inventory**.
 
 ## Stock is a ledger, not a counter
 
@@ -15,8 +15,8 @@ Every arrival (**Stock In**) and every use (**Stock Out**) is recorded as a perm
 
 ## Recording movements
 
-- **Stock In** — record an arrival, with an optional batch and expiry.
-- **Stock Out** — record usage. This can be manual, or written automatically when a linked catalog item is billed (see below).
+- **Stock In**, record an arrival, with an optional batch and expiry.
+- **Stock Out**, record usage. This can be manual, or written automatically when a linked catalog item is billed (see below).
 
 ## Low-stock alerts
 
@@ -24,11 +24,11 @@ Each item has a **reorder level**. At or below it, the item shows a red **Low St
 
 ## Per branch
 
-Stock is tracked **per branch** — each location has its own independent levels, so a busy branch running low doesn't hide healthy stock elsewhere.
+Stock is tracked **per branch**, each location has its own independent levels, so a busy branch running low doesn't hide healthy stock elsewhere.
 
 ## Batches and expiry
 
-Items can carry **batch and expiry** information, with alerts for stock nearing expiry — important for medicines.
+Items can carry **batch and expiry** information, with alerts for stock nearing expiry, important for medicines.
 
 ## Bill of Materials (BOM)
 

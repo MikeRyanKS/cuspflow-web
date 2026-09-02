@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "About CuspFlow | Dental Practice Management for Growing Clinics",
   description:
     "CuspFlow is dental practice management software built for clinics in Asia, South America and Africa. Learn who we build for and what we believe.",
+  alternates: { canonical: "https://cuspflow.co/about" },
 };
 
 const values = [

@@ -6,9 +6,9 @@ import Breadcrumbs from "@/components/docs/Breadcrumbs";
 import { SITE_URL } from "@/lib/docs-routes";
 
 export const metadata: Metadata = {
-  title: "Video Tutorials — CuspFlow",
+  title: "Video Tutorials | CuspFlow",
   description:
-    "Short video tutorials for CuspFlow dental practice management software — getting started, scheduling, the waiting room, billing, treatment plans, inventory, payroll and more.",
+    "Short video tutorials for CuspFlow dental practice management software: getting started, scheduling, the waiting room, billing, treatment plans, inventory, payroll and more.",
   alternates: { canonical: `${SITE_URL}/docs/tutorials` },
   openGraph: {
     title: "CuspFlow Video Tutorials",

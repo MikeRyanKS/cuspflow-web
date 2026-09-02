@@ -9,7 +9,7 @@ import { articleHref, categoryHref, SITE_URL } from "@/lib/docs-routes";
 export const metadata: Metadata = {
   title: "CuspFlow Help & Documentation",
   description:
-    "Guides, how-tos and answers for CuspFlow — the dental practice management system. Learn patient records, scheduling, treatment plans, billing, inventory, payroll and more.",
+    "Guides, how-tos and answers for CuspFlow, the dental practice management system. Learn patient records, scheduling, treatment plans, billing, inventory, payroll and more.",
   alternates: { canonical: `${SITE_URL}/docs` },
   openGraph: {
     title: "CuspFlow Help & Documentation",
@@ -41,7 +41,7 @@ export default function DocsIndexPage() {
           CuspFlow Help Center
         </h1>
         <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
-          Everything you need to run your clinic in CuspFlow — from your first patient
+          Everything you need to run your clinic in CuspFlow, from your first patient
           record to payroll, billing and reporting. New here?{" "}
           <Link href={articleHref({ category: "getting-started", slug: "getting-started" })} className="text-brand-600 font-medium hover:text-brand-700">
             Start with the getting-started guide

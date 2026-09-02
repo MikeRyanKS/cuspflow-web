@@ -30,7 +30,7 @@ export async function generateMetadata({
   if (!article || article.category !== category) return {};
   const url = `${SITE_URL}${articleHref(article)}`;
   return {
-    title: `${article.title} — CuspFlow Docs`,
+    title: `${article.title} | CuspFlow Docs`,
     description: article.description,
     alternates: { canonical: url },
     openGraph: {

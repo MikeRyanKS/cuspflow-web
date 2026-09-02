@@ -1,6 +1,6 @@
 ---
 title: Patient records & medical history
-description: Create and manage patient records — demographics, contact details, structured medical history, allergies and medications.
+description: Create and manage patient records, demographics, contact details, structured medical history, allergies and medications.
 category: patients-scheduling
 order: 1
 updated: 2026-07-21
@@ -14,7 +14,7 @@ Every person your clinic treats has a **patient record** holding their demograph
 From **Patients**, choose **New Patient** and enter their details:
 
 - Name, date of birth and gender.
-- Contact details. **Adult patients need a phone number** — it's the clinic's main way to avoid duplicate records. Children under 18 can be added without a phone **only if** they belong to a [family](/docs/patients-scheduling/families), which provides the contact channel.
+- Contact details. **Adult patients need a phone number**, it's the clinic's main way to avoid duplicate records. Children under 18 can be added without a phone **only if** they belong to a [family](/docs/patients-scheduling/families), which provides the contact channel.
 - Optionally add them to a family, or create them as a standalone patient.
 - An emergency contact.
 
@@ -26,14 +26,14 @@ Search is instant. Type any part of a **name, phone, email or patient code** and
 
 ## Medical history
 
-Medical history is kept as **structured records**, not a single free-text note. Each entry is one of four types — **Medical, Dental, Allergy** or **Medication** — and is flagged as **ongoing** or **resolved**. That makes it easy to see at a glance what a patient is allergic to or currently taking, right when it matters.
+Medical history is kept as **structured records**, not a single free-text note. Each entry is one of four types, **Medical, Dental, Allergy** or **Medication**, and is flagged as **ongoing** or **resolved**. That makes it easy to see at a glance what a patient is allergic to or currently taking, right when it matters.
 
 ## What else lives on the profile
 
 A patient's profile also gathers, in tabs:
 
-- Their **appointment history** — every appointment they've ever had.
-- Their **treatment plans** — one per visit, kept permanently.
+- Their **appointment history**, every appointment they've ever had.
+- Their **treatment plans**, one per visit, kept permanently.
 - Their **payment history** and outstanding balance.
 - **Orthodontic cases**, if any (see [Orthodontics tracking](/docs/clinical/orthodontics)).
 

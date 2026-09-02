@@ -6,7 +6,7 @@ order: 2
 updated: 2026-07-21
 ---
 
-Families group related patients — a household — so you can manage shared contact details and see a combined balance. Each family has a **Head of Family** who acts as the billing and contact anchor.
+Families group related patients, a household, so you can manage shared contact details and see a combined balance. Each family has a **Head of Family** who acts as the billing and contact anchor.
 
 ## Creating a family
 

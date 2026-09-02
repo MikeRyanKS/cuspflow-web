@@ -1,6 +1,6 @@
 ---
 title: Check-in & the Waiting Room
-description: Run the clinic's live operations board — track patients through Waiting, In Treatment, Billing and Discharged, with wait-time alerts and emergency prioritisation.
+description: Run the clinic's live operations board, track patients through Waiting, In Treatment, Billing and Discharged, with wait-time alerts and emergency prioritisation.
 category: patients-scheduling
 order: 4
 updated: 2026-08-29
@@ -13,10 +13,10 @@ The Waiting Room is the clinic's live operations board. It shows every patient c
 
 Each patient moves through four tracked stages:
 
-1. **Waiting** — checked in, not yet seen.
-2. **In Treatment** — seated in a chair, being treated.
-3. **Billing** — treatment done, at reception to pay.
-4. **Discharged** — paid and left.
+1. **Waiting**, checked in, not yet seen.
+2. **In Treatment**, seated in a chair, being treated.
+3. **Billing**, treatment done, at reception to pay.
+4. **Discharged**, paid and left.
 
 Move patients between stages by dragging their card across the board, or using the status dropdown inside the treatment plan. CuspFlow records how long each patient spent in each stage, which feeds wait-time and clinic-flow reporting.
 

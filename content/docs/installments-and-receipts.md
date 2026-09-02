@@ -14,14 +14,14 @@ Patients can pay across multiple visits. Each payment is recorded separately wit
 
 **Unpaid → Partial → Paid**
 
-automatically as money comes in. You take each installment through the normal [checkout](/docs/billing-payments/checkout-and-taking-payment) flow — just enter the amount being paid this time.
+automatically as money comes in. You take each installment through the normal [checkout](/docs/billing-payments/checkout-and-taking-payment) flow, just enter the amount being paid this time.
 
 ## Receipts
 
 Receipts print in two formats depending on your printer, set in **Settings → General**:
 
-- **A4** — a full-page receipt.
-- **Thermal** — a narrow till-roll receipt.
+- **A4**, a full-page receipt.
+- **Thermal**, a narrow till-roll receipt.
 
 Receipt numbers are assigned by the system in a **gap-free sequence per clinic** (for example `RCP-00001`), so your records stay complete and auditable.
 

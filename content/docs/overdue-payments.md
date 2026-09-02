@@ -1,6 +1,6 @@
 ---
 title: Overdue payments & follow-up
-description: Find patients with outstanding balances, review their payment history, and follow up — individually or by family.
+description: Find patients with outstanding balances, review their payment history, and follow up, individually or by family.
 category: billing-payments
 order: 3
 updated: 2026-07-21
@@ -14,7 +14,7 @@ From **Financials → Patient Overdue Payments** you can:
 
 - See all patients who still owe money.
 - Open a patient to review their **payment history** and balance.
-- See a **family** group's combined balance, if the patient belongs to a [family](/docs/patients-scheduling/families) — useful when one person settles the household's bills.
+- See a **family** group's combined balance, if the patient belongs to a [family](/docs/patients-scheduling/families), useful when one person settles the household's bills.
 - Take a payment there and then, using the normal [checkout](/docs/billing-payments/checkout-and-taking-payment) flow.
 
 ## Payment reminders
@@ -23,4 +23,4 @@ If your clinic has reminders enabled, you can prompt patients about outstanding 
 
 ## Keeping balances accurate
 
-Because every payment and refund is recorded against the invoice, the overdue list always reflects reality — there's no separate figure to keep in sync. For the bigger financial picture, see [Reports & analytics](/docs/reference/reports-and-analytics).
+Because every payment and refund is recorded against the invoice, the overdue list always reflects reality, there's no separate figure to keep in sync. For the bigger financial picture, see [Reports & analytics](/docs/reference/reports-and-analytics).

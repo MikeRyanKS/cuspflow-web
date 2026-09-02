@@ -21,7 +21,7 @@ export async function generateMetadata({
   const { category } = await params;
   const cat = getCategory(category);
   if (!cat) return {};
-  const title = `${cat.title} — CuspFlow Docs`;
+  const title = `${cat.title} | CuspFlow Docs`;
   return {
     title,
     description: cat.description,

@@ -23,9 +23,9 @@ Single-location clinics simply use the one main branch created at signup.
 CuspFlow tracks **chairs** rather than rooms, so staff always know which seats are free. Set up chairs per branch, each with a name and optional room.
 
 - In an appointment or treatment plan, staff **assign a chair** to the patient.
-- A chair shows live occupancy — 🟢 Free or 🔴 Occupied. Clinical staff toggle it occupied when the patient is seated and free when they leave.
+- A chair shows live occupancy, 🟢 Free or 🔴 Occupied. Clinical staff toggle it occupied when the patient is seated and free when they leave.
 - Chairs can be **active or inactive**. Inactive chairs are hidden from all selectors, but chairs are never hard-deleted, so historical assignments stay intact.
 
 ## Availability drives booking
 
-Each branch's weekly availability, together with each doctor's [schedule](/docs/staff-hr/staff-management), controls which time slots the [booking form](/docs/patients-scheduling/appointments) offers — so patients can't be booked into a chair or a doctor that isn't available.
+Each branch's weekly availability, together with each doctor's [schedule](/docs/staff-hr/staff-management), controls which time slots the [booking form](/docs/patients-scheduling/appointments) offers, so patients can't be booked into a chair or a doctor that isn't available.
