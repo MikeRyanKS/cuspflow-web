@@ -4,6 +4,7 @@ description: Track medicines, consumables and equipment as a movement ledger, wi
 category: operations
 order: 1
 updated: 2026-07-21
+video: https://youtu.be/mlvzW-zejbQ
 ---
 
 The Inventory module tracks the physical items your clinic owns and consumes — medicines, consumables and equipment. Find it under **Inventory**.

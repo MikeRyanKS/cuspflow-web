@@ -4,6 +4,7 @@ description: How CuspFlow plans, seats, storage and add-ons work, and how to cha
 category: account-subscription
 order: 1
 updated: 2026-08-29
+video: https://youtu.be/hpMHEQuC8oI
 ---
 
 CuspFlow is sold as a subscription, and you manage it yourself under **Settings → Billing**. Every plan includes **every feature** and an **unlimited number of branches** — plans differ only by how many staff **seats** and how much file **storage** they include.

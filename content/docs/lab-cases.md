@@ -4,6 +4,7 @@ description: Track external laboratory work — crowns, bridges, dentures and al
 category: clinical
 order: 2
 updated: 2026-07-21
+video: https://youtu.be/ZxROSduoHhY
 ---
 
 When a treatment needs external laboratory work — crowns, dentures, bridges, aligners — create a **lab case** linked to the treatment plan. Lab cases live under **Lab Cases**, or can be created directly from a [treatment plan](/docs/clinical/treatment-plans).

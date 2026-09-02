@@ -4,6 +4,7 @@ description: Run the clinic's live operations board — track patients through W
 category: patients-scheduling
 order: 4
 updated: 2026-08-29
+video: https://youtu.be/ukbw4Z4S0PA
 ---
 
 The Waiting Room is the clinic's live operations board. It shows every patient currently checked in **at the branch you're working in**, what stage of their visit they're in, how long they've been there, and which chair they're in. It updates in real time across every open screen. Switch branches from the dropdown at the top of the app to see another branch's board.

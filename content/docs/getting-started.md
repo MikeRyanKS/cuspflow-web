@@ -4,6 +4,7 @@ description: A guided tour of CuspFlow — what each part of the system does and
 category: getting-started
 order: 1
 updated: 2026-08-29
+video: https://youtu.be/wIW0ola5lJw
 ---
 
 CuspFlow is a cloud practice-management system for dental clinics. It follows a patient from the moment they walk in — registration, appointment, waiting room, treatment, billing and payment — and gives owners the reporting and staff-management tools to run the business. It works across one clinic or many branches, and each clinic's data is completely private to that clinic.

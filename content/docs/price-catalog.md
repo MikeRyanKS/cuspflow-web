@@ -4,6 +4,7 @@ description: Maintain the list of billable procedures and prescriptions, and lin
 category: operations
 order: 2
 updated: 2026-07-21
+video: https://youtu.be/jwlFQIgJtSo
 ---
 
 The **price catalog** is the list of procedures and prescriptions your clinic bills for. It's what feeds line items into treatment plans and invoices. Manage it under **Settings → Price Catalog** (also reachable as **Price Catalog** in the sidebar).

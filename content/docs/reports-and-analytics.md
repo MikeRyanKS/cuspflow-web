@@ -4,6 +4,7 @@ description: Understand the Financials dashboard and Reports — revenue, collec
 category: reference
 order: 2
 updated: 2026-08-29
+video: https://youtu.be/uI1t3ZEQWPI
 ---
 
 CuspFlow turns your day-to-day activity into numbers you can act on, across two areas: **Financials** and **Reports**.

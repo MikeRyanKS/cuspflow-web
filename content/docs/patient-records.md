@@ -4,6 +4,7 @@ description: Create and manage patient records — demographics, contact details
 category: patients-scheduling
 order: 1
 updated: 2026-07-21
+video: https://youtu.be/iYnb9jW7HPI
 ---
 
 Every person your clinic treats has a **patient record** holding their demographics, contact details, medical and dental history, allergies, current medications, insurance details and emergency contacts. Each patient gets a unique **patient code (MRN)** for quick lookup.

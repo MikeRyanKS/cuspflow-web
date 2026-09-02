@@ -4,6 +4,7 @@ description: Run pay runs that calculate salary, commission and tax per staff me
 category: staff-hr
 order: 2
 updated: 2026-07-21
+video: https://youtu.be/xT6ywwQ-GMo
 ---
 
 Payroll calculates what each staff member is owed for a period — salary plus commission, with tax handled — and produces printable payslips. Find it under **HR → Payroll**.

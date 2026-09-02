@@ -10,10 +10,12 @@ import DocsSidebar from "@/components/docs/DocsSidebar";
  */
 export default function DocsShell({
   activeSlug,
+  activeTutorials,
   aside,
   children,
 }: {
   activeSlug?: string;
+  activeTutorials?: boolean;
   aside?: ReactNode;
   children: ReactNode;
 }) {
@@ -26,7 +28,7 @@ export default function DocsShell({
             {/* Left: persistent nav */}
             <aside className="hidden lg:block py-10">
               <div className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pb-10">
-                <DocsSidebar activeSlug={activeSlug} />
+                <DocsSidebar activeSlug={activeSlug} activeTutorials={activeTutorials} />
               </div>
             </aside>
 

@@ -26,6 +26,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   };
 
+  const tutorials = {
+    url: `${base}/docs/tutorials`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  };
+
   const categories = getCategories().map((c) => ({
     url: `${base}${categoryHref(c.id)}`,
     lastModified: now,
@@ -40,5 +47,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...marketing, docsIndex, ...categories, ...articles];
+  return [...marketing, docsIndex, tutorials, ...categories, ...articles];
 }

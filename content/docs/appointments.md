@@ -4,6 +4,7 @@ description: Book pre-scheduled and walk-in appointments, take requests through 
 category: patients-scheduling
 order: 3
 updated: 2026-08-29
+video: https://youtu.be/Qp9Wh0yJfIw
 ---
 
 Appointments are the foundation of the clinic's day. Every visit — booked ahead or walk-in — has an appointment attached, tying together the patient, the doctor, the chair and the treatment that follows.

@@ -4,6 +4,7 @@ description: Track insurance claims from draft to payment, record the approved a
 category: billing-payments
 order: 4
 updated: 2026-08-29
+video: https://youtu.be/tTveuguTK0U
 ---
 
 Where patients are covered by insurance, CuspFlow helps you track claims from submission to outcome. Claims live under **Financials → Insurance Claims**.

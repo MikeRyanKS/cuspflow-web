@@ -7,7 +7,13 @@ import { articleHref, categoryHref } from "@/lib/docs-routes";
  * index (getArticlesByCategory). Rendered on every docs page via the docs
  * layout. `activeSlug` highlights the current article.
  */
-export default function DocsSidebar({ activeSlug }: { activeSlug?: string }) {
+export default function DocsSidebar({
+  activeSlug,
+  activeTutorials,
+}: {
+  activeSlug?: string;
+  activeTutorials?: boolean;
+}) {
   const groups = getArticlesByCategory();
 
   return (
@@ -17,6 +23,17 @@ export default function DocsSidebar({ activeSlug }: { activeSlug?: string }) {
         className="block px-3 py-2 font-semibold text-slate-900 hover:text-teal-600"
       >
         Documentation home
+      </Link>
+      <Link
+        href="/docs/tutorials"
+        aria-current={activeTutorials ? "page" : undefined}
+        className={
+          activeTutorials
+            ? "flex items-center gap-2 rounded-lg px-3 py-1.5 font-medium bg-teal-50 text-teal-700"
+            : "flex items-center gap-2 rounded-lg px-3 py-1.5 font-medium text-slate-700 hover:bg-slate-50 hover:text-teal-600"
+        }
+      >
+        <span aria-hidden="true">▶</span> Video Tutorials
       </Link>
       <ul className="mt-2 space-y-6">
         {groups.map(({ category, articles }) => (

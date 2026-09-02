@@ -4,6 +4,7 @@ description: Set up your branches, dental chairs and first staff members so the 
 category: getting-started
 order: 2
 updated: 2026-08-29
+video: https://youtu.be/h3GDcGWQkgI
 ---
 
 A little setup up front makes everything else run smoothly. This guide covers the essentials to configure before you start seeing patients. You'll do most of this in **Settings**, which is available to Owners and Administrators.

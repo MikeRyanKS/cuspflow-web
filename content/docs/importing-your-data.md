@@ -4,6 +4,7 @@ description: Use the Data Migration wizard to bring branches, staff, patients, f
 category: getting-started
 order: 3
 updated: 2026-08-29
+video: https://youtu.be/FjCAIiJmpdc
 ---
 
 When you're moving to CuspFlow you don't have to re-enter everything by hand. The **Data Migration** wizard imports your existing records from CSV. It's a guided tool for Owners and Administrators under **Settings → Data Migration**, and each import can handle up to **5,000 rows**.

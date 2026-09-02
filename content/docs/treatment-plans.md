@@ -4,6 +4,7 @@ description: Chart a visit end to end — procedures, prescriptions, the FDI tee
 category: clinical
 order: 1
 updated: 2026-08-29
+video: https://youtu.be/oIqPf6gAnDk
 ---
 
 A **treatment plan** is the complete record of a single visit. It's created automatically when a patient is checked in — from a booking or a walk-in — and stays on file permanently. Open it from the patient's [Waiting Room](/docs/patients-scheduling/waiting-room) card or their profile.

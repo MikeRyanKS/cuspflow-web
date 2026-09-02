@@ -4,6 +4,7 @@ description: Add staff, grant system logins, assign roles and set schedules — 
 category: staff-hr
 order: 1
 updated: 2026-07-21
+video: https://youtu.be/wi4oiDQnego
 ---
 
 The HR module manages your workforce. It's built on a deliberate split between a person's **HR profile** and their **login**.

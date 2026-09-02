@@ -4,6 +4,7 @@ description: Review the invoice, apply discounts, record payments by any method,
 category: billing-payments
 order: 1
 updated: 2026-07-21
+video: https://youtu.be/Vzt_wDOAS4o
 ---
 
 Every treatment plan has exactly **one invoice**. It's created at the first checkout and tracks the line items, subtotal, any discount, how much has been paid, and the remaining balance.
