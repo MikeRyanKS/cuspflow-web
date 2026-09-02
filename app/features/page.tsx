@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import FinalCTA from "@/components/sections/FinalCTA";
+import BrowserFrame from "@/components/ui/BrowserFrame";
 import {
   MonitorDot,
   ClipboardList,
@@ -18,7 +19,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Features — CuspFlow",
+  title: "Features | CuspFlow",
   description:
     "A complete feature breakdown: waiting room, treatment plans, billing, lab cases, payroll & HR, and multi-branch management.",
 };
@@ -32,7 +33,7 @@ const categories = [
       { title: "Live Waiting Room", desc: "Real-time patient status board. Every chair, every status visible from every screen in the clinic." },
       { title: "Patient Journey Tracking", desc: "Track every patient through Checked In → In Chair → Treatment Done → Ready to Pay → Checked Out." },
       { title: "Elapsed Time Alerts", desc: "See how long each patient has been at each stage. Spot bottlenecks before they become complaints." },
-      { title: "Discharge Billing Gate", desc: "Patients can only be discharged after billing is reviewed — no patient walks out without a finalized invoice." },
+      { title: "Discharge Billing Gate", desc: "Patients can only be discharged after billing is reviewed, no patient walks out without a finalized invoice." },
     ],
   },
   {
@@ -41,9 +42,9 @@ const categories = [
     color: "bg-brand-50 text-brand-600",
     features: [
       { title: "Appointment Scheduling", desc: "Book, reschedule, and cancel appointments with doctor and chair assignment." },
-      { title: "Multi-Provider Calendar", desc: "See every doctor, chair, and room in one calendar — filter by branch or provider." },
+      { title: "Multi-Provider Calendar", desc: "See every doctor, chair, and room in one calendar, filter by branch or provider." },
       { title: "Availability Management", desc: "Set clinic hours, chair availability, and doctor schedules per branch." },
-      { title: "Multi-Chair Support", desc: "Manage multiple dental chairs across multiple rooms — all visible from the same calendar." },
+      { title: "Multi-Chair Support", desc: "Manage multiple dental chairs across multiple rooms, all visible from the same calendar." },
     ],
   },
   {
@@ -66,10 +67,10 @@ const categories = [
     features: [
       { title: "Auto-Generated Invoices", desc: "Invoice created automatically when a treatment plan is finalized. Zero double-entry." },
       { title: "Installment Plans", desc: "Split a patient's balance across multiple payment dates. Track every installment automatically." },
-      { title: "Multiple Payment Methods", desc: "Cash, card, bank transfer, insurance claims — all recorded and attributed to the correct patient." },
+      { title: "Multiple Payment Methods", desc: "Cash, card, bank transfer, insurance claims, all recorded and attributed to the correct patient." },
       { title: "Real-Time Balance Tracking", desc: "Know exactly what every patient owes at any moment. No more end-of-day reconciliation surprises." },
       { title: "Discount Management", desc: "Apply percentage or fixed discounts at the line-item or invoice level." },
-      { title: "Payment History", desc: "Complete payment history per patient — filterable by date, method, and branch." },
+      { title: "Payment History", desc: "Complete payment history per patient, filterable by date, method, and branch." },
     ],
   },
   {
@@ -81,7 +82,7 @@ const categories = [
       { title: "Status Tracking", desc: "Draft → Sent → In Production → Received → Fitted. Every transition is timestamped." },
       { title: "Cost Roll-Up", desc: "Lab costs automatically appear as line items on the patient's treatment plan and invoice." },
       { title: "Multiple Laboratories", desc: "Manage relationships with multiple labs per branch. Add transport and other costs per case." },
-      { title: "FDI Tooth Linking", desc: "Link lab cases to specific teeth — updates the treatment plan's tooth chart automatically." },
+      { title: "FDI Tooth Linking", desc: "Link lab cases to specific teeth, updates the treatment plan's tooth chart automatically." },
     ],
   },
   {
@@ -122,7 +123,7 @@ const categories = [
     icon: BarChart3,
     color: "bg-orange-50 text-orange-600",
     features: [
-      { title: "Revenue Reports", desc: "Total revenue, collected payments, outstanding balances — filterable by branch, date range, and dentist." },
+      { title: "Revenue Reports", desc: "Total revenue, collected payments, outstanding balances, filterable by branch, date range, and dentist." },
       { title: "Patient Reports", desc: "New patients, returning patients, appointment completion rates." },
       { title: "Lab Case Reports", desc: "Pending lab cases, average turnaround time, lab costs vs. patient charges." },
       { title: "Staff Performance", desc: "Appointments, treatments, and revenue attributable to each dentist or staff member." },
@@ -153,8 +154,8 @@ const categories = [
     icon: FileText,
     color: "bg-slate-100 text-slate-600",
     features: [
-      { title: "Free Built-in Data Import Tool", desc: "Bring patients, appointments, staff, and inventory across from your old system yourself — a free, built-in import wizard with column auto-mapping and a validation dry-run before anything is saved. No waiting on us, no migration fees." },
-      { title: "Full Data Export", desc: "Export your clinic's complete data to CSV at any time — no lock-in, no hostage backups." },
+      { title: "Free Built-in Data Import Tool", desc: "Bring patients, appointments, staff, and inventory across from your old system yourself, a free, built-in import wizard with column auto-mapping and a validation dry-run before anything is saved. No waiting on us, no migration fees." },
+      { title: "Full Data Export", desc: "Export your clinic's complete data to CSV at any time, no lock-in, no hostage backups." },
       { title: "Complete Audit Trail", desc: "Every clinical and financial change is timestamped and attributed to an authenticated user." },
     ],
   },
@@ -163,7 +164,7 @@ const categories = [
     icon: Globe,
     color: "bg-fuchsia-50 text-fuchsia-600",
     features: [
-      { title: "8 Staff Roles", desc: "Owner, Administrator, Finance, HR, Receptionist, Doctor, Nurse, and Support Staff — each sees exactly what they need." },
+      { title: "8 Staff Roles", desc: "Owner, Administrator, Finance, HR, Receptionist, Doctor, Nurse, and Support Staff, each sees exactly what they need." },
       { title: "Per-Staff Permissions", desc: "Fine-tune access with custom permission overrides on top of each staff member's role." },
       { title: "Secure Authentication", desc: "Staff log in with clinic-scoped credentials. Each clinic's data is fully isolated from every other clinic." },
     ],
@@ -179,6 +180,55 @@ const categories = [
     ],
   },
 ];
+
+/** Real app screenshots shown under the matching feature category. */
+const CATEGORY_SHOTS: Record<string, { src: string; alt: string; url: string }> = {
+  "Patient Flow": {
+    src: "/screenshots/waiting-room.webp",
+    alt: "CuspFlow live waiting room board with patients in Waiting, In Treatment and Billing columns",
+    url: "app.cuspflow.co/waiting-room",
+  },
+  Appointments: {
+    src: "/screenshots/appointments.webp",
+    alt: "CuspFlow appointments calendar with doctor and chair assignments",
+    url: "app.cuspflow.co/appointments",
+  },
+  "Treatment Plans": {
+    src: "/screenshots/treatment-plans.webp",
+    alt: "CuspFlow treatment plans list showing procedures, teeth and status",
+    url: "app.cuspflow.co/treatment-plans",
+  },
+  "Billing & Payments": {
+    src: "/screenshots/financials.webp",
+    alt: "CuspFlow financials overview with revenue, collections and outstanding balances",
+    url: "app.cuspflow.co/financials",
+  },
+  "Patient Management": {
+    src: "/screenshots/patients.webp",
+    alt: "CuspFlow patient list with search by name, phone and patient code",
+    url: "app.cuspflow.co/patients",
+  },
+  "Analytics & Reports": {
+    src: "/screenshots/reports.webp",
+    alt: "CuspFlow reports with appointment status breakdown and busiest-day charts",
+    url: "app.cuspflow.co/reports",
+  },
+  Inventory: {
+    src: "/screenshots/price-catalog.webp",
+    alt: "CuspFlow price catalog of billable procedures and prescriptions",
+    url: "app.cuspflow.co/settings/catalog",
+  },
+  "Staff, Payroll & HR": {
+    src: "/screenshots/hr.webp",
+    alt: "CuspFlow staff directory with roles, branches and login status",
+    url: "app.cuspflow.co/hr",
+  },
+  "Data & Migration": {
+    src: "/screenshots/data-migration.webp",
+    alt: "CuspFlow data migration wizard with column mapping and validation dry-run",
+    url: "app.cuspflow.co/settings/data-migration",
+  },
+};
 
 export default function FeaturesPage() {
   return (
@@ -204,6 +254,7 @@ export default function FeaturesPage() {
           <div className="max-w-6xl mx-auto px-5 sm:px-6 space-y-12 md:space-y-16">
             {categories.map((cat) => {
               const Icon = cat.icon;
+              const shot = CATEGORY_SHOTS[cat.name];
               return (
                 <div key={cat.name}>
                   <div className="flex items-center gap-3 mb-5 sm:mb-7">
@@ -220,6 +271,11 @@ export default function FeaturesPage() {
                       </div>
                     ))}
                   </div>
+                  {shot && (
+                    <div className="mt-5 sm:mt-7 max-w-3xl">
+                      <BrowserFrame src={shot.src} alt={shot.alt} url={shot.url} />
+                    </div>
+                  )}
                 </div>
               );
             })}

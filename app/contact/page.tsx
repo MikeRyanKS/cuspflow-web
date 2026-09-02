@@ -9,7 +9,7 @@ const branchOptions = ["1 branch", "2–3 branches", "4–10 branches", "10+ bra
 
 const benefits = [
   { icon: "🎯", title: "Tailored to your clinic", desc: "We'll set up the demo around your branch count, team size, and workflows." },
-  { icon: "⚡", title: "Live product — no slides", desc: "You'll see the actual CuspFlow app, not a deck of screenshots." },
+  { icon: "⚡", title: "Live product, no slides", desc: "You'll see the actual CuspFlow app, not a deck of screenshots." },
   { icon: "🔒", title: "No commitment", desc: "A demo is just a conversation. We'll answer every question you have." },
 ];
 
@@ -44,12 +44,12 @@ export default function ContactPage() {
                 Book a free demo
               </h1>
               <p className="text-slate-500 text-sm sm:text-base leading-relaxed max-w-lg">
-                See CuspFlow running with your clinic&apos;s actual workflow — 30 minutes, no sales pressure, no commitment.
+                See CuspFlow running with your clinic&apos;s actual workflow, 30 minutes, no sales pressure, no commitment.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
-              {/* Benefits — shown above form on mobile, beside it on desktop */}
+              {/* Benefits, shown above form on mobile, beside it on desktop */}
               <div className="order-2 md:order-1 space-y-5">
                 {benefits.map((item) => (
                   <div key={item.title} className="flex gap-4">

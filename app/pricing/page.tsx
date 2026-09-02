@@ -6,8 +6,8 @@ import { CheckCircle, ArrowRight } from "lucide-react";
 import PricingPlans from "@/components/pricing/PricingPlans";
 
 export const metadata: Metadata = {
-  title: "Pricing — CuspFlow",
-  description: "Simple, transparent pricing for dental clinics of all sizes. Every feature on every plan, with unlimited branches — pay only for seats and storage.",
+  title: "Pricing | CuspFlow",
+  description: "Simple, transparent pricing for dental clinics of all sizes. Every feature on every plan, with unlimited branches. Pay only for seats and storage.",
 };
 
 const includedFeatures = [
@@ -33,19 +33,19 @@ const addons = [
 const faqs = [
   {
     q: "Is there a free trial?",
-    a: "Yes — every new clinic starts with a fully-featured 30-day free trial. No credit card required. You get the entire platform during the trial, and only add payment details when you're ready to subscribe.",
+    a: "Yes, every new clinic starts with a fully-featured 30-day free trial. No credit card required. You get the entire platform during the trial, and only add payment details when you're ready to subscribe.",
   },
   {
     q: "Do all plans really include every feature?",
-    a: "Yes. There's no feature gating in CuspFlow. Every plan unlocks the full product — waiting room, treatment plans, billing, lab cases, payroll, analytics, online booking, everything — with unlimited branches. Plans differ only by how many staff seats and how much imaging storage they include.",
+    a: "Yes. There's no feature gating in CuspFlow. Every plan unlocks the full product, waiting room, treatment plans, billing, lab cases, payroll, analytics, online booking, everything, with unlimited branches. Plans differ only by how many staff seats and how much imaging storage they include.",
   },
   {
     q: "What if I need more seats or storage than my plan includes?",
-    a: "Add them without changing plans. Additional staff seats are $12/mo each and storage blocks are $10/mo per 50 GB. Add or remove them any time — changes are prorated automatically.",
+    a: "Add them without changing plans. Additional staff seats are $12/mo each and storage blocks are $10/mo per 50 GB. Add or remove them any time, changes are prorated automatically.",
   },
   {
     q: "Can I change plans later?",
-    a: "Absolutely. You can upgrade or downgrade at any time and your data moves with you — nothing is lost when you switch. Upgrades apply immediately (prorated); downgrades take effect at your next renewal.",
+    a: "Absolutely. You can upgrade or downgrade at any time and your data moves with you, nothing is lost when you switch. Upgrades apply immediately (prorated); downgrades take effect at your next renewal.",
   },
   {
     q: "How does annual billing work?",
@@ -67,7 +67,7 @@ export default function PricingPage() {
             </h1>
             <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
               Every feature is included on every plan. You only pay for staff seats and storage, and every plan
-              includes unlimited branches. Every plan starts with a 30-day free trial — no credit card required.
+              includes unlimited branches. Every plan starts with a 30-day free trial, no credit card required.
             </p>
           </div>
         </section>

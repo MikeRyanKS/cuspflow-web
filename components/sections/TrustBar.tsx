@@ -1,5 +1,5 @@
 const stats = [
-  { value: "100%", label: "Web-based — no installs" },
+  { value: "100%", label: "Web-based, no installs" },
   { value: "Real-time", label: "Live patient status updates" },
   { value: "Multi-branch", label: "All locations, one login" },
   { value: "Secure", label: "Encrypted data, isolated per clinic" },

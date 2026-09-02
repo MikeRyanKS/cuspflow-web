@@ -30,7 +30,7 @@ export default function DeepDive({
             reversed ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
         >
-          {/* Copy — always first in DOM → always on top on mobile */}
+          {/* Copy, always first in DOM → always on top on mobile */}
           <div className="lg:flex-1">
             <p className="text-xs sm:text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3 sm:mb-4">
               {badge}
@@ -49,7 +49,7 @@ export default function DeepDive({
             </ul>
           </div>
 
-          {/* Visual — always second in DOM → always below on mobile */}
+          {/* Visual, always second in DOM → always below on mobile */}
           <div className="lg:flex-1">{visual}</div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export default function FinalCTA() {
         </h2>
         <p className="text-slate-400 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-xl mx-auto">
           Start your free trial today and see CuspFlow running with your clinic&apos;s actual workflow.
-          No credit card required — up and running in minutes.
+          No credit card required, up and running in minutes.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
           <Link

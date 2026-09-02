@@ -140,7 +140,7 @@ export default function PricingPlans() {
                   {isCustom
                     ? "Tailored to your network"
                     : period === "annual"
-                      ? `billed annually — $${(tier.annualMonthly as number) * 12}/yr`
+                      ? `billed annually, $${(tier.annualMonthly as number) * 12}/yr`
                       : `or $${tier.annualMonthly}/mo billed annually`}
                 </p>
               </div>

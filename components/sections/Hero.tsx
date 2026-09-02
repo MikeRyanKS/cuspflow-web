@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import BrowserFrame from "../ui/BrowserFrame";
 
 const bullets = [
-  "Live waiting room — every chair, every status",
+  "Live waiting room, every chair and every status",
   "Treatment plans linked to billing automatically",
   "Multi-branch, one login",
-  "Free built-in data import — switch systems in a day",
+  "Free built-in data import, switch systems in a day",
 ];
 
 const mobilePatients = [
@@ -13,57 +14,6 @@ const mobilePatients = [
   { name: "James O. · Ready to Pay", dot: "bg-green-400", badge: "bg-green-50 border-green-200 text-green-700" },
   { name: "Lena M. · Waiting · 8 min", dot: "bg-slate-300", badge: "bg-slate-50 border-slate-200 text-slate-600" },
 ];
-
-function WaitingRoomMockup() {
-  const patients = [
-    { name: "Amira Khalil", chair: "Chair 2", elapsed: "45 min", doctor: "Dr. Ahmad Al-Rashid", status: "In Chair", statusColor: "bg-amber-100 text-amber-700", dotColor: "bg-amber-400" },
-    { name: "James Osei", chair: "Chair 1", elapsed: "28 min", doctor: "Dr. Sara Ibrahim", status: "Ready to Pay", statusColor: "bg-green-100 text-green-700", dotColor: "bg-green-400" },
-    { name: "Lena Mahmoud", chair: "Waiting Area", elapsed: "8 min", doctor: "Appointment 11:30 AM", status: "Waiting", statusColor: "bg-slate-100 text-slate-600", dotColor: "bg-slate-400" },
-    { name: "Tariq Al-Farsi", chair: "Chair 3", elapsed: "12 min", doctor: "Dr. Ahmad Al-Rashid", status: "In Chair", statusColor: "bg-amber-100 text-amber-700", dotColor: "bg-amber-400" },
-  ];
-
-  return (
-    <div className="rounded-2xl overflow-hidden shadow-2xl border border-slate-200/80 bg-white">
-      <div className="bg-slate-100 px-4 py-2.5 flex items-center gap-3 border-b border-slate-200">
-        <div className="flex gap-1.5">
-          <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
-          <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-          <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
-        </div>
-        <div className="flex-1 bg-white rounded-md px-3 py-1 text-xs text-slate-400 font-mono">
-          app.cuspflow.co/waiting-room
-        </div>
-      </div>
-      <div className="px-4 py-3 border-b border-slate-100 flex items-center justify-between">
-        <div>
-          <p className="text-sm font-semibold text-slate-900">Live Waiting Room</p>
-          <p className="text-xs text-slate-400">Main Branch · Updated just now</p>
-        </div>
-        <div className="flex gap-2">
-          <span className="text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200 rounded-full px-2 py-0.5">3 In Chair</span>
-          <span className="text-xs font-medium bg-green-50 text-green-700 border border-green-200 rounded-full px-2 py-0.5">1 Ready</span>
-        </div>
-      </div>
-      <div className="p-3 space-y-2 bg-slate-50/50">
-        {patients.map((p) => (
-          <div key={p.name} className="bg-white rounded-xl border border-slate-100 px-3 py-2.5 flex items-center justify-between shadow-sm">
-            <div className="flex items-center gap-3">
-              <div className={`w-2 h-2 rounded-full ${p.dotColor} shrink-0`} />
-              <div>
-                <p className="text-xs font-semibold text-slate-900">{p.name}</p>
-                <p className="text-xs text-slate-400">{p.chair} · {p.doctor}</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2 shrink-0">
-              <span className="text-xs text-slate-400">{p.elapsed}</span>
-              <span className={`text-xs font-medium rounded-full px-2 py-0.5 ${p.statusColor}`}>{p.status}</span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 export default function Hero() {
   return (
@@ -87,11 +37,12 @@ export default function Hero() {
           </h1>
 
           <p className="text-base sm:text-lg text-slate-500 leading-relaxed mb-6 max-w-lg">
-            CuspFlow gives every dentist, nurse, and receptionist a real-time view of every patient —
-            from the moment they walk in to the moment they pay. No spreadsheets. No sticky notes. No chaos.
+            CuspFlow gives every dentist, nurse, and receptionist a real-time view of every
+            patient, from the moment they walk in to the moment they pay. No spreadsheets, no
+            sticky notes, no chaos.
           </p>
 
-          {/* Mobile product teaser — visible below lg */}
+          {/* Mobile product teaser, visible below lg */}
           <div className="flex flex-wrap gap-2 mb-6 lg:hidden">
             {mobilePatients.map((p) => (
               <span key={p.name} className={`inline-flex items-center gap-1.5 border rounded-full px-3 py-1.5 text-xs font-medium ${p.badge}`}>
@@ -125,7 +76,12 @@ export default function Hero() {
         </div>
 
         <div className="hidden lg:block">
-          <WaitingRoomMockup />
+          <BrowserFrame
+            src="/screenshots/waiting-room.webp"
+            alt="CuspFlow live waiting room board showing patients across Waiting, In Treatment and Billing columns"
+            url="app.cuspflow.co/waiting-room"
+            priority
+          />
         </div>
       </div>
     </section>

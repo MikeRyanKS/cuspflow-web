@@ -12,7 +12,7 @@ const tiers = [
       "Up to 5 staff seats",
       "15 GB imaging storage",
       "Unlimited branches",
-      "Full platform — every feature included",
+      "Full platform, every feature included",
     ],
   },
   {
@@ -25,7 +25,7 @@ const tiers = [
       "Up to 15 staff seats",
       "50 GB imaging storage",
       "Unlimited branches",
-      "Full platform — every feature included",
+      "Full platform, every feature included",
     ],
   },
   {
@@ -38,7 +38,7 @@ const tiers = [
       "Up to 35 staff seats",
       "120 GB imaging storage",
       "Unlimited branches",
-      "Full platform — every feature included",
+      "Full platform, every feature included",
     ],
   },
 ];
@@ -55,7 +55,7 @@ export default function PricingPreview() {
             Every feature, on every plan
           </h2>
           <p className="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">
-            No feature gating, ever. Plans differ only by staff seats and storage — not by
+            No feature gating, ever. Plans differ only by staff seats and storage, not by
             what your clinic can do, and every plan has unlimited branches. Every plan starts with a 30-day free trial.
           </p>
         </div>

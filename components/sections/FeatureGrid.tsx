@@ -14,7 +14,7 @@ const features = [
   {
     icon: MonitorDot,
     title: "Live Waiting Room",
-    description: "Real-time patient status from check-in to discharge. Every chair, every status, one screen — visible to the whole team instantly.",
+    description: "Real-time patient status from check-in to discharge. Every chair, every status, one screen, visible to the whole team instantly.",
     color: "bg-brand-50 text-brand-600",
   },
   {
@@ -26,7 +26,7 @@ const features = [
   {
     icon: Receipt,
     title: "Smart Billing",
-    description: "Auto-generated invoices from treatment items. Track payments, installments, and outstanding balances — all in one place.",
+    description: "Auto-generated invoices from treatment items. Track payments, installments, and outstanding balances, all in one place.",
     color: "bg-violet-50 text-violet-600",
   },
   {
@@ -44,7 +44,7 @@ const features = [
   {
     icon: Users,
     title: "Staff, Payroll & HR",
-    description: "Staff directory, payroll, attendance, and commissions in one place — with role-based access for all 8 staff roles.",
+    description: "Staff directory, payroll, attendance, and commissions in one place, with role-based access for all 8 staff roles.",
     color: "bg-emerald-50 text-emerald-600",
   },
 ];
@@ -90,12 +90,12 @@ export default function FeatureGrid() {
           </div>
           <div className="flex-1 min-w-0">
             <h3 className="text-sm sm:text-base font-semibold text-slate-900 mb-1.5">
-              Switching systems? Bring your data yourself — free.
+              Switching systems? Bring your data yourself, free.
             </h3>
             <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
               CuspFlow includes a free, built-in data import tool. Move your patients, appointments,
               staff and inventory across from your old system with column auto-mapping and a validation
-              dry-run before anything is saved — no migration fees, no waiting on us. Most clinics are up
+              dry-run before anything is saved, no migration fees, no waiting on us. Most clinics are up
               and running the same day.
             </p>
           </div>

@@ -1,7 +1,7 @@
 const pains = [
   {
     quote: '"Where is the patient?"',
-    body: "Receptionists call nurses. Nurses walk to the chair. Nobody knows without asking. CuspFlow's live waiting room ends the guessing — every status visible from every screen.",
+    body: "Receptionists call nurses. Nurses walk to the chair. Nobody knows without asking. CuspFlow's live waiting room ends the guessing, every status visible from every screen.",
     icon: "🗂",
   },
   {
@@ -11,7 +11,7 @@ const pains = [
   },
   {
     quote: '"Did they actually pay?"',
-    body: "Billing lives in a spreadsheet. The receptionist checks it manually. CuspFlow auto-generates the invoice the moment the treatment plan is finalized — nothing slips through.",
+    body: "Billing lives in a spreadsheet. The receptionist checks it manually. CuspFlow auto-generates the invoice the moment the treatment plan is finalized, nothing slips through.",
     icon: "💳",
   },
 ];
