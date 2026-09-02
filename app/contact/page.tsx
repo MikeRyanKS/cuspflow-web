@@ -13,18 +13,37 @@ const benefits = [
   { icon: "🔒", title: "No commitment", desc: "A demo is just a conversation. We'll answer every question you have." },
 ];
 
+// Set NEXT_PUBLIC_WEB3FORMS_KEY in the deploy environment to enable the form.
+// Until it is set, the form falls back to a direct email link so a visitor's
+// message is never silently lost.
+const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? "";
+const SUPPORT_EMAIL = "hello@cuspflow.co";
+
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setError(false);
+    // Without a configured key the API would reject the submission silently.
+    if (!ACCESS_KEY) {
+      setError(true);
+      return;
+    }
     setLoading(true);
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
       const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: data });
-      if (res.ok) setSent(true);
+      if (res.ok) {
+        setSent(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
     } finally {
       setLoading(false);
     }
@@ -83,7 +102,7 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+                    <input type="hidden" name="access_key" value={ACCESS_KEY} />
                     <input type="hidden" name="subject" value="New CuspFlow Demo Request" />
                     <input type="hidden" name="from_name" value="CuspFlow Website" />
                     <input type="checkbox" name="botcheck" className="hidden" />
@@ -159,9 +178,19 @@ export default function ContactPage() {
                       {loading ? "Sending…" : <><Send size={14} /> Book My Demo</>}
                     </button>
 
-                    <p className="text-xs text-slate-400 text-center">
-                      We&apos;ll reply within one business day.
-                    </p>
+                    {error ? (
+                      <p className="text-xs text-rose-600 text-center" role="alert">
+                        Sorry, the form could not be sent right now. Please email us directly at{" "}
+                        <a href={`mailto:${SUPPORT_EMAIL}`} className="font-semibold text-brand-600 hover:underline">
+                          {SUPPORT_EMAIL}
+                        </a>{" "}
+                        and we will get straight back to you.
+                      </p>
+                    ) : (
+                      <p className="text-xs text-slate-400 text-center">
+                        We&apos;ll reply within one business day.
+                      </p>
+                    )}
                   </form>
                 )}
               </div>
