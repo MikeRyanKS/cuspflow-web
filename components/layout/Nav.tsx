@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
+// Docs & Tutorials intentionally live in the footer (Resources), not the top
+// nav — the top nav stays focused on the marketing/conversion path.
 const links = [
   { href: "/features", label: "Features" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/docs", label: "Docs" },
-  { href: "/docs/tutorials", label: "Tutorials" },
   { href: "/contact", label: "Contact" },
 ];
 
