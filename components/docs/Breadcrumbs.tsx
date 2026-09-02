@@ -34,7 +34,7 @@ export default function Breadcrumbs({ trail }: { trail: Crumb[] }) {
             return (
               <li key={`${c.label}-${i}`} className="flex items-center gap-1">
                 {c.href && !last ? (
-                  <Link href={c.href} className="hover:text-teal-600">
+                  <Link href={c.href} className="hover:text-brand-600">
                     {c.label}
                   </Link>
                 ) : (

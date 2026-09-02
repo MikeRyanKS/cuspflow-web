@@ -16,7 +16,7 @@ export default function TableOfContents({ toc }: { toc: TocEntry[] }) {
           <li key={h.id} className={h.depth === 3 ? "pl-6" : "pl-3"}>
             <a
               href={`#${h.id}`}
-              className="block text-slate-500 hover:text-teal-600 leading-snug"
+              className="block text-slate-500 hover:text-brand-600 leading-snug"
             >
               {h.text}
             </a>

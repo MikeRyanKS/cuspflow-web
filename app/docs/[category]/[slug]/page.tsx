@@ -108,7 +108,7 @@ export default async function ArticlePage({
           </p>
           <a
             href="mailto:support@cuspflow.co"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-teal-600 px-4 py-2 text-sm font-semibold text-white hover:bg-teal-700 transition-colors"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700 transition-colors"
           >
             <Mail size={15} /> Email support
           </a>
@@ -119,12 +119,12 @@ export default async function ArticlePage({
           {prev ? (
             <Link
               href={articleHref(prev)}
-              className="group rounded-xl border border-slate-200 p-4 hover:border-teal-300 transition-colors"
+              className="group rounded-xl border border-slate-200 p-4 hover:border-brand-300 transition-colors"
             >
               <span className="text-xs text-slate-400 flex items-center gap-1">
                 <ArrowLeft size={12} /> Previous
               </span>
-              <span className="block text-sm font-semibold text-slate-800 group-hover:text-teal-700 mt-1">
+              <span className="block text-sm font-semibold text-slate-800 group-hover:text-brand-700 mt-1">
                 {prev.title}
               </span>
             </Link>
@@ -134,12 +134,12 @@ export default async function ArticlePage({
           {next ? (
             <Link
               href={articleHref(next)}
-              className="group rounded-xl border border-slate-200 p-4 hover:border-teal-300 transition-colors sm:text-right"
+              className="group rounded-xl border border-slate-200 p-4 hover:border-brand-300 transition-colors sm:text-right"
             >
               <span className="text-xs text-slate-400 flex items-center gap-1 sm:justify-end">
                 Next <ArrowRight size={12} />
               </span>
-              <span className="block text-sm font-semibold text-slate-800 group-hover:text-teal-700 mt-1">
+              <span className="block text-sm font-semibold text-slate-800 group-hover:text-brand-700 mt-1">
                 {next.title}
               </span>
             </Link>

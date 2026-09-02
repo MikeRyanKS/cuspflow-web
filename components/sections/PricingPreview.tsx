@@ -48,7 +48,7 @@ export default function PricingPreview() {
     <section className="py-14 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-10 md:mb-14">
-          <p className="text-sm font-semibold text-teal-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3">
             Pricing
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4">
@@ -66,7 +66,7 @@ export default function PricingPreview() {
               key={tier.name}
               className={`rounded-2xl p-6 sm:p-8 border flex flex-col ${
                 tier.highlight
-                  ? "bg-teal-600 border-teal-600 text-white shadow-xl shadow-teal-600/20"
+                  ? "bg-brand-600 border-brand-600 text-white shadow-xl shadow-brand-600/20"
                   : "bg-white border-slate-200"
               }`}
             >
@@ -78,21 +78,21 @@ export default function PricingPreview() {
               <h3 className={`text-lg sm:text-xl font-bold mb-1 ${tier.highlight ? "text-white" : "text-slate-900"}`}>
                 {tier.name}
               </h3>
-              <p className={`text-xs sm:text-sm mb-5 leading-relaxed ${tier.highlight ? "text-teal-100" : "text-slate-500"}`}>
+              <p className={`text-xs sm:text-sm mb-5 leading-relaxed ${tier.highlight ? "text-brand-100" : "text-slate-500"}`}>
                 {tier.description}
               </p>
               <div className="mb-6">
                 <span className={`text-3xl font-bold ${tier.highlight ? "text-white" : "text-slate-900"}`}>{tier.price}</span>
-                <span className={`text-sm font-medium ${tier.highlight ? "text-teal-100" : "text-slate-400"}`}>/mo</span>
-                <p className={`text-xs mt-1 ${tier.highlight ? "text-teal-100" : "text-slate-400"}`}>
+                <span className={`text-sm font-medium ${tier.highlight ? "text-brand-100" : "text-slate-400"}`}>/mo</span>
+                <p className={`text-xs mt-1 ${tier.highlight ? "text-brand-100" : "text-slate-400"}`}>
                   or {tier.annual}/mo billed annually
                 </p>
               </div>
               <ul className="space-y-2 flex-1 mb-6">
                 {tier.specs.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs sm:text-sm">
-                    <CheckCircle size={13} className={tier.highlight ? "text-teal-200 shrink-0" : "text-teal-500 shrink-0"} />
-                    <span className={tier.highlight ? "text-teal-50" : "text-slate-600"}>{f}</span>
+                    <CheckCircle size={13} className={tier.highlight ? "text-brand-200 shrink-0" : "text-brand-500 shrink-0"} />
+                    <span className={tier.highlight ? "text-brand-50" : "text-slate-600"}>{f}</span>
                   </li>
                 ))}
               </ul>
@@ -102,7 +102,7 @@ export default function PricingPreview() {
                 rel="noopener noreferrer"
                 className={`text-center py-2.5 rounded-xl text-sm font-semibold transition-colors ${
                   tier.highlight
-                    ? "bg-white text-teal-700 hover:bg-teal-50"
+                    ? "bg-white text-brand-700 hover:bg-brand-50"
                     : "border border-slate-200 text-slate-700 hover:bg-slate-50"
                 }`}
               >
@@ -114,11 +114,11 @@ export default function PricingPreview() {
 
         <p className="text-center text-xs text-slate-400">
           Running a group of 35+ seats?{" "}
-          <Link href="/pricing" className="text-teal-600 font-medium hover:underline">
+          <Link href="/pricing" className="text-brand-600 font-medium hover:underline">
             Enterprise
           </Link>{" "}
           is custom-quoted. See{" "}
-          <Link href="/pricing" className="text-teal-600 font-medium hover:underline">
+          <Link href="/pricing" className="text-brand-600 font-medium hover:underline">
             full pricing &amp; add-ons
           </Link>
           .

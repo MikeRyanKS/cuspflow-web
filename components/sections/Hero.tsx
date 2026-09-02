@@ -68,20 +68,20 @@ function WaitingRoomMockup() {
 export default function Hero() {
   return (
     <section className="relative flex items-center pt-16 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50/80 to-teal-50/20 -z-10" />
-      <div className="absolute top-1/3 right-0 w-96 h-96 bg-teal-100/15 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-sky-100/15 rounded-full blur-3xl -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50/80 to-brand-50/20 -z-10" />
+      <div className="absolute top-1/3 right-0 w-96 h-96 bg-brand-100/15 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-brand-100/15 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-6xl mx-auto px-5 sm:px-6 py-12 sm:py-16 md:py-20 w-full grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div>
-          <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200 rounded-full px-3 py-1 text-xs font-medium text-teal-700 mb-5">
-            <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
+          <div className="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 rounded-full px-3 py-1 text-xs font-medium text-brand-700 mb-5">
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse" />
             Now accepting early-access clinics
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">
             Your Clinic,{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-sky-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500">
               Running in Perfect Sync
             </span>
           </h1>
@@ -104,14 +104,14 @@ export default function Hero() {
           <ul className="space-y-2 mb-8">
             {bullets.map((b) => (
               <li key={b} className="flex items-center gap-2.5 text-sm text-slate-600">
-                <CheckCircle size={15} className="text-teal-500 shrink-0" />
+                <CheckCircle size={15} className="text-brand-500 shrink-0" />
                 {b}
               </li>
             ))}
           </ul>
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <Link href="https://app.cuspflow.co/signup" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-teal-600 text-white font-semibold hover:bg-teal-700 transition-colors shadow-lg shadow-teal-600/20 text-sm">
+            <Link href="https://app.cuspflow.co/signup" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-600 text-white font-semibold hover:bg-brand-700 transition-colors shadow-lg shadow-brand-600/20 text-sm">
               Start Free Trial <ArrowRight size={15} />
             </Link>
             <Link href="/features" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition-colors text-sm">

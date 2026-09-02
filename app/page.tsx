@@ -20,9 +20,9 @@ function WaitingRoomVisual() {
 
   return (
     <div className="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
-      <div className="bg-teal-600 px-5 py-4">
+      <div className="bg-brand-600 px-5 py-4">
         <p className="text-white font-semibold text-sm">Live Waiting Room</p>
-        <p className="text-teal-200 text-xs mt-0.5">Main Branch · 3 patients active</p>
+        <p className="text-brand-200 text-xs mt-0.5">Main Branch · 3 patients active</p>
       </div>
       <div className="px-5 pt-4 pb-2 border-b border-slate-100">
         <p className="text-xs text-slate-400 mb-2 font-medium">Patient journey stages</p>
@@ -75,7 +75,7 @@ function TreatmentPlanVisual() {
           {rows.map((row, ri) => (
             <div key={ri} className="flex gap-1">
               {row.map((t) => (
-                <div key={t} className={`w-7 h-7 rounded-md flex items-center justify-center text-[9px] font-medium border ${highlighted.has(t) ? "bg-teal-500 border-teal-600 text-white" : "bg-white border-slate-200 text-slate-500"}`}>
+                <div key={t} className={`w-7 h-7 rounded-md flex items-center justify-center text-[9px] font-medium border ${highlighted.has(t) ? "bg-brand-500 border-brand-600 text-white" : "bg-white border-slate-200 text-slate-500"}`}>
                   {t}
                 </div>
               ))}
@@ -92,7 +92,7 @@ function TreatmentPlanVisual() {
         ))}
         <div className="flex justify-between items-center pt-3 mt-1">
           <span className="text-xs font-semibold text-slate-700">Total</span>
-          <span className="text-sm font-bold text-teal-600">AED 3,200</span>
+          <span className="text-sm font-bold text-brand-600">AED 3,200</span>
         </div>
       </div>
     </div>
@@ -130,7 +130,7 @@ function BillingVisual() {
         <div className="flex justify-between text-xs"><span className="text-slate-400">Amount Paid</span><span className="text-green-600 font-medium">AED 1,440</span></div>
         <div className="flex justify-between text-xs"><span className="font-semibold text-slate-700">Balance Due</span><span className="font-bold text-rose-600">AED 1,440</span></div>
         <div className="flex gap-2 pt-2">
-          <button className="flex-1 py-2 rounded-lg bg-teal-600 text-white text-xs font-semibold">Pay Remaining</button>
+          <button className="flex-1 py-2 rounded-lg bg-brand-600 text-white text-xs font-semibold">Pay Remaining</button>
           <button className="flex-1 py-2 rounded-lg border border-slate-200 text-slate-600 text-xs font-medium">Installment Plan</button>
         </div>
       </div>
@@ -154,7 +154,7 @@ function DataImportVisual() {
           <p className="text-sm font-semibold text-slate-900">Import patients</p>
           <p className="text-xs text-slate-400">patients-export.csv · 486 rows</p>
         </div>
-        <span className="text-xs font-medium bg-teal-50 text-teal-700 border border-teal-200 rounded-full px-2.5 py-1">Step 2 of 4</span>
+        <span className="text-xs font-medium bg-brand-50 text-brand-700 border border-brand-200 rounded-full px-2.5 py-1">Step 2 of 4</span>
       </div>
       <div className="px-5 py-4 bg-slate-50/60 border-b border-slate-100">
         <p className="text-xs text-slate-400 mb-3 font-medium">Column mapping (auto-detected)</p>
@@ -163,7 +163,7 @@ function DataImportVisual() {
             <div key={from} className="flex items-center gap-2 text-xs">
               <span className="flex-1 bg-white border border-slate-200 rounded-md px-2.5 py-1.5 text-slate-600 truncate">{from}</span>
               <span className="text-slate-300">→</span>
-              <span className={`flex-1 rounded-md px-2.5 py-1.5 truncate border ${state === "skip" ? "bg-slate-50 border-slate-200 text-slate-400" : "bg-teal-50 border-teal-200 text-teal-700 font-medium"}`}>{to}</span>
+              <span className={`flex-1 rounded-md px-2.5 py-1.5 truncate border ${state === "skip" ? "bg-slate-50 border-slate-200 text-slate-400" : "bg-brand-50 border-brand-200 text-brand-700 font-medium"}`}>{to}</span>
             </div>
           ))}
         </div>
@@ -178,7 +178,7 @@ function DataImportVisual() {
             </div>
           ))}
         </div>
-        <button className="mt-3 w-full py-2 rounded-lg bg-teal-600 text-white text-xs font-semibold">Import 482 patients</button>
+        <button className="mt-3 w-full py-2 rounded-lg bg-brand-600 text-white text-xs font-semibold">Import 482 patients</button>
       </div>
     </div>
   );

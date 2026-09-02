@@ -32,7 +32,7 @@ export default function DeepDive({
         >
           {/* Copy — always first in DOM → always on top on mobile */}
           <div className="lg:flex-1">
-            <p className="text-xs sm:text-sm font-semibold text-teal-600 uppercase tracking-wider mb-3 sm:mb-4">
+            <p className="text-xs sm:text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3 sm:mb-4">
               {badge}
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4 sm:mb-5">
@@ -42,7 +42,7 @@ export default function DeepDive({
             <ul className="space-y-2.5 sm:space-y-3">
               {bullets.map((b) => (
                 <li key={b} className="flex items-start gap-3 text-sm text-slate-600">
-                  <CheckCircle size={15} className="text-teal-500 shrink-0 mt-0.5" />
+                  <CheckCircle size={15} className="text-brand-500 shrink-0 mt-0.5" />
                   {b}
                 </li>
               ))}

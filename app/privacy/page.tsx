@@ -74,7 +74,7 @@ export default function PrivacyPage() {
               <h2 className="text-lg font-semibold text-slate-900 mb-3">6. Contact</h2>
               <p>
                 For privacy-related questions, contact us at{" "}
-                <a href="mailto:privacy@cuspflow.co" className="text-teal-600 hover:underline">
+                <a href="mailto:privacy@cuspflow.co" className="text-brand-600 hover:underline">
                   privacy@cuspflow.co
                 </a>.
               </p>

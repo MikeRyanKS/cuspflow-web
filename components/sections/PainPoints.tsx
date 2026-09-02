@@ -21,7 +21,7 @@ export default function PainPoints() {
     <section className="py-14 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-10 md:mb-14">
-          <p className="text-sm font-semibold text-teal-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3">
             Sound familiar?
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight">

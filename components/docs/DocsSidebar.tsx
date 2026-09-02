@@ -20,7 +20,7 @@ export default function DocsSidebar({
     <nav aria-label="Documentation" className="text-sm">
       <Link
         href="/docs"
-        className="block px-3 py-2 font-semibold text-slate-900 hover:text-teal-600"
+        className="block px-3 py-2 font-semibold text-slate-900 hover:text-brand-600"
       >
         Documentation home
       </Link>
@@ -29,8 +29,8 @@ export default function DocsSidebar({
         aria-current={activeTutorials ? "page" : undefined}
         className={
           activeTutorials
-            ? "flex items-center gap-2 rounded-lg px-3 py-1.5 font-medium bg-teal-50 text-teal-700"
-            : "flex items-center gap-2 rounded-lg px-3 py-1.5 font-medium text-slate-700 hover:bg-slate-50 hover:text-teal-600"
+            ? "flex items-center gap-2 rounded-lg px-3 py-1.5 font-medium bg-brand-50 text-brand-700"
+            : "flex items-center gap-2 rounded-lg px-3 py-1.5 font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600"
         }
       >
         <span aria-hidden="true">▶</span> Video Tutorials
@@ -40,7 +40,7 @@ export default function DocsSidebar({
           <li key={category.id}>
             <Link
               href={categoryHref(category.id)}
-              className="block px-3 text-xs font-semibold uppercase tracking-wider text-slate-400 hover:text-teal-600"
+              className="block px-3 text-xs font-semibold uppercase tracking-wider text-slate-400 hover:text-brand-600"
             >
               {category.title}
             </Link>
@@ -54,7 +54,7 @@ export default function DocsSidebar({
                       aria-current={active ? "page" : undefined}
                       className={
                         active
-                          ? "block rounded-lg px-3 py-1.5 font-medium bg-teal-50 text-teal-700"
+                          ? "block rounded-lg px-3 py-1.5 font-medium bg-brand-50 text-brand-700"
                           : "block rounded-lg px-3 py-1.5 text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                       }
                     >

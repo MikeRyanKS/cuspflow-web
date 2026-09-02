@@ -65,9 +65,9 @@ export default async function CategoryPage({
           <Link
             key={a.slug}
             href={articleHref(a)}
-            className="group rounded-xl border border-slate-200 p-4 hover:border-teal-300 hover:shadow-sm transition-all"
+            className="group rounded-xl border border-slate-200 p-4 hover:border-brand-300 hover:shadow-sm transition-all"
           >
-            <p className="text-sm font-semibold text-slate-900 group-hover:text-teal-700 flex items-center gap-1.5">
+            <p className="text-sm font-semibold text-slate-900 group-hover:text-brand-700 flex items-center gap-1.5">
               {a.title}
               <ArrowRight size={14} className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
             </p>

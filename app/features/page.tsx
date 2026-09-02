@@ -27,7 +27,7 @@ const categories = [
   {
     name: "Patient Flow",
     icon: MonitorDot,
-    color: "bg-teal-50 text-teal-600",
+    color: "bg-brand-50 text-brand-600",
     features: [
       { title: "Live Waiting Room", desc: "Real-time patient status board. Every chair, every status visible from every screen in the clinic." },
       { title: "Patient Journey Tracking", desc: "Track every patient through Checked In → In Chair → Treatment Done → Ready to Pay → Checked Out." },
@@ -38,7 +38,7 @@ const categories = [
   {
     name: "Appointments",
     icon: CalendarDays,
-    color: "bg-sky-50 text-sky-600",
+    color: "bg-brand-50 text-brand-600",
     features: [
       { title: "Appointment Scheduling", desc: "Book, reschedule, and cancel appointments with doctor and chair assignment." },
       { title: "Multi-Provider Calendar", desc: "See every doctor, chair, and room in one calendar — filter by branch or provider." },
@@ -109,7 +109,7 @@ const categories = [
   {
     name: "Multi-Branch",
     icon: Building2,
-    color: "bg-cyan-50 text-cyan-600",
+    color: "bg-brand-50 text-brand-600",
     features: [
       { title: "Branch Isolation", desc: "Every branch's patients, staff, and financials are completely isolated. No cross-contamination." },
       { title: "Group-Level Reporting", desc: "Roll up financial and operational data across all branches for group-level insights." },
@@ -171,7 +171,7 @@ const categories = [
   {
     name: "X-rays & Imaging",
     icon: Image,
-    color: "bg-teal-50 text-teal-700",
+    color: "bg-brand-50 text-brand-700",
     features: [
       { title: "X-ray Uploads", desc: "Upload X-rays (JPEG, PNG, DICOM) directly to a treatment plan. Tagged by tooth number." },
       { title: "Notes on Images", desc: "Add clinical notes to each X-ray for fast reference during consultations." },
@@ -186,9 +186,9 @@ export default function FeaturesPage() {
       <Nav />
       <main className="pt-16 sm:pt-24">
         {/* Header */}
-        <section className="py-12 md:py-16 bg-gradient-to-br from-white via-sky-50/40 to-teal-50/60">
+        <section className="py-12 md:py-16 bg-gradient-to-br from-white via-brand-50/40 to-brand-50/60">
           <div className="max-w-4xl mx-auto px-5 sm:px-6 text-center">
-            <p className="text-sm font-semibold text-teal-600 uppercase tracking-wider mb-4">Features</p>
+            <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-4">Features</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 leading-tight mb-4">
               Everything your clinic needs, nothing it doesn&apos;t.
             </h1>

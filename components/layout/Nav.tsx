@@ -33,11 +33,11 @@ export default function Nav() {
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
-          <span className="w-7 h-7 rounded-lg bg-teal-600 flex items-center justify-center text-white text-sm font-bold">
+          <span className="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white text-sm font-bold">
             C
           </span>
           <span className="text-slate-900">
-            Cusp<span className="text-teal-600">Flow</span>
+            Cusp<span className="text-brand-600">Flow</span>
           </span>
         </Link>
 
@@ -47,7 +47,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className="text-sm text-slate-600 hover:text-teal-600 transition-colors"
+              className="text-sm text-slate-600 hover:text-brand-600 transition-colors"
             >
               {l.label}
             </Link>
@@ -60,7 +60,7 @@ export default function Nav() {
             href="https://app.cuspflow.co/login"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium px-3 py-2 rounded-lg text-slate-700 hover:text-teal-600 hover:bg-slate-100 transition-colors"
+            className="text-sm font-medium px-3 py-2 rounded-lg text-slate-700 hover:text-brand-600 hover:bg-slate-100 transition-colors"
           >
             Log in
           </Link>
@@ -68,7 +68,7 @@ export default function Nav() {
             href="https://app.cuspflow.co/signup"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium px-4 py-2 rounded-lg bg-teal-600 text-white hover:bg-teal-700 transition-colors"
+            className="text-sm font-medium px-4 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700 transition-colors"
           >
             Free Trial
           </Link>
@@ -92,7 +92,7 @@ export default function Nav() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-sm text-slate-700 hover:text-teal-600"
+              className="text-sm text-slate-700 hover:text-brand-600"
             >
               {l.label}
             </Link>
@@ -102,7 +102,7 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="text-sm font-medium text-slate-700 hover:text-teal-600"
+            className="text-sm font-medium text-slate-700 hover:text-brand-600"
           >
             Log in
           </Link>
@@ -111,7 +111,7 @@ export default function Nav() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="text-sm font-medium px-4 py-2 rounded-lg bg-teal-600 text-white text-center"
+            className="text-sm font-medium px-4 py-2 rounded-lg bg-brand-600 text-white text-center"
           >
             Free Trial
           </Link>

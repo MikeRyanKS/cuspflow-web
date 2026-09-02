@@ -56,7 +56,7 @@ export default function TutorialsPage() {
       />
 
       <header className="mb-10 max-w-2xl">
-        <div className="inline-flex items-center gap-2 text-teal-600 mb-3">
+        <div className="inline-flex items-center gap-2 text-brand-600 mb-3">
           <PlayCircle size={18} />
           <span className="text-sm font-semibold uppercase tracking-wider">Video Tutorials</span>
         </div>
@@ -74,7 +74,7 @@ export default function TutorialsPage() {
           <Link
             key={t.youtube}
             href={t.href}
-            className="group rounded-xl border border-slate-200 overflow-hidden hover:border-teal-300 hover:shadow-md transition-all"
+            className="group rounded-xl border border-slate-200 overflow-hidden hover:border-brand-300 hover:shadow-md transition-all"
           >
             <div className="relative aspect-video bg-slate-900 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -85,14 +85,14 @@ export default function TutorialsPage() {
                 className="h-full w-full object-cover opacity-95 group-hover:opacity-100 group-hover:scale-[1.02] transition-all"
               />
               <span className="absolute inset-0 flex items-center justify-center">
-                <span className="flex items-center justify-center w-14 h-14 rounded-full bg-black/55 group-hover:bg-teal-600 transition-colors">
+                <span className="flex items-center justify-center w-14 h-14 rounded-full bg-black/55 group-hover:bg-brand-600 transition-colors">
                   <PlayCircle size={30} className="text-white" />
                 </span>
               </span>
             </div>
             <div className="p-4">
               <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">{t.group}</p>
-              <p className="text-sm font-semibold text-slate-900 group-hover:text-teal-700 mt-1">{t.title}</p>
+              <p className="text-sm font-semibold text-slate-900 group-hover:text-brand-700 mt-1">{t.title}</p>
             </div>
           </Link>
         ))}

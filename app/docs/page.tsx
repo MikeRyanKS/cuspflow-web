@@ -33,7 +33,7 @@ export default function DocsIndexPage() {
       />
 
       <header className="mb-10 max-w-2xl">
-        <div className="inline-flex items-center gap-2 text-teal-600 mb-3">
+        <div className="inline-flex items-center gap-2 text-brand-600 mb-3">
           <BookOpen size={18} />
           <span className="text-sm font-semibold uppercase tracking-wider">Documentation</span>
         </div>
@@ -43,7 +43,7 @@ export default function DocsIndexPage() {
         <p className="text-slate-500 text-base sm:text-lg leading-relaxed">
           Everything you need to run your clinic in CuspFlow — from your first patient
           record to payroll, billing and reporting. New here?{" "}
-          <Link href={articleHref({ category: "getting-started", slug: "getting-started" })} className="text-teal-600 font-medium hover:text-teal-700">
+          <Link href={articleHref({ category: "getting-started", slug: "getting-started" })} className="text-brand-600 font-medium hover:text-brand-700">
             Start with the getting-started guide
           </Link>
           .
@@ -56,7 +56,7 @@ export default function DocsIndexPage() {
             <div className="flex items-baseline justify-between gap-4 mb-4">
               <div>
                 <h2 className="text-xl font-bold text-slate-900">
-                  <Link href={categoryHref(category.id)} className="hover:text-teal-600">
+                  <Link href={categoryHref(category.id)} className="hover:text-brand-600">
                     {category.title}
                   </Link>
                 </h2>
@@ -68,9 +68,9 @@ export default function DocsIndexPage() {
                 <Link
                   key={a.slug}
                   href={articleHref(a)}
-                  className="group rounded-xl border border-slate-200 p-4 hover:border-teal-300 hover:shadow-sm transition-all"
+                  className="group rounded-xl border border-slate-200 p-4 hover:border-brand-300 hover:shadow-sm transition-all"
                 >
-                  <p className="text-sm font-semibold text-slate-900 group-hover:text-teal-700 flex items-center gap-1.5">
+                  <p className="text-sm font-semibold text-slate-900 group-hover:text-brand-700 flex items-center gap-1.5">
                     {a.title}
                     <ArrowRight size={14} className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                   </p>

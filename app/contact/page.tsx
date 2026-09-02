@@ -33,13 +33,13 @@ export default function ContactPage() {
   return (
     <>
       <Nav />
-      <main className="pt-16 sm:pt-24 min-h-screen bg-gradient-to-br from-white via-sky-50/30 to-teal-50/40">
+      <main className="pt-16 sm:pt-24 min-h-screen bg-gradient-to-br from-white via-brand-50/30 to-brand-50/40">
         <section className="py-10 sm:py-16">
           <div className="max-w-5xl mx-auto px-5 sm:px-6">
 
             {/* Page header */}
             <div className="mb-8 sm:mb-12">
-              <p className="text-xs sm:text-sm font-semibold text-teal-600 uppercase tracking-wider mb-3">Contact</p>
+              <p className="text-xs sm:text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3">Contact</p>
               <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-3">
                 Book a free demo
               </h1>
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 <div className="pt-4 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
                     We typically reply within one business day. Prefer email?{" "}
-                    <a href="mailto:hello@cuspflow.co" className="text-teal-600 hover:underline">hello@cuspflow.co</a>
+                    <a href="mailto:hello@cuspflow.co" className="text-brand-600 hover:underline">hello@cuspflow.co</a>
                   </p>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                 {sent ? (
                   <div className="text-center py-10">
                     <div className="flex justify-center mb-4">
-                      <CheckCircle size={48} className="text-teal-500" />
+                      <CheckCircle size={48} className="text-brand-500" />
                     </div>
                     <h2 className="text-xl font-bold text-slate-900 mb-2">Message received!</h2>
                     <p className="text-slate-500 text-sm">
@@ -95,7 +95,7 @@ export default function ContactPage() {
                           name="name"
                           required
                           placeholder="Dr. Sara Ibrahim"
-                          className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500"
+                          className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
                         />
                       </div>
                       <div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                           name="clinic_name"
                           required
                           placeholder="Smile Studio"
-                          className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500"
+                          className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
                         />
                       </div>
                     </div>
@@ -116,7 +116,7 @@ export default function ContactPage() {
                         type="email"
                         required
                         placeholder="sara@smilestudio.co"
-                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500"
+                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
                       />
                     </div>
 
@@ -126,7 +126,7 @@ export default function ContactPage() {
                         name="phone"
                         type="tel"
                         placeholder="+971 50 123 4567"
-                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500"
+                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500"
                       />
                     </div>
 
@@ -134,7 +134,7 @@ export default function ContactPage() {
                       <label className="block text-xs font-medium text-slate-600 mb-1.5">Number of branches</label>
                       <select
                         name="branches"
-                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 bg-white"
+                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 bg-white"
                       >
                         <option value="">Select…</option>
                         {branchOptions.map((o) => <option key={o} value={o}>{o}</option>)}
@@ -147,14 +147,14 @@ export default function ContactPage() {
                         name="message"
                         rows={3}
                         placeholder="Current software, main pain points, specific features you're curious about…"
-                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 resize-none"
+                        className="w-full border border-slate-200 rounded-xl px-3.5 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500/30 focus:border-brand-500 resize-none"
                       />
                     </div>
 
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-teal-600 text-white font-semibold text-sm hover:bg-teal-700 transition-colors disabled:opacity-60"
+                      className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-brand-600 text-white font-semibold text-sm hover:bg-brand-700 transition-colors disabled:opacity-60"
                     >
                       {loading ? "Sending…" : <><Send size={14} /> Book My Demo</>}
                     </button>

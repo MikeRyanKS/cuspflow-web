@@ -36,11 +36,11 @@ export default function Footer() {
         {/* Brand */}
         <div className="col-span-2">
           <Link href="/" className="flex items-center gap-2 font-semibold text-lg mb-3">
-            <span className="w-7 h-7 rounded-lg bg-teal-600 flex items-center justify-center text-white text-sm font-bold">
+            <span className="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white text-sm font-bold">
               C
             </span>
             <span className="text-slate-900">
-              Cusp<span className="text-teal-600">Flow</span>
+              Cusp<span className="text-brand-600">Flow</span>
             </span>
           </Link>
           <p className="text-sm text-slate-500 max-w-xs leading-relaxed">
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-sm text-slate-500 hover:text-teal-600 transition-colors"
+                    className="text-sm text-slate-500 hover:text-brand-600 transition-colors"
                   >
                     {l.label}
                   </Link>

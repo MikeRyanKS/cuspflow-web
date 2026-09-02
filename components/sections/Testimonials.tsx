@@ -4,14 +4,14 @@ const testimonials = [
     name: "Dr. Hanan Al-Rashid",
     title: "Principal Dentist, Al-Rashid Dental Group",
     initials: "HR",
-    color: "bg-teal-600",
+    color: "bg-brand-600",
   },
   {
     quote: "Lab cases used to fall through the cracks. Now every case is tracked, every cost is on the patient's bill, and my nurses always know the expected return date.",
     name: "Dr. Emeka Okonkwo",
     title: "Owner, Okonkwo Family Dentistry",
     initials: "EO",
-    color: "bg-sky-600",
+    color: "bg-brand-600",
   },
   {
     quote: "Having the treatment plan, billing, and payments in one screen is a game-changer. Patients trust us more because we can show them exactly what they owe and why.",
@@ -27,7 +27,7 @@ export default function Testimonials() {
     <section className="py-14 md:py-24 bg-slate-50/60">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-10 md:mb-14">
-          <p className="text-sm font-semibold text-teal-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3">
             What clinics say
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight">

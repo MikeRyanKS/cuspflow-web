@@ -79,7 +79,7 @@ export default function TermsPage() {
               <h2 className="text-lg font-semibold text-slate-900 mb-3">7. Contact</h2>
               <p>
                 For questions about these terms, contact us at{" "}
-                <a href="mailto:legal@cuspflow.co" className="text-teal-600 hover:underline">
+                <a href="mailto:legal@cuspflow.co" className="text-brand-600 hover:underline">
                   legal@cuspflow.co
                 </a>.
               </p>

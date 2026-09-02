@@ -15,13 +15,13 @@ const features = [
     icon: MonitorDot,
     title: "Live Waiting Room",
     description: "Real-time patient status from check-in to discharge. Every chair, every status, one screen — visible to the whole team instantly.",
-    color: "bg-teal-50 text-teal-600",
+    color: "bg-brand-50 text-brand-600",
   },
   {
     icon: ClipboardList,
     title: "Visual Treatment Plans",
     description: "FDI tooth chart, procedures, prescriptions, and lab cases in a single linked view. No more hunting across systems.",
-    color: "bg-sky-50 text-sky-600",
+    color: "bg-brand-50 text-brand-600",
   },
   {
     icon: Receipt,
@@ -54,7 +54,7 @@ export default function FeatureGrid() {
     <section className="py-14 md:py-24 bg-slate-50/60">
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="text-center mb-10 md:mb-14">
-          <p className="text-sm font-semibold text-teal-600 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-3">
             Everything you need
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4">
@@ -71,7 +71,7 @@ export default function FeatureGrid() {
             return (
               <div
                 key={f.title}
-                className="bg-white rounded-2xl p-5 sm:p-7 border border-slate-100 hover:border-teal-200 hover:shadow-md transition-all duration-200"
+                className="bg-white rounded-2xl p-5 sm:p-7 border border-slate-100 hover:border-brand-200 hover:shadow-md transition-all duration-200"
               >
                 <div className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center mb-4 sm:mb-5 ${f.color}`}>
                   <Icon size={18} />
@@ -84,8 +84,8 @@ export default function FeatureGrid() {
         </div>
 
         {/* Highlighted: free built-in data import tool */}
-        <div className="mt-4 sm:mt-6 bg-white rounded-2xl p-5 sm:p-7 border border-teal-200 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
-          <div className="w-11 h-11 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0">
+        <div className="mt-4 sm:mt-6 bg-white rounded-2xl p-5 sm:p-7 border border-brand-200 shadow-sm flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+          <div className="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
             <Upload size={18} />
           </div>
           <div className="flex-1 min-w-0">
@@ -101,7 +101,7 @@ export default function FeatureGrid() {
           </div>
           <Link
             href="/docs/getting-started/importing-your-data"
-            className="shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-teal-600 hover:text-teal-700"
+            className="shrink-0 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-600 hover:text-brand-700"
           >
             See how it works <ArrowRight size={14} />
           </Link>

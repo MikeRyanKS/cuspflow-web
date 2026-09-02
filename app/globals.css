@@ -2,6 +2,30 @@
 
 @theme {
   --font-family-sans: var(--font-inter), system-ui, sans-serif;
+
+  /* Brand blue — matches the CuspFlow app primary (#4361EE / hover #3451D1).
+     The marketing site was teal; these tokens back the `brand-*` utilities the
+     pages use, so the site reads as the same product as the app. Green is kept
+     as a deliberate accent (see `--color-accent-*`) to stay lively. */
+  --color-brand-50:  #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #7c8cf8;
+  --color-brand-500: #5b76f0;
+  --color-brand-600: #4361ee;
+  --color-brand-700: #3451d1;
+  --color-brand-800: #2c3fa5;
+  --color-brand-900: #26357f;
+
+  /* Lively green accent — used sparingly (checkmarks, "included", success cues). */
+  --color-accent-50:  #ecfdf5;
+  --color-accent-100: #d1fae5;
+  --color-accent-200: #a7f3d0;
+  --color-accent-400: #34d399;
+  --color-accent-500: #10b981;
+  --color-accent-600: #059669;
+  --color-accent-700: #047857;
 }
 
 html {
@@ -47,12 +71,12 @@ body {
   margin-bottom: 1rem;
 }
 .docs-prose a {
-  color: #0d9488; /* teal-600 */
+  color: #4361ee; /* brand-600 */
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 .docs-prose a:hover {
-  color: #0f766e; /* teal-700 */
+  color: #3451d1; /* brand-700 */
 }
 /* Heading autolink wrappers (rehype-autolink-headings behavior:wrap) should
    not look like body links. */
@@ -110,8 +134,8 @@ body {
 }
 .docs-prose blockquote {
   margin: 1.25rem 0;
-  border-left: 3px solid #14b8a6; /* teal-500 */
-  background: #f0fdfa; /* teal-50 */
+  border-left: 3px solid #5b76f0; /* brand-500 */
+  background: #eef2ff; /* brand-50 */
   padding: 0.75rem 1rem;
   border-radius: 0 0.5rem 0.5rem 0;
   color: #475569;
