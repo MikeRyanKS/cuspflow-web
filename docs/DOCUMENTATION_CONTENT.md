@@ -11,13 +11,21 @@ describes — click through to see it live.
 *(Marketing / non-docs website copy lives in [`WEBSITE_CONTENT.md`](./WEBSITE_CONTENT.md).
 Build/architecture details live in [`WEBSITE_DOCUMENTATION.md`](./WEBSITE_DOCUMENTATION.md).)*
 
-**Last updated:** 2026-08-29
+**Last updated:** 2026-09-02
 
 ---
 
 ## Help centre — 9 categories, 29 articles
 
 Home: **<https://cuspflow.co/docs>**
+
+**Video tutorials.** A dedicated gallery lives at **<https://cuspflow.co/docs/tutorials>**
+(linked from the top nav, the docs sidebar, and the in-app Help panel). It lists
+**16 short how-to videos** hosted on the CuspFlow YouTube channel, each card
+linking to the matching article. The videos are also embedded inline at the top
+of their articles via a `video:` field in the article frontmatter — so the same
+16 videos appear both in the gallery and on their respective pages. To attach a
+video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 
 ### Getting Started
 *Set up your clinic and learn the essentials.* — <https://cuspflow.co/docs/getting-started>
