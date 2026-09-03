@@ -22,7 +22,7 @@ const jsonLd = {
       "@id": `${SITE_URL}/#organization`,
       name: "CuspFlow",
       url: SITE_URL,
-      logo: `${SITE_URL}/favicon.svg`,
+      logo: `${SITE_URL}/logo.png`,
       description:
         "Cloud dental practice management software for clinics in Asia, South America and Africa.",
       email: "support@cuspflow.co",
