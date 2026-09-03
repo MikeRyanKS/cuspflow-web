@@ -10,16 +10,24 @@ it describes — click through to see it live.
 
 *(Build/architecture details live in [`WEBSITE_DOCUMENTATION.md`](./WEBSITE_DOCUMENTATION.md).)*
 
-**Last updated:** 2026-07-21
+**Last updated:** 2026-09-03
 
 ### Pages
 - Home — <https://cuspflow.co>
 - Features — <https://cuspflow.co/features>
 - Pricing — <https://cuspflow.co/pricing>
+- About — <https://cuspflow.co/about>
+- Blog — <https://cuspflow.co/blog>
 - Contact / book a demo — <https://cuspflow.co/contact>
-- Docs (help centre) — <https://cuspflow.co/docs>
-- Privacy — <https://cuspflow.co/privacy> · Terms — <https://cuspflow.co/terms>
+- Docs (help centre) — <https://cuspflow.co/docs> · Video tutorials — <https://cuspflow.co/docs/tutorials>
+- Privacy — <https://cuspflow.co/privacy> · Terms — <https://cuspflow.co/terms> · Sub-processors — <https://cuspflow.co/sub-processors>
 - App sign-up (external) — <https://app.cuspflow.co/signup>
+
+> **Legal pages:** the full text of Terms and Privacy is mirrored in plain Markdown
+> at [`TERMS.md`](./TERMS.md) and [`PRIVACY.md`](./PRIVACY.md). Edit the live pages in
+> `app/terms/page.tsx` / `app/privacy/page.tsx`, then update those mirrors to match.
+> Operating entity: **Keplify LLC (Delaware)**. Theme is app brand-blue (`brand-*`
+> tokens) with a green accent.
 
 ---
 

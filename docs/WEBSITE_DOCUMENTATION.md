@@ -4,7 +4,7 @@
 **Location:** `/Users/mac/cuspflow-web/`  
 **Live Domain:** `cuspflow.co`  
 **App Domain:** `app.cuspflow.co` (the Dental PMS application)  
-**Last Updated:** 2026-07-21
+**Last Updated:** 2026-09-03
 
 > ### ✅ Pricing is now published (4 tiers + add-ons)
 > `/pricing` shows the full self-serve pricing that matches the app's Stripe
@@ -23,6 +23,27 @@
 > `content/docs/*.md` via `lib/docs.ts`. See [the Documentation section](#documentation-docs)
 > below. When you **add or rename an article**, the sitemap updates automatically,
 > but `llms.txt` content and any hand-written cross-links do not — review them.
+
+> ### 🔄 2026-09-03 overhaul
+> - **Theme:** recolored from teal to the app brand blue (`#4361EE`). Tokens live
+>   in `app/globals.css` `@theme` as `brand-*` (plus a green `accent-*`); pages
+>   use `brand-*` utilities. Green is kept deliberately as an accent.
+> - **Real screenshots:** the site shows actual app screenshots (in
+>   `public/screenshots/*.webp`) via `components/ui/BrowserFrame.tsx`, which frames
+>   them in browser chrome and opens a full-size **lightbox** on click. They are
+>   captured by `dental-pms/tutorials/src/capture-marketing.ts` from the seeded app.
+> - **New pages:** `/about`, `/blog` (+ `/blog/[slug]`, Markdown in `content/blog/`
+>   via `lib/blog.ts`, 5 SEO posts), `/sub-processors`. Docs + Tutorials were moved
+>   out of the top nav into the footer.
+> - **SEO:** keyword-rich titles + per-page canonicals; homepage Organization +
+>   SoftwareApplication JSON-LD; `sitemap.xml` and `llms.txt` include about/blog/
+>   posts/sub-processors; footer links to `/sitemap.xml` and `/llms.txt`; OG share
+>   image at `public/og.png`; raster `public/logo.png` used for Organization logo.
+> - **Legal:** `/terms` (25 sections) and `/privacy` (16 sections) are now
+>   comprehensive, operated-by **Keplify LLC (Delaware)**, Delaware governing law,
+>   framed around target-market laws (POPIA/NDPA/Kenya DPA/LGPD/DPDP). Plain-Markdown
+>   mirrors are in `docs/TERMS.md` and `docs/PRIVACY.md` — **keep them in sync** with
+>   `app/terms/page.tsx` / `app/privacy/page.tsx`.
 
 ---
 

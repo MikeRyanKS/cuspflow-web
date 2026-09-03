@@ -4,7 +4,14 @@
 
 **Read this first. Update it last.**
 
-**Last updated:** 2026-07-21 · **Branch:** `main` · **Repo:** `MikeRyanKS/cuspflow-web`
+**Last updated:** 2026-09-03 · **Branch:** `main` · **Repo:** `MikeRyanKS/cuspflow-web`
+
+> **Latest session (2026-09-03):** full marketing overhaul — brand-blue theme, real
+> app screenshots (`BrowserFrame` + lightbox), new `/about`, `/blog` (5 SEO posts),
+> `/sub-processors`, deep SEO (JSON-LD, sitemap/llms/OG), comprehensive `/terms` +
+> `/privacy` (Keplify LLC, Delaware), footer links to sitemap/llms. See the
+> "2026-09-03 overhaul" callout in `WEBSITE_DOCUMENTATION.md`. Legal text mirrors:
+> `docs/TERMS.md` + `docs/PRIVACY.md`.
 
 ---
 
