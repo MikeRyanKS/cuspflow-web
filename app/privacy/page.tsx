@@ -113,7 +113,9 @@ export default function PrivacyPage() {
                 We may also disclose information if required by law or valid legal process, to protect the
                 rights, safety and security of clinics, patients, the public or CuspFlow, or in connection
                 with a merger, acquisition or sale of assets, in which case we will require the recipient
-                to honor this Policy. We will update this list as our providers change.
+                to honor this Policy. See our{" "}
+                <a href="/sub-processors" className="text-brand-600 hover:underline">current list of sub-processors</a>,
+                which we update as our providers change.
               </p>
             </section>
 

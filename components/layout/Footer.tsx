@@ -28,6 +28,7 @@ const cols = [
       { href: "/about", label: "About" },
       { href: "/privacy", label: "Privacy Policy" },
       { href: "/terms", label: "Terms of Service" },
+      { href: "/sub-processors", label: "Sub-processors" },
     ],
   },
 ];
