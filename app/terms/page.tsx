@@ -23,11 +23,13 @@ export default function TermsPage() {
           <div className="max-w-none text-sm text-slate-600 leading-relaxed space-y-8">
             <section>
               <p className="text-slate-500">
-                These Terms of Service (the &quot;Terms&quot;) are a binding agreement between CuspFlow
-                (&quot;CuspFlow&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;) and the dental clinic or
-                organization that registers for or uses the CuspFlow platform (&quot;you&quot;, &quot;your&quot;
-                or the &quot;Clinic&quot;). Please read them carefully. By creating an account, ticking the
-                box to accept these Terms, or using the service, you agree to be bound by them.
+                These Terms of Service (the &quot;Terms&quot;) are a binding agreement between Keplify LLC,
+                a Delaware limited liability company that operates the CuspFlow platform
+                (&quot;Keplify&quot;, &quot;CuspFlow&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;), and the
+                dental clinic or organization that registers for or uses the CuspFlow platform
+                (&quot;you&quot;, &quot;your&quot; or the &quot;Clinic&quot;). Please read them carefully. By
+                creating an account, ticking the box to accept these Terms, or using the service, you
+                agree to be bound by them.
               </p>
               <p className="mt-3 text-slate-500">
                 This is important legal information, but it is not legal advice for your clinic. You are
@@ -208,7 +210,7 @@ export default function TermsPage() {
               <h2 className="text-lg font-semibold text-slate-900 mb-3">14. Intellectual property</h2>
               <p>
                 The Service, including its software, design, trademarks, logos and documentation, is and
-                remains the property of CuspFlow and its licensors. These Terms grant you a limited,
+                remains the property of Keplify LLC and its licensors. These Terms grant you a limited,
                 non-exclusive, non-transferable, revocable right to access and use the Service during your
                 Subscription for your own clinic&apos;s internal business purposes. No other rights are
                 granted. If you send us feedback or suggestions, we may use them without restriction or
@@ -319,11 +321,11 @@ export default function TermsPage() {
             <section>
               <h2 className="text-lg font-semibold text-slate-900 mb-3">23. Governing law and disputes</h2>
               <p>
-                These Terms are governed by the laws of the jurisdiction in which CuspFlow is established,
-                without regard to conflict-of-laws rules, and the parties submit to the courts of that
-                jurisdiction, except where the mandatory law of your own country gives you rights that
-                cannot be waived. The parties will first try to resolve any dispute informally by
-                contacting each other.
+                These Terms are governed by the laws of the State of Delaware, United States, without
+                regard to its conflict-of-laws rules, and the parties submit to the state and federal
+                courts located in Delaware, except where the mandatory law of your own country gives you
+                rights that cannot be waived. The parties will first try to resolve any dispute informally
+                by contacting each other.
               </p>
             </section>
 

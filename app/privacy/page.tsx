@@ -23,9 +23,10 @@ export default function PrivacyPage() {
           <div className="max-w-none text-sm text-slate-600 leading-relaxed space-y-8">
             <section>
               <p className="text-slate-500">
-                CuspFlow (&quot;CuspFlow&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;) provides
-                cloud dental practice management software to dental clinics in Asia, South America and
-                Africa. This Privacy Policy explains what information we collect, how we use, share and
+                CuspFlow, operated by Keplify LLC, a Delaware limited liability company
+                (&quot;Keplify&quot;, &quot;CuspFlow&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;),
+                provides cloud dental practice management software to dental clinics in Asia, South America
+                and Africa. This Privacy Policy explains what information we collect, how we use, share and
                 protect it, and the choices available to clinics and their patients. It forms part of our{" "}
                 <a href="/terms" className="text-brand-600 hover:underline">Terms of Service</a>.
               </p>

@@ -73,7 +73,13 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-200 py-6 text-center text-xs text-slate-400">
-        &copy; {year} CuspFlow. All rights reserved.
+        <div className="flex items-center justify-center gap-4 mb-2">
+          {/* Static files served from the site root (not Next routes), so plain anchors. */}
+          <a href="/sitemap.xml" className="hover:text-brand-600 transition-colors">Sitemap</a>
+          <span aria-hidden>·</span>
+          <a href="/llms.txt" className="hover:text-brand-600 transition-colors">llms.txt</a>
+        </div>
+        &copy; {year} Keplify LLC. CuspFlow is a product of Keplify LLC. All rights reserved.
       </div>
     </footer>
   );
