@@ -40,12 +40,21 @@ export const metadata: Metadata = {
     url: "https://cuspflow.co",
     siteName: "CuspFlow",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "CuspFlow dental practice management software",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "CuspFlow: Dental Practice Management Software",
     description:
       "Live waiting room, treatment plans, billing and reporting in one system, built for dental clinics in Asia, South America and Africa.",
+    images: ["/og.png"],
   },
   metadataBase: new URL("https://cuspflow.co"),
 };

@@ -26,7 +26,7 @@ export default function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 bg-brand-50 border border-brand-200 rounded-full px-3 py-1 text-xs font-medium text-brand-700 mb-5">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse" />
-            Now accepting early-access clinics
+            Built for busy dental clinics
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.1] tracking-tight mb-5">

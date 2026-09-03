@@ -2,9 +2,9 @@ import { Clock, FlaskConical, CreditCard } from "lucide-react";
 
 /**
  * Honest "what CuspFlow fixes" section. This replaced a set of fabricated
- * customer testimonials: the product is in early access, so attributed quotes
- * from named dentists would have been misleading. When real, verifiable
- * customer quotes exist, they can be added here (with the customer's consent).
+ * customer testimonials (invented named dentists with quotes), which would have
+ * been misleading. When real, verifiable customer quotes exist, they can be
+ * added here with the customer's consent.
  */
 const outcomes = [
   {
