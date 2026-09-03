@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Terms of Service | CuspFlow Dental Practice Management",
   description:
     "The terms of service for CuspFlow, the dental practice management platform for clinics in Asia, South America and Africa.",
+  alternates: { canonical: "https://cuspflow.co/terms" },
 };
 
 export default function TermsPage() {
@@ -19,163 +20,336 @@ export default function TermsPage() {
             <p className="text-sm text-slate-400">Last updated: September 2026</p>
           </div>
 
-          <div className="prose prose-slate max-w-none text-sm text-slate-600 leading-relaxed space-y-8">
+          <div className="max-w-none text-sm text-slate-600 leading-relaxed space-y-8">
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">1. Acceptance</h2>
-              <p>
-                By accessing or using CuspFlow, you agree to be bound by these Terms of Service. If you
-                are using CuspFlow on behalf of a clinic or organization, you represent that you have the
-                authority to bind that entity to these terms. If you do not agree, do not use the service.
+              <p className="text-slate-500">
+                These Terms of Service (the &quot;Terms&quot;) are a binding agreement between CuspFlow
+                (&quot;CuspFlow&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;) and the dental clinic or
+                organization that registers for or uses the CuspFlow platform (&quot;you&quot;, &quot;your&quot;
+                or the &quot;Clinic&quot;). Please read them carefully. By creating an account, ticking the
+                box to accept these Terms, or using the service, you agree to be bound by them.
               </p>
+              <p className="mt-3 text-slate-500">
+                This is important legal information, but it is not legal advice for your clinic. You are
+                responsible for your own compliance with the laws that apply to you.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">1. Definitions</h2>
+              <ul className="list-disc pl-5 mt-2 space-y-1">
+                <li><strong>Service</strong>: the CuspFlow cloud dental practice management platform, including its websites, applications, features, APIs, documentation and support.</li>
+                <li><strong>Clinic Data</strong>: all data your staff enter into or generate in the Service, including patient records, clinical notes, images, appointments, billing and financial data.</li>
+                <li><strong>Patient Data</strong>: the subset of Clinic Data that relates to an identifiable patient, including personal, contact, medical and dental information.</li>
+                <li><strong>Authorized User</strong>: a staff member you allow to access the Service under your account, with a role and permissions you control.</li>
+                <li><strong>Subscription</strong>: your paid plan, including any add-on seats and storage.</li>
+              </ul>
             </section>
 
             <section>
               <h2 className="text-lg font-semibold text-slate-900 mb-3">2. Eligibility and geographic availability</h2>
               <p>
                 CuspFlow is offered exclusively to dental clinics located and operating in Asia, South
-                America and Africa. The service is built for the currencies, tax settings, print formats
-                and connectivity conditions common to clinics in these regions, from single-chair
-                practices to multi-branch groups.
+                America and Africa, from single-chair practices to multi-branch groups. The Service is
+                built for the currencies, tax settings, print formats and connectivity conditions common
+                to clinics in these regions.
               </p>
               <p className="mt-3">
                 CuspFlow is <strong>not</strong> offered to, and may not be used by, clinics located in
-                Europe, the United States or Canada. We do not market the service in these regions and do
-                not intend it for use there. By signing up, you confirm that your clinic operates in a
-                supported region. We may suspend or terminate any account that does not meet this
-                eligibility requirement.
+                Europe, the United States or Canada. We do not market the Service in those regions and do
+                not intend it for use there. By registering, you confirm that your clinic operates in a
+                supported region and that the person accepting these Terms is at least 18 years old and
+                authorized to bind the Clinic. We may suspend or terminate any account that does not meet
+                this requirement.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">3. Service description</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">3. The Service</h2>
               <p>
-                CuspFlow is a cloud-based dental practice management platform. It provides tools for
-                patient records, appointment scheduling, a live waiting room, treatment planning, billing
-                and payments, insurance claims, lab cases, inventory, staff and payroll, analytics, and
-                related clinic workflows. Features may be added, changed or removed over time as the
-                product evolves.
+                CuspFlow provides cloud-based tools to run a dental practice, which currently include:
+                patient records and families; appointment scheduling, walk-ins and a live waiting room;
+                treatment planning with an FDI tooth chart, clinical notes and imaging; billing,
+                payments, installments, receipts and insurance claims; lab case tracking; inventory and a
+                price catalog; staff management, roles and permissions, attendance and payroll; patient
+                reminders over WhatsApp and email; an optional online booking page; reporting and
+                analytics; and free data import and export. Features may be added, changed or removed as
+                the product evolves. Each clinic is provisioned as a separate tenant whose data is
+                isolated from every other clinic.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">4. Accounts and security</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">4. Accounts, registration and security</h2>
               <p>
-                Each clinic is provisioned as an isolated tenant. You are responsible for maintaining the
-                confidentiality of every login, for all activity that occurs under your accounts, and for
-                promptly notifying us of any unauthorized use. Each login is limited to a small number of
-                simultaneously active devices. You must provide accurate account information and keep it
-                up to date.
+                To use the Service you must create an account with accurate, current and complete
+                information and keep it up to date. You are responsible for all activity under your
+                account and for the acts and omissions of your Authorized Users. You must keep login
+                credentials confidential, use the roles and permissions we provide to limit access
+                appropriately, and notify us promptly at security@cuspflow.co of any suspected
+                unauthorized access. Each login is limited to a small number of simultaneously active
+                devices.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">5. Subscriptions, trials and fees</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">5. Free trial</h2>
               <p>
-                New clinics start with a 30-day free trial that includes every feature. No card is
-                required to begin the trial. After the trial, continued use requires a paid subscription.
-                Plans differ only by the number of staff seats and the amount of imaging storage included;
-                every plan includes every feature and unlimited branches. Additional seats and storage can
-                be added at any time and are billed as add-ons.
-              </p>
-              <p className="mt-3">
-                Subscriptions may be billed monthly or annually and renew automatically until cancelled.
-                Upgrades take effect immediately and are prorated; downgrades take effect at the next
-                renewal. Fees are exclusive of any local taxes that may apply. Payments are handled by our
-                third-party payment processor.
+                New clinics may start with a free trial of the full Service for the period stated at
+                signup (currently 30 days), without a card. At the end of the trial, continued use
+                requires a paid Subscription. We may change or withdraw trial offers at any time. Data
+                you enter during the trial is treated the same as data under a paid Subscription and is
+                subject to the retention and deletion terms below.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">6. Clinic responsibilities</h2>
-              <p>Clinics using CuspFlow are responsible for:</p>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">6. Subscriptions, fees and payment</h2>
+              <p>
+                Paid plans differ only by the number of staff seats and the amount of imaging storage
+                included. Every plan includes every feature and unlimited branches. Additional seats and
+                storage can be added at any time as add-ons. Fees, billing frequency (monthly or annual)
+                and current plan details are shown on our pricing page and at checkout, and are exclusive
+                of any taxes, duties or bank and currency-conversion charges that may apply, which are
+                your responsibility. Payments are processed by our third-party payment processor; by
+                subscribing you also agree to that processor&apos;s terms. You authorize us and our
+                processor to charge your chosen payment method for all fees due.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">7. Renewal, changes and cancellation</h2>
+              <p>
+                Subscriptions renew automatically for successive periods until cancelled. You can cancel,
+                upgrade or downgrade at any time from Settings. Upgrades take effect immediately and are
+                prorated; downgrades and cancellations take effect at the end of the current billing
+                period. If you reduce seats or storage, you are responsible for bringing your usage
+                within the new limits. We may change fees or plan structures on reasonable notice, with
+                changes applying from your next renewal.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">8. Refunds</h2>
+              <p>
+                Except where required by the law that applies to you, fees already paid are
+                non-refundable, and cancelling stops future renewals rather than refunding the current
+                period. Because a full-featured free trial is available before any payment, we encourage
+                you to evaluate the Service during the trial. If you believe you were charged in error,
+                contact us at billing@cuspflow.co and we will review it in good faith.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">9. Your data and content</h2>
+              <p>
+                As between you and CuspFlow, the Clinic owns all Clinic Data. We claim no ownership over
+                it. You grant us a worldwide, non-exclusive licence to host, copy, process, transmit,
+                display and back up Clinic Data solely to provide, secure, maintain and improve the
+                Service, to prevent or address technical or security issues, and as otherwise instructed
+                by you or permitted by these Terms and our Privacy Policy. You can export your complete
+                Clinic Data at any time, free of charge, in a portable format. You are responsible for
+                the accuracy, quality and legality of Clinic Data and for having the right to provide it
+                to us.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">10. Data protection and roles</h2>
+              <p>
+                For Patient Data and other personal information in Clinic Data, the Clinic is the party
+                that decides why and how the data is processed (the controller, responsible party or data
+                fiduciary under the law that applies to you), and CuspFlow processes it on your behalf and
+                on your documented instructions (as processor or operator). We process personal
+                information only to provide the Service and as described in our{" "}
+                <a href="/privacy" className="text-brand-600 hover:underline">Privacy Policy</a>, which
+                forms part of these Terms. We maintain reasonable technical and organizational security
+                measures, engage sub-processors only under confidentiality and data-protection
+                obligations, and will assist you, so far as reasonably practicable, in meeting your own
+                obligations to patients and regulators.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">11. Your responsibilities as a Clinic</h2>
+              <p>You are responsible for:</p>
               <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>Maintaining the confidentiality of login credentials and managing staff access appropriately</li>
-                <li>Obtaining any patient consent required to record and process patient information</li>
-                <li>Ensuring that patient data entered into the platform complies with the privacy, health and record-keeping laws that apply in the clinic&apos;s own country</li>
-                <li>The accuracy of the clinical, financial and patient data entered by their staff</li>
-                <li>Keeping contact and billing information current</li>
+                <li>Complying with the health, privacy, record-keeping, consumer, tax and other laws that apply to your clinic and its country, including any local data-protection law (for example POPIA in South Africa, the NDPA in Nigeria, the Data Protection Act in Kenya, the LGPD in Brazil, or the DPDP Act in India).</li>
+                <li>Obtaining any consent or other lawful basis required before recording and processing Patient Data, and providing patients with any notices your local law requires.</li>
+                <li>Managing your Authorized Users, their roles and their access, and the accuracy of the data your staff enter.</li>
+                <li>Using the Service only for legitimate dental practice management and not for any unlawful purpose.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">7. Acceptable use</h2>
-              <p>You may not use CuspFlow to:</p>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">12. Acceptable use</h2>
+              <p>You must not, and must not allow anyone to:</p>
               <ul className="list-disc pl-5 mt-2 space-y-1">
-                <li>Store data unrelated to dental practice management</li>
-                <li>Access, or attempt to access, another clinic&apos;s data</li>
-                <li>Reverse-engineer, copy, resell or sublicense the platform</li>
-                <li>Interfere with or disrupt the integrity or performance of the service</li>
-                <li>Violate any law or regulation that applies to you</li>
+                <li>Store data unrelated to dental practice management, or upload unlawful, infringing or malicious content.</li>
+                <li>Access, or attempt to access, another clinic&apos;s data or any part of the Service you are not authorized to use.</li>
+                <li>Reverse-engineer, decompile, copy, resell, sublicense or create derivative works of the Service, except to the extent this restriction is prohibited by law.</li>
+                <li>Probe, scan, overload, disrupt or interfere with the integrity, security or performance of the Service, or bypass usage limits.</li>
+                <li>Use the Service to send unlawful, deceptive or unsolicited messages, or in violation of any third-party messaging or payment platform&apos;s rules.</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">8. Data ownership and export</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">13. Availability, support and maintenance</h2>
               <p>
-                Your clinic&apos;s data belongs to your clinic. We claim no ownership over the patient,
-                clinical or financial records you enter. You can export your complete clinic data at any
-                time, free of charge, in a portable format. We act as a processor of that data on your
-                behalf and use it only to provide and improve the service, as described in our Privacy
+                We work to keep the Service available and reliable but do not guarantee that it will be
+                uninterrupted or error-free. We may perform maintenance, and will give advance notice of
+                planned downtime where practical. Support is provided by email and through the in-app help
+                centre. The Service depends on third-party infrastructure and on your own internet
+                connection and devices, which are outside our control.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">14. Intellectual property</h2>
+              <p>
+                The Service, including its software, design, trademarks, logos and documentation, is and
+                remains the property of CuspFlow and its licensors. These Terms grant you a limited,
+                non-exclusive, non-transferable, revocable right to access and use the Service during your
+                Subscription for your own clinic&apos;s internal business purposes. No other rights are
+                granted. If you send us feedback or suggestions, we may use them without restriction or
+                obligation to you.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">15. Third-party services</h2>
+              <p>
+                The Service relies on third parties, including cloud hosting and database infrastructure,
+                a payment processor, an email provider, and the WhatsApp Business Platform for messaging.
+                Your use of features that depend on these may be subject to the relevant third
+                party&apos;s terms, and we are not responsible for their acts, omissions or availability.
+                A current list of the categories of sub-processors we use is described in our Privacy
                 Policy.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">9. Intellectual property</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">16. Confidentiality</h2>
               <p>
-                CuspFlow, including its software, design, trademarks and documentation, is and remains our
-                property. These terms grant you a limited, non-exclusive, non-transferable right to use the
-                service during your subscription. No other rights are granted.
+                Each party may receive confidential information from the other. Each party will protect
+                the other&apos;s confidential information with reasonable care and use it only to perform
+                under these Terms, except where disclosure is required by law. Clinic Data is your
+                confidential information.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">10. Availability and support</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">17. Suspension</h2>
               <p>
-                We aim for high availability but do not guarantee that the service will be uninterrupted or
-                error-free. Planned maintenance will be communicated in advance where practical. Support is
-                provided by email and through the in-app help centre.
+                We may suspend your access to all or part of the Service if your payment is overdue, if we
+                reasonably believe your use threatens the security, integrity or availability of the
+                Service or breaches these Terms, or if we are required to do so by law. Where practical we
+                will give notice and an opportunity to resolve the issue, and will restore access once it
+                is resolved.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">11. Disclaimers and limitation of liability</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">18. Term, termination and data deletion</h2>
+              <p>
+                These Terms apply for as long as you use the Service. Either party may terminate the
+                Subscription at any time. Upon cancellation or lapse of the Subscription, the Clinic
+                enters a 60-day view-only window during which its Clinic Data remains readable and can be
+                exported in full. If the Subscription is not reactivated within that window, the Clinic
+                Data is permanently deleted from active systems, and residual copies in backups are
+                overwritten in the ordinary backup cycle.
+              </p>
+              <p className="mt-3">
+                Separately, individual records your staff delete inside the Service (for example a
+                patient, appointment or catalogue item) are removed from active use immediately and kept
+                recoverable for 30 days, after which they move to archival storage and are eventually
+                erased in line with the record-keeping requirements that apply in your country. We may
+                terminate or suspend accounts that materially breach these Terms or the eligibility
+                requirement in section 2.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">19. Disclaimers</h2>
               <p>
                 CuspFlow is a record-keeping and workflow tool. It does not provide clinical, medical,
-                legal, tax or accounting advice, and it is not a substitute for professional judgment. The
-                service is provided on an &quot;as is&quot; and &quot;as available&quot; basis without warranties of any
-                kind, to the fullest extent permitted by law. To the extent permitted by law, our total
-                liability arising out of or relating to the service is limited to the fees you paid for the
-                service in the twelve months preceding the claim.
+                dental, legal, tax or accounting advice, and it is not a substitute for professional
+                judgment or for your own records obligations. To the fullest extent permitted by law, the
+                Service is provided on an &quot;as is&quot; and &quot;as available&quot; basis, and we
+                disclaim all warranties, express or implied, including merchantability, fitness for a
+                particular purpose, non-infringement, and any warranty that the Service will be
+                error-free, secure or uninterrupted.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">12. Termination and data deletion</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">20. Limitation of liability</h2>
               <p>
-                Either party may end the subscription at any time. Upon cancellation or lapse of the
-                subscription, the clinic enters a 60-day view-only window during which its data remains
-                readable and can be exported in full. If the subscription is not reactivated within that
-                window, the clinic&apos;s data is permanently deleted. We may suspend or terminate accounts
-                that breach these terms or the eligibility requirement in section 2.
+                To the fullest extent permitted by law, neither party is liable for any indirect,
+                incidental, special, consequential or punitive damages, or for lost profits, revenue,
+                goodwill or data, arising out of or relating to the Service, even if advised of the
+                possibility. To the fullest extent permitted by law, our total aggregate liability
+                arising out of or relating to the Service is limited to the fees you paid to us for the
+                Service in the twelve months before the event giving rise to the claim. Nothing in these
+                Terms limits liability that cannot be limited under the law that applies to you.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">13. Changes to these terms</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">21. Indemnification</h2>
               <p>
-                We may update these terms from time to time. When we make material changes, we will update
-                the date above and, where appropriate, notify clinics through the platform. Continued use
-                after a change takes effect constitutes acceptance of the updated terms.
+                You will defend, indemnify and hold CuspFlow harmless from claims, damages and costs
+                arising from your Clinic Data, your use of the Service in breach of these Terms or of law,
+                or your failure to obtain any consent or lawful basis required for the Patient Data you
+                process, except to the extent caused by our own breach of these Terms.
               </p>
             </section>
 
             <section>
-              <h2 className="text-lg font-semibold text-slate-900 mb-3">14. Contact</h2>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">22. Changes to the Service and to these Terms</h2>
               <p>
-                For questions about these terms, contact us at{" "}
+                We may update the Service and these Terms from time to time. When we make material changes
+                to the Terms, we will update the date above and, where appropriate, notify you through the
+                Service. Changes take effect when posted, and your continued use after that constitutes
+                acceptance. If you do not agree to a change, your remedy is to stop using the Service and
+                cancel.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">23. Governing law and disputes</h2>
+              <p>
+                These Terms are governed by the laws of the jurisdiction in which CuspFlow is established,
+                without regard to conflict-of-laws rules, and the parties submit to the courts of that
+                jurisdiction, except where the mandatory law of your own country gives you rights that
+                cannot be waived. The parties will first try to resolve any dispute informally by
+                contacting each other.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">24. General</h2>
+              <p>
+                You may not assign these Terms without our consent; we may assign them to an affiliate or
+                in connection with a merger or sale. If any provision is found unenforceable, the rest
+                remains in effect. Our failure to enforce a provision is not a waiver. Neither party is
+                liable for delay or failure caused by events beyond its reasonable control. These Terms,
+                together with the Privacy Policy and any order or plan details, are the entire agreement
+                between the parties about the Service. Notices to you may be given through the Service or
+                by email; notices to us should go to the address below.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-lg font-semibold text-slate-900 mb-3">25. Contact</h2>
+              <p>
+                Questions about these Terms:{" "}
                 <a href="mailto:legal@cuspflow.co" className="text-brand-600 hover:underline">
                   legal@cuspflow.co
+                </a>
+                . Billing questions:{" "}
+                <a href="mailto:billing@cuspflow.co" className="text-brand-600 hover:underline">
+                  billing@cuspflow.co
                 </a>
                 .
               </p>
