@@ -3,7 +3,7 @@ title: Payroll & commissions
 description: Run pay runs that calculate salary, commission and tax per staff member, and produce printable payslips.
 category: staff-hr
 order: 2
-updated: 2026-07-21
+updated: 2026-09-16
 video: https://youtu.be/xT6ywwQ-GMo
 ---
 
@@ -14,7 +14,7 @@ Payroll calculates what each staff member is owed for a period, salary plus comm
 1. **Create a pay run**, choose the period and the staff to include.
 2. CuspFlow calculates each person's **base salary** (if salaried) or **hourly pay** (from clocked [attendance](/docs/staff-hr/attendance)), their **commission**, and **tax**.
 3. **Review** the per-staff entries.
-4. **Approve** the run and **print payslips**, individually or in a batch.
+4. **Approve** the run and **print payslips**, individually or in a batch. Paystub paper size (A4 or A5) is its own setting under **Settings → General → Print**, independent of receipts and other documents.
 
 ## How commissions work
 

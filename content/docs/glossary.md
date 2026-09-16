@@ -3,7 +3,7 @@ title: Glossary of terms
 description: Plain-English definitions of the dental and practice-management terms used throughout CuspFlow, FDI notation, treatment plans, Bill of Materials, view-only window and more.
 category: core-concepts
 order: 1
-updated: 2026-08-29
+updated: 2026-09-16
 ---
 
 A quick reference for the terminology you'll see across CuspFlow.
@@ -31,7 +31,7 @@ A quick reference for the terminology you'll see across CuspFlow.
 - **Patient journey**, the four tracked stages a patient moves through in the Waiting Room: Waiting → In Treatment → Billing → Discharged.
 - **Invoice**, the single billing record attached to a treatment plan; tracks items, discount, amount paid and balance.
 - **Installment**, a partial payment toward a balance; the invoice moves Unpaid → Partial → Paid as money comes in.
-- **Receipt**, proof of payment, printed in A4 or thermal format with a gap-free number per clinic (e.g. `RCP-00001`).
+- **Receipt**, proof of payment, printed in A4, A5 or thermal format with a gap-free number per clinic (e.g. `RCP-00001`).
 - **Finalised**, an invoice whose balance is cleared; finalising is what allows a patient to be discharged.
 
 ## Multi-branch terms

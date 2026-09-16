@@ -3,7 +3,7 @@ title: Online booking & the request queue
 description: Share a public booking link so patients can request appointments; recognised patients are confirmed automatically, and unrecognised ones queue for staff to Confirm or Decline.
 category: patients-scheduling
 order: 5
-updated: 2026-08-29
+updated: 2026-09-16
 ---
 
 Online booking lets patients request an appointment themselves, from a link you share, without anyone at the front desk having to pick up the phone. It's off until you turn it on.
@@ -16,7 +16,7 @@ Go to **Settings → Online Booking**. From there you control:
 - What the form asks for.
 - How far ahead patients are allowed to book.
 
-You get a **public link** to share on your website, your Google listing, social media, or a WhatsApp auto-reply.
+You get a **public link** to share on your website, your Google listing, social media, or a WhatsApp auto-reply. Turning it on here is a one-time, Owner/Administrator setup step, but grabbing the link afterwards isn't confined to Settings: a **Copy Booking Link** button shows up on the Reception dashboard and the [Appointments page](/docs/patients-scheduling/appointments) for any staff member to use, day to day.
 
 ## What the patient sees
 

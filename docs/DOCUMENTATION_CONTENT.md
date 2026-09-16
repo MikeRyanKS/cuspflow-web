@@ -33,7 +33,7 @@ video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 | Article | What it covers |
 |---|---|
 | [Getting Started with CuspFlow](https://cuspflow.co/docs/getting-started/getting-started) | Guided tour / map of the whole system; the patient-journey path (register → book/check-in → waiting room → treatment plan → payment → discharge); "where things live" table. |
-| [Initial clinic setup](https://cuspflow.co/docs/getting-started/initial-clinic-setup) | Clinic details (name, currency/locale, tax, print format A4/A5/thermal, invoice/receipt prefixes), branches, dental chairs, first staff, weekly schedules. |
+| [Initial clinic setup](https://cuspflow.co/docs/getting-started/initial-clinic-setup) | Clinic details (name, currency/locale, tax, per-document print format — Receipts A4/A5/thermal, Medical Forms/Prescriptions/Paystubs A4/A5 each, invoice/receipt prefixes), branches, dental chairs, first staff, weekly schedules. |
 | [Importing your existing data](https://cuspflow.co/docs/getting-started/importing-your-data) | Data Migration wizard v2: template-first, 7 entities in dependency order, fuzzy header matching, validation dry-run, **rejects rather than guesses** + re-uploadable rejects report, per-import Reports tab, 7-day rollback, migrated-data tagging, up to 5,000 rows. |
 
 ### Core Concepts
@@ -51,8 +51,8 @@ video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 |---|---|
 | [Patient records & medical history](https://cuspflow.co/docs/patients-scheduling/patient-records) | Demographics, patient code (MRN), instant search, structured medical history (Medical/Dental/Allergy/Medication), adult phone rule. |
 | [Families & household billing](https://cuspflow.co/docs/patients-scheduling/families) | Family groups, Head of Family, household balance, under-18 phone exemption. |
-| [Booking & managing appointments](https://cuspflow.co/docs/patients-scheduling/appointments) | Pre-booked & walk-in, online-booking summary, multi-doctor calendar, statuses (Scheduled → Checked-In → Completed / Cancelled / No-Show), emergencies, availability, search by name/phone/email/ID. |
-| [Online booking & the request queue](https://cuspflow.co/docs/patients-scheduling/online-booking) | Public booking link (Settings → Online Booking), auto-confirm for recognised patients (phone/email match), Booking Requests review card on the Reception dashboard, no auto-created patient records. |
+| [Booking & managing appointments](https://cuspflow.co/docs/patients-scheduling/appointments) | Pre-booked & walk-in, online-booking summary + Copy Booking Link, multi-doctor calendar, statuses (Scheduled → Checked-In → Completed / Cancelled / No-Show), emergencies, availability, search by name/phone/email/ID. |
+| [Online booking & the request queue](https://cuspflow.co/docs/patients-scheduling/online-booking) | Public booking link (turned on in Settings → Online Booking, copyable from Reception or Appointments day-to-day), auto-confirm for recognised patients (phone/email match), Booking Requests review card on the Reception dashboard, no auto-created patient records. |
 | [Patient reminders](https://cuspflow.co/docs/patients-scheduling/patient-reminders) | Appointment + overdue-balance reminders over WhatsApp (BYO WhatsApp Business, billed by Meta) with email fallback, Settings → Notifications config, per-patient exclusion. SMS retired. |
 | [Check-in & the Waiting Room](https://cuspflow.co/docs/patients-scheduling/waiting-room) | Live Kanban board scoped to your working branch (Waiting → In Treatment → Billing → Discharged), 30-min wait alerts, emergency priority, discharge-until-finalised gate. |
 
@@ -72,7 +72,7 @@ video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 | Article | What it covers |
 |---|---|
 | [Checkout & taking payment](https://cuspflow.co/docs/billing-payments/checkout-and-taking-payment) | Review invoice, discounts, payment methods (Cash/Card/Mobile Money/Insurance/Waived), finalise & discharge gate, clinic currency. |
-| [Installments & receipts](https://cuspflow.co/docs/billing-payments/installments-and-receipts) | Partial payments (Unpaid → Partial → Paid), A4/A5/thermal receipts, gap-free numbering, refunds. |
+| [Installments & receipts](https://cuspflow.co/docs/billing-payments/installments-and-receipts) | Partial payments (Unpaid → Partial → Paid), A4/A5/thermal receipts (own print-format setting, separate from Medical Forms/Prescriptions/Paystubs), gap-free numbering, refunds. |
 | [Overdue payments & follow-up](https://cuspflow.co/docs/billing-payments/overdue-payments) | Outstanding-balance list, per-patient & per-family balances, WhatsApp/email payment reminders. |
 | [Insurance claims](https://cuspflow.co/docs/billing-payments/insurance-claims) | Claim lifecycle (Draft → Submitted → Approved/Rejected → Paid), amount claimed vs approved + shortfall, carriers & policies, printable/exportable claims report, Insurance as a payment method. |
 
@@ -91,7 +91,7 @@ video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 | Article | What it covers |
 |---|---|
 | [Staff management & roles](https://cuspflow.co/docs/staff-hr/staff-management) | HR profile vs. login split, adding staff, branded invite emails, roles, custom permissions, self-service login-email change, schedules → appointment availability. |
-| [Payroll & commissions](https://cuspflow.co/docs/staff-hr/payroll) | Pay runs (salary + commission + tax), payslips, snapshotted commission rates. |
+| [Payroll & commissions](https://cuspflow.co/docs/staff-hr/payroll) | Pay runs (salary + commission + tax), payslips (own A4/A5 print-format setting), snapshotted commission rates. |
 | [Attendance & time tracking](https://cuspflow.co/docs/staff-hr/attendance) | Clock in/out, hours computation, attendance reports feeding hourly pay. |
 
 ### Account & Subscription

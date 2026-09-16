@@ -3,7 +3,7 @@ title: Initial clinic setup
 description: Set up your branches, dental chairs and first staff members so the rest of CuspFlow works the way your clinic does.
 category: getting-started
 order: 2
-updated: 2026-08-29
+updated: 2026-09-16
 video: https://youtu.be/h3GDcGWQkgI
 ---
 
@@ -16,7 +16,7 @@ Open **Settings → General** and set:
 - **Clinic name, contact details and logo**, these appear on receipts and printed documents.
 - **Currency and locale**, your clinic's own currency symbol and number format. Patient invoices, receipts and payments all use this; nothing is hardcoded, so a clinic in Nairobi and one in Dubai each see their own formatting.
 - **Tax rate**, used where tax applies.
-- **Print format**, full **A4**, half-page **A5**, or narrow **thermal** (till-roll) receipts and medical forms, depending on your printer. This is a clinic-wide setting, not per document.
+- **Print format**, a separate setting for each printable document, **Receipts** (A4, half-page A5, or narrow thermal till-roll), plus **Medical Forms**, **Prescriptions** and **Payroll Paystubs** (A4 or A5 each). All default to A4 — change any of them independently if that document prints on a different size at your clinic.
 - **Invoice and receipt prefixes**, for example `RCP-`, which produces gap-free numbers like `RCP-00001`.
 
 ## 2. Branches

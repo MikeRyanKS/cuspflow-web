@@ -18,13 +18,13 @@ automatically as money comes in. You take each installment through the normal [c
 
 ## Receipts
 
-Receipts print in one of three formats depending on your printer, set clinic-wide in **Settings → General**:
+Receipts print in one of three formats depending on your printer, set in **Settings → General**:
 
 - **A4**, a full-page receipt.
 - **A5**, a half-page receipt, for clinics that print on half sheets.
 - **Thermal**, a narrow till-roll receipt.
 
-The same setting also applies to the **Medical Form** (attendance certificate) printed from a treatment plan.
+This is its own setting, separate from the Medical Form, Prescriptions and Payroll Paystub print formats also configured there, each of which can be A4 or A5 independently — so a clinic can print receipts on a thermal till-roll while keeping certificates and paystubs on full or half-page paper.
 
 Receipt numbers are assigned by the system in a **gap-free sequence per clinic** (for example `RCP-00001`), so your records stay complete and auditable.
 

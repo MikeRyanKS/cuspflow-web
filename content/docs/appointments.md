@@ -26,6 +26,8 @@ Each clinic has a public **booking link** (turn it on and configure it under **S
 
 An unrecognised contact is **never turned into a patient record automatically**, a real person always reviews new patients first.
 
+Setting the link up is a Settings page, but sharing it day-to-day isn't — once online booking is turned on, a **Copy Booking Link** button appears right on the Reception dashboard and on this Appointments page, so front-desk staff can grab it for a patient without needing Settings access at all.
+
 ## The calendar
 
 The calendar shows every appointment for the day or week, laid out by time and doctor, and updates live as bookings change. When several doctors are working, it shows a side-by-side column per doctor; provider filter chips let you show or hide each doctor's column.
