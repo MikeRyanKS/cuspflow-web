@@ -3,7 +3,7 @@ title: Treatment plans & the teeth chart
 description: Chart a visit end to end, procedures, prescriptions, the FDI teeth chart, clinical notes, X-rays and the care team, inside a treatment plan.
 category: clinical
 order: 1
-updated: 2026-08-29
+updated: 2026-09-16
 video: https://youtu.be/oIqPf6gAnDk
 ---
 
@@ -39,6 +39,14 @@ Each plan needs a **Main Doctor**, checkout is blocked until one is assigned. As
 ## Status
 
 A plan is **Ongoing** while the visit is active, and becomes **Finalized** or **Cancelled**. The invoice has its own separate paid/finalised state, see [Checkout & taking payment](/docs/billing-payments/checkout-and-taking-payment).
+
+## Printing from the plan
+
+The drawer's footer can print a **Receipt** (once payment begins), a **Medical Form** (an attendance certificate listing the visit's procedures and prescriptions, for a patient who needs proof of attendance), or **Prescriptions** alone. All three follow your clinic's print format from **Settings → General**, A4, A5 or thermal, so a certificate prints on the same paper size as everything else in the clinic.
+
+## Edit history
+
+Every plan keeps a collapsed **Edit History** at the bottom, who changed what and when. Anyone who can open the plan sees the activity line; the full before/after detail is visible to Owners and Administrators, matching the clinic-wide audit trail at **Settings → Audit Logs**.
 
 ## The Treatment Plans list
 

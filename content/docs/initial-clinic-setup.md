@@ -16,7 +16,7 @@ Open **Settings → General** and set:
 - **Clinic name, contact details and logo**, these appear on receipts and printed documents.
 - **Currency and locale**, your clinic's own currency symbol and number format. Patient invoices, receipts and payments all use this; nothing is hardcoded, so a clinic in Nairobi and one in Dubai each see their own formatting.
 - **Tax rate**, used where tax applies.
-- **Print format**, full **A4** or narrow **thermal** (till-roll) receipts, depending on your printer.
+- **Print format**, full **A4**, half-page **A5**, or narrow **thermal** (till-roll) receipts and medical forms, depending on your printer. This is a clinic-wide setting, not per document.
 - **Invoice and receipt prefixes**, for example `RCP-`, which produces gap-free numbers like `RCP-00001`.
 
 ## 2. Branches

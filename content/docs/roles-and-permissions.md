@@ -3,7 +3,7 @@ title: Roles & permissions
 description: How CuspFlow's eight staff roles work, what each one can access, and how Owners grant custom permission overrides.
 category: core-concepts
 order: 2
-updated: 2026-08-29
+updated: 2026-09-16
 ---
 
 Everyone who logs in to CuspFlow has a **role** that determines what they can see and do. This keeps clinical, financial and HR data in front of the people who need it and away from those who don't.
@@ -16,7 +16,7 @@ Everyone who logs in to CuspFlow has a **role** that determines what they can se
 | **Administrator** | Practice manager / operations | Everything, same as Owner. |
 | **Finance** | Billing and accounts | Patients, appointments, financials, reports, claims, inventory, lab cases. No HR or settings. |
 | **HR** | People management | Staff directory (including creating and editing employees), payroll, attendance. No patient or financial data. |
-| **Receptionist** | Front desk | Appointments, waiting room, patients, families, checkout, lab cases; inventory view-only. Of Financials: only Overdue Payments and Cash Reconciliation (clinic-wide summary totals hidden by default, see below). |
+| **Receptionist** | Front desk | Appointments, waiting room, patients, families, treatment plans (including clinical notes and the teeth chart), checkout, lab cases; inventory view-only. Of Financials: only Overdue Payments and Cash Reconciliation (clinic-wide summary totals hidden by default, see below). |
 | **Doctor** | Clinician | Patients, appointments, waiting room, treatment plans, lab cases. No billing or HR. |
 | **Nurse** | Clinician | Same clinical access as Doctor. |
 | **Support Staff** | Stock room | Inventory management only. |
@@ -52,8 +52,9 @@ An Owner can hand any individual Financials page, or the summary totals, to a sp
 
 ## Important rules
 
-- Only the **Owner** can change a staff member's role.
+- The **Owner** and **Administrator** can both assign or change a staff member's role, so day-to-day hiring and promotions don't have to wait on the Owner. The one exception: only the **Owner** can grant the Owner role itself, and an Administrator can't edit an Owner's record at all, in either direction.
 - The **Owner is never locked out**, even if a plan change would otherwise reduce available seats, they're the only one who can fix billing.
+- A staff member's **login email can only be changed by that person themselves**, from their own profile, not by an admin editing their HR record, so it can never drift out of sync with what they actually sign in with.
 - Sensitive actions (payroll, billing, staff access) are enforced on the server, not just hidden in the interface.
 
 See [Staff management](/docs/staff-hr/staff-management) to assign roles and grant access.

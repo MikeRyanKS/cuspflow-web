@@ -3,7 +3,7 @@ title: Booking & managing appointments
 description: Book pre-scheduled and walk-in appointments, take requests through your online booking link, use the multi-doctor calendar, and handle check-ins, reschedules, cancellations and no-shows.
 category: patients-scheduling
 order: 3
-updated: 2026-08-29
+updated: 2026-09-16
 video: https://youtu.be/Qp9Wh0yJfIw
 ---
 
@@ -42,6 +42,10 @@ Cancelling frees the slot. No-shows are marked manually to keep reporting accura
 ## Emergencies
 
 Flag an appointment as an emergency so the patient is highlighted and prioritised in the waiting room.
+
+## Finding an appointment
+
+The Appointments list is searchable by patient **name, phone number, email or patient ID**, alongside the procedure name, so front-desk staff can find the right visit however a patient identifies themselves on the phone.
 
 ## Reporting
 
