@@ -109,6 +109,11 @@ export interface DocListItem extends DocFrontmatter {
   slug: string;
 }
 
+export interface DocSearchItem extends DocListItem {
+  /** Plain-text body (markdown syntax stripped), for client-side search. */
+  body: string;
+}
+
 const DOCS_DIR = path.join(process.cwd(), "content", "docs");
 const CATEGORY_IDS = new Set(DOC_CATEGORIES.map((c) => c.id));
 
@@ -242,6 +247,27 @@ export function getArticlesByCategory(): { category: DocCategory; articles: DocL
 
 export function getArticlesInCategory(categoryId: string): DocListItem[] {
   return getAllArticles().filter((a) => a.category === categoryId);
+}
+
+/** Strip markdown syntax down to plain, searchable text (headings, links, emphasis, code fences, list markers). */
+function stripMarkdown(markdown: string): string {
+  return markdown
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`>#]/g, "")
+    .replace(/^[-\d.]+\s+/gm, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** All articles with a plain-text body, for the client-side docs search box. */
+export function getSearchIndex(): DocSearchItem[] {
+  const items = readAllFiles().map(({ slug, raw }) => {
+    const { data, content } = parseFrontmatter(slug, raw);
+    return { slug, ...data, body: stripMarkdown(content) };
+  });
+  return sortArticles(items);
 }
 
 /** Prev/next in the flattened (category-order, then order) sequence. */
