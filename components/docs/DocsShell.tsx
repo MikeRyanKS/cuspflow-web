@@ -2,6 +2,8 @@ import type { ReactNode } from "react";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import DocsSidebar from "@/components/docs/DocsSidebar";
+import DocsSearch from "@/components/docs/DocsSearch";
+import { getSearchIndex } from "@/lib/docs";
 
 /**
  * Shared three-column shell for every docs page: sticky left nav (built from
@@ -19,6 +21,8 @@ export default function DocsShell({
   aside?: ReactNode;
   children: ReactNode;
 }) {
+  const searchIndex = getSearchIndex();
+
   return (
     <>
       <Nav />
@@ -33,7 +37,10 @@ export default function DocsShell({
             </aside>
 
             {/* Center: content */}
-            <div className="py-10 min-w-0">{children}</div>
+            <div className="py-10 min-w-0">
+              <DocsSearch items={searchIndex} className="mb-8" />
+              {children}
+            </div>
 
             {/* Right: table of contents (article pages only) */}
             {aside ? (

@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { getArticlesByCategory, getSearchIndex } from "@/lib/docs";
+import { getArticlesByCategory } from "@/lib/docs";
 import { articleHref, categoryHref } from "@/lib/docs-routes";
-import DocsSearch from "@/components/docs/DocsSearch";
 
 /**
  * Persistent docs navigation, built from the same category/order data as the
@@ -16,7 +15,6 @@ export default function DocsSidebar({
   activeTutorials?: boolean;
 }) {
   const groups = getArticlesByCategory();
-  const searchIndex = getSearchIndex();
 
   return (
     <nav aria-label="Documentation" className="text-sm">
@@ -26,7 +24,6 @@ export default function DocsSidebar({
       >
         Documentation home
       </Link>
-      <DocsSearch items={searchIndex} />
       <Link
         href="/docs/tutorials"
         aria-current={activeTutorials ? "page" : undefined}
