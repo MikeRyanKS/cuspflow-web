@@ -2,7 +2,7 @@
 title: Overdue payments & follow-up
 description: Find patients with outstanding balances, review their payment history, and follow up, individually or by family.
 category: billing-payments
-order: 3
+order: 4
 updated: 2026-07-21
 ---
 

@@ -18,7 +18,7 @@ automatically as money comes in. You take each installment through the normal [c
 
 ## Receipts
 
-Receipts print in one of three formats depending on your printer, set in **Settings → General**:
+Receipts print in one of three formats depending on your printer, set in **Settings → Print & Receipts**:
 
 - **A4**, a full-page receipt.
 - **A5**, a half-page receipt, for clinics that print on half sheets.
@@ -27,6 +27,8 @@ Receipts print in one of three formats depending on your printer, set in **Setti
 This is its own setting, separate from the Medical Form, Prescriptions and Payroll Paystub print formats also configured there, each of which can be A4 or A5 independently — so a clinic can print receipts on a thermal till-roll while keeping certificates and paystubs on full or half-page paper.
 
 Receipt numbers are assigned by the system in a **gap-free sequence per clinic** (for example `RCP-00001`), so your records stay complete and auditable.
+
+You can also brand what appears on the receipt — logo, branch details, up to four phone numbers and two emails in the header, and a footer with other-branch contacts, opening hours, a promotional note and a legal disclaimer, all with a live preview. See [Customizing receipts & printing](/docs/billing-payments/customizing-receipts-and-printing). A receipt can also be **emailed** to the patient as a PDF, using those same settings.
 
 ## Refunds
 

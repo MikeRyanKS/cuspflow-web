@@ -2,7 +2,7 @@
 title: Insurance claims
 description: Track insurance claims from draft to payment, record the approved amount and see the shortfall the patient still owes, with carrier and policy details per patient.
 category: billing-payments
-order: 4
+order: 5
 updated: 2026-08-29
 video: https://youtu.be/tTveuguTK0U
 ---

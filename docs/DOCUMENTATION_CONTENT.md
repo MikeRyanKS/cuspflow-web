@@ -33,7 +33,7 @@ video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 | Article | What it covers |
 |---|---|
 | [Getting Started with CuspFlow](https://cuspflow.co/docs/getting-started/getting-started) | Guided tour / map of the whole system; the patient-journey path (register → book/check-in → waiting room → treatment plan → payment → discharge); "where things live" table. |
-| [Initial clinic setup](https://cuspflow.co/docs/getting-started/initial-clinic-setup) | Clinic details (name, currency/locale, tax, per-document print format — Receipts A4/A5/thermal, Medical Forms/Prescriptions/Paystubs A4/A5 each, invoice/receipt prefixes), branches, dental chairs, first staff, weekly schedules. |
+| [Initial clinic setup](https://cuspflow.co/docs/getting-started/initial-clinic-setup) | Clinic details (name, currency/locale, tax, invoice/receipt prefixes; paper sizes + receipt branding moved to Settings → Print & Receipts), branches, dental chairs, first staff, weekly schedules. |
 | [Importing your existing data](https://cuspflow.co/docs/getting-started/importing-your-data) | Data Migration wizard v2: template-first, 7 entities in dependency order, fuzzy header matching, validation dry-run, **rejects rather than guesses** + re-uploadable rejects report, per-import Reports tab, 7-day rollback, migrated-data tagging, up to 5,000 rows. |
 
 ### Core Concepts
@@ -72,7 +72,8 @@ video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 | Article | What it covers |
 |---|---|
 | [Checkout & taking payment](https://cuspflow.co/docs/billing-payments/checkout-and-taking-payment) | Review invoice, discounts, payment methods (Cash/Card/Mobile Money/Insurance/Waived), finalise & discharge gate, clinic currency. |
-| [Installments & receipts](https://cuspflow.co/docs/billing-payments/installments-and-receipts) | Partial payments (Unpaid → Partial → Paid), A4/A5/thermal receipts (own print-format setting, separate from Medical Forms/Prescriptions/Paystubs), gap-free numbering, refunds. |
+| [Installments & receipts](https://cuspflow.co/docs/billing-payments/installments-and-receipts) | Partial payments (Unpaid → Partial → Paid), A4/A5/thermal receipts (set in Settings → Print & Receipts), gap-free numbering, refunds, link to receipt branding. |
+| [Customizing receipts & printing](https://cuspflow.co/docs/billing-payments/customizing-receipts-and-printing) | Settings → Print & Receipts: per-document paper sizes + offline-record toggle; configurable receipt header (logo/branch/address toggles, extra line, up to 4 phones, 2 emails) and footer (thank-you, other branches, opening hours, promo, legal disclaimer, printed-by), live preview; same header/footer on prescriptions, medical forms and the emailed receipt PDF. |
 | [Overdue payments & follow-up](https://cuspflow.co/docs/billing-payments/overdue-payments) | Outstanding-balance list, per-patient & per-family balances, WhatsApp/email payment reminders. |
 | [Insurance claims](https://cuspflow.co/docs/billing-payments/insurance-claims) | Claim lifecycle (Draft → Submitted → Approved/Rejected → Paid), amount claimed vs approved + shortfall, carriers & policies, printable/exportable claims report, Insurance as a payment method. |
 

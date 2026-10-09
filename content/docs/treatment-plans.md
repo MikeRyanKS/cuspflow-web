@@ -42,7 +42,7 @@ A plan is **Ongoing** while the visit is active, and becomes **Finalized** or **
 
 ## Printing from the plan
 
-The drawer's footer can print a **Receipt** (once payment begins), a **Medical Form** (an attendance certificate listing the visit's procedures and prescriptions, for a patient who needs proof of attendance), or **Prescriptions** alone. Each has its own paper-size setting in **Settings → General**, A4 or A5 for Medical Forms and Prescriptions (Receipts can also use narrow thermal) — so a certificate doesn't have to share the receipt printer's paper size.
+The drawer's footer can print a **Receipt** (once payment begins), a **Medical Form** (an attendance certificate listing the visit's procedures and prescriptions, for a patient who needs proof of attendance), or **Prescriptions** alone. Each has its own paper-size setting in **Settings → Print & Receipts**, A4 or A5 for Medical Forms and Prescriptions (Receipts can also use narrow thermal) — so a certificate doesn't have to share the receipt printer's paper size. The Medical Form and Prescriptions also carry your clinic header and footer from that same page.
 
 ## Edit history
 
