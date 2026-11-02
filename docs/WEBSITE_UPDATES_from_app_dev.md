@@ -6,7 +6,7 @@ Format: newest entries at the top. Each entry states what changed in the app, wh
 
 ---
 
-## 2026-11-02 — Re-pricing: new prices on all three plans, bigger seat allowances, and the annual discount is now per-plan
+## 2026-11-02 · Re-pricing: new prices on all three plans, bigger seat allowances, and the annual discount is now per-plan
 
 **What changed in the app:** All three paid plans were re-priced and every tier gained seats. Storage allowances are unchanged.
 
@@ -18,20 +18,20 @@ Format: newest entries at the top. Each entry states what changed in the app, wh
 
 The **additional staff seat** add-on dropped from **$12/mo to $5/mo**. The storage block stays at $10/mo per 50 GB. Enterprise stays custom-quoted, but its threshold language moves from "35+ seats" to "45+ seats" to sit above the new Clinic Pro ceiling.
 
-**Why it matters for the website:** the single biggest copy change is that **the annual discount is no longer one number**. It used to be a flat ~20% on every plan; it is now ~8% / 15% / ~20%. Every "saves roughly 20%" line was therefore wrong for two of the three plans. The product owner's instruction was to keep the **"up to 20%"** framing, which stays truthful because 20% is the real saving on Clinic Pro, and to state the per-plan figure wherever a specific plan is being discussed. Also: prices now carry cents, so every figure needs two decimals ($26.90, not $26.9), and the annual totals no longer divide evenly into twelve, so a per-month rate must be derived from the yearly total rather than the yearly total being derived from a rounded monthly rate ($560/yr is $46.67/mo, and $46.67 × 12 is $560.04 — a price we don't charge).
+**Why it matters for the website:** the single biggest copy change is that **the annual discount is no longer one number**. It used to be a flat ~20% on every plan; it is now ~8% / 15% / ~20%. Every "saves roughly 20%" line was therefore wrong for two of the three plans. The product owner's instruction was to keep the **"up to 20%"** framing, which stays truthful because 20% is the real saving on Clinic Pro, and to state the per-plan figure wherever a specific plan is being discussed. Also: prices now carry cents, so every figure needs two decimals ($26.90, not $26.9), and the annual totals no longer divide evenly into twelve, so a per-month rate must be derived from the yearly total rather than the yearly total being derived from a rounded monthly rate ($560/yr is $46.67/mo, and $46.67 × 12 is $560.04, a price we don't charge).
 
-**What to update:** *(this session handled it directly, by explicit request — see Status below.)*
+**What to update:** *(this session handled it directly, by explicit request; see Status below.)*
 
 **Status:** ✅ Done 2026-11-02, directly in this repo (app-dev session, by explicit request). Changes:
 
-- `components/pricing/PricingPlans.tsx` — new prices and seat counts; `annualMonthly` replaced by `annualTotal` (the real yearly charge) with the per-month rate and the saving percentage both *derived* from it; switcher badge now "Save up to 20%" computed from the tiers rather than hardcoded; each annual card footnote states its own saving; Enterprise "35+" → "45+".
-- `components/sections/PricingPreview.tsx` — homepage card figures and seat counts; "Running a group of 35+ seats?" → "45+".
-- `app/pricing/page.tsx` — additional-seat add-on $12 → $5 (both the add-on card and the FAQ answer); annual-billing FAQ rewritten to "up to 20%" with the per-plan breakdown.
-- `app/page.tsx` — JSON-LD `SoftwareApplication.offers.price` was `"39"` (the old Starter annual per-month rate) → `"24.75"`, with the description updated. A structured-data price that undercuts the real one risks the rich result being flagged.
-- `content/docs/choosing-and-managing-your-subscription.md` — plans table rebuilt with an **Annual saving** column; add-on seat price; "up to 20%" wording. Also fixed a pre-existing broken table cell on the Enterprise row (`| Custom |, |`).
-- `content/docs/faq.md` — annual-billing answer and the add-on seat price.
+- `components/pricing/PricingPlans.tsx`: new prices and seat counts; `annualMonthly` replaced by `annualTotal` (the real yearly charge) with the per-month rate and the saving percentage both *derived* from it; switcher badge now "Save up to 20%" computed from the tiers rather than hardcoded; each annual card footnote states its own saving; Enterprise "35+" → "45+".
+- `components/sections/PricingPreview.tsx`: homepage card figures and seat counts; "Running a group of 35+ seats?" → "45+".
+- `app/pricing/page.tsx`: additional-seat add-on $12 → $5 (both the add-on card and the FAQ answer); annual-billing FAQ rewritten to "up to 20%" with the per-plan breakdown.
+- `app/page.tsx`: JSON-LD `SoftwareApplication.offers.price` was `"39"` (the old Starter annual per-month rate) → `"24.75"`, with the description updated. A structured-data price that undercuts the real one risks the rich result being flagged.
+- `content/docs/choosing-and-managing-your-subscription.md`: plans table rebuilt with an **Annual saving** column; add-on seat price; "up to 20%" wording. Also fixed a pre-existing broken table cell on the Enterprise row (`| Custom |, |`).
+- `content/docs/faq.md`: annual-billing answer and the add-on seat price.
 
-Built clean (`npm run build`). **Not yet committed or pushed** — the app-side migration and edge-function deploy land first so the site never advertises a price the checkout can't honour.
+Built clean (`npm run build`). **Not yet committed or pushed**, since the app-side migration and edge-function deploy land first so the site never advertises a price the checkout can't honour.
 
 **One thing to watch:** figures are hardcoded in three separate places on this site (`PricingPlans.tsx`, `PricingPreview.tsx`, and the two help-centre articles) plus the JSON-LD offer. They are not derived from the app's `subscription_plans` table, so the next re-pricing has to touch all of them. `app/pricing/page.tsx`'s add-on prices are a fourth copy.
 

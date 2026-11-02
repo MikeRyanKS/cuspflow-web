@@ -16,7 +16,7 @@ CuspFlow is sold as a subscription, and you manage it yourself under **Settings 
 | **Starter** | Up to 7 | 15 GB | $26.90 | $297/yr | ~8% |
 | **Growth** | Up to 20 | 50 GB | $54.90 | $560/yr | 15% |
 | **Clinic Pro** | Up to 45 | 120 GB | $99.90 | $960/yr | ~20% |
-| **Enterprise** | 45+ | Custom | Custom | Custom | — |
+| **Enterprise** | 45+ | Custom | Custom | Custom | n/a |
 
 Annual billing saves up to 20% versus monthly, and how much depends on the plan (see the table above). Subscriptions are billed in **USD**. (Your patient-facing invoices and receipts always use your own clinic [currency](/docs/getting-started/initial-clinic-setup), only the CuspFlow subscription itself is in USD.)
 

@@ -6,25 +6,25 @@
 **App Domain:** `app.cuspflow.co` (the Dental PMS application)  
 **Last Updated:** 2026-11-02
 
-> ### ✅ Pricing is published (4 tiers + add-ons) — figures as of 2026-11-02
+> ### ✅ Pricing is published (4 tiers + add-ons) · figures as of 2026-11-02
 > `/pricing` shows the full self-serve pricing that matches the app's Stripe
 > catalogue: **Starter $26.90/$297 · Growth $54.90/$560 · Clinic Pro $99.90/$960 ·
-> Enterprise (contact sales)**, plus add-ons — **Additional Staff Seat $5/mo**
+> Enterprise (contact sales)**, plus add-ons: **Additional Staff Seat $5/mo**
 > and **Storage Block (50 GB) $10/mo**, both recurring. Every feature is included
 > on every tier and **branches are unlimited on every plan**; tiers differ only by
 > staff seats and storage.
 >
-> **The annual discount is per-plan, not one number** — ~8% on Starter, 15% on
+> **The annual discount is per-plan, not one number**: ~8% on Starter, 15% on
 > Growth, ~20% on Clinic Pro. Customer-facing copy says **"up to 20%"**, which is
 > truthful because 20% is the real saving on Clinic Pro. Any single figure quoted
 > as *the* annual discount is a bug.
 >
 > ⚠️ **This site does not read the price catalogue.** The app's two billing
 > screens fetch `subscription_plans` from the database, so a re-pricing reaches
-> them with no deploy. This repo hardcodes the figures in **four** places —
+> them with no deploy. This repo hardcodes the figures in **four** places:
 > `components/pricing/PricingPlans.tsx`, `components/sections/PricingPreview.tsx`,
 > `app/pricing/page.tsx` (add-ons + FAQ), and the two help articles
-> (`choosing-and-managing-your-subscription.md`, `faq.md`) — plus the homepage
+> (`choosing-and-managing-your-subscription.md`, `faq.md`), plus the homepage
 > JSON-LD `offers.price` in `app/page.tsx`, which must quote the real cheapest
 > entry price. All of them have to be changed by hand.
 >
@@ -181,7 +181,7 @@ Full feature breakdown organised into 12 categories:
 | **Clinic Pro** | Busy, high-volume practice | $99.90 | $960/yr (~20% off) | Up to 45 | 120 GB |
 | **Enterprise** | Dental group / large network | Custom | Custom | 45+ | Custom |
 
-**Branches are unlimited on every tier, including Starter** — location count is
+**Branches are unlimited on every tier, including Starter**, so location count is
 not a paid differentiator (see the 2026-08-18 entry in
 `WEBSITE_UPDATES_from_app_dev.md`). Seats and storage are the only ones.
 

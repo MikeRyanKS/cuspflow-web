@@ -170,7 +170,7 @@ export default function PricingPlans() {
                   {isCustom
                     ? "Tailored to your network"
                     : period === "annual"
-                      ? `billed annually, $${money(tier.annualTotal as number)}/yr — save ${savingPct}%`
+                      ? `billed annually, $${money(tier.annualTotal as number)}/yr · save ${savingPct}%`
                       : `or $${money(perMonthAnnual as number)}/mo billed annually`}
                 </p>
               </div>

@@ -100,7 +100,7 @@ video to an article, set `video: https://youtu.be/<id>` in its frontmatter.
 
 | Article | What it covers |
 |---|---|
-| [Choosing & managing your subscription](https://cuspflow.co/docs/account-subscription/choosing-and-managing-your-subscription) | Plans, seats, storage, add-ons, plan changes, Settings → Billing. **Unlimited branches on every plan**; two-devices-per-login cap. Pricing figures mirror the pricing page — re-synced for the 2026-11-02 re-pricing (plans table now carries an **Annual saving** column, since the discount is per-plan, not a flat 20%). |
+| [Choosing & managing your subscription](https://cuspflow.co/docs/account-subscription/choosing-and-managing-your-subscription) | Plans, seats, storage, add-ons, plan changes, Settings → Billing. **Unlimited branches on every plan**; two-devices-per-login cap. Pricing figures mirror the pricing page, re-synced for the 2026-11-02 re-pricing (plans table now carries an **Annual saving** column, since the discount is per-plan, not a flat 20%). |
 | [Billing lifecycle, trials & data export](https://cuspflow.co/docs/account-subscription/billing-lifecycle-trials-and-data-export) | 30-day trial, payment-lapse flow, 60-day view-only window, free full export, **per-record deletion lifecycle** (soft-delete → 30-day Trash → archival → retention-driven erasure), security note. |
 
 ### Reference
@@ -133,9 +133,9 @@ for the rest — don't duplicate the whole FAQ.
 **Getting started & pricing**
 1. **Is there a free trial?** — Yes, 30 days, full platform, no card.
 2. **Do all plans really include every feature?** — Yes, no feature gating.
-3. **What if I need more seats or storage than my plan includes?** — Add-ons ($5/seat, $10 per 50 GB), prorated.
+3. **What if I need more seats or storage than my plan includes?** Add-ons ($5/seat, $10 per 50 GB), prorated.
 4. **Can I change plans later?** — Yes; upgrades immediate (prorated), downgrades at renewal; data moves with you.
-5. **How does annual billing work?** — Up to 20%, billed once a year; the exact saving is per-plan (~8% Starter / 15% Growth / 20% Clinic Pro).
+5. **How does annual billing work?** Up to 20%, billed once a year; the exact saving is per-plan (~8% Starter / 15% Growth / 20% Clinic Pro).
 
 **Data, security & currencies**
 6. **Is our patient data secure?** — Encrypted in transit & at rest, per-clinic isolation enforced at the database (row-level security).

@@ -114,7 +114,7 @@ plan. You only pay for staff seats and storage, and every plan starts with a
 **defaults to Annual**, so the headline per-month figure shown by default is the
 annual-billing rate. Subscriptions are billed in USD.
 
-**The annual saving is per-plan, not one figure** — ~8% / 15% / ~20%. The
+**The annual saving is per-plan, not one figure** (~8% / 15% / ~20%). The
 switcher badge says **"Save up to 20%"** (computed from the tier data, not
 hardcoded) and each annual card states its own saving. Never quote a single
 number as *the* annual discount.
@@ -122,7 +122,7 @@ number as *the* annual discount.
 ### Plans
 
 Figures as of the **2026-11-02 re-pricing**. Annual is the TOTAL yearly charge;
-the per-month column is derived from it (`annual ÷ 12`), never the reverse — the
+the per-month column is derived from it (`annual ÷ 12`), never the reverse. The
 totals don't divide evenly ($560/yr is $46.67/mo, and $46.67 × 12 is $560.04).
 
 | Plan | Monthly | Annual (per mo) | Annual (per yr) | Saving | Seats | Storage | Tagline |
@@ -130,9 +130,9 @@ totals don't divide evenly ($560/yr is $46.67/mo, and $46.67 × 12 is $560.04).
 | **Starter** | $26.90/mo | $24.75/mo | $297/yr | ~8% | Up to 7 | 15 GB | For a clinic just getting started. |
 | **Growth** *(Most popular)* | $54.90/mo | $46.67/mo | $560/yr | 15% | Up to 20 | 50 GB | For established clinics ready to scale their operations. |
 | **Clinic Pro** | $99.90/mo | $80.00/mo | $960/yr | ~20% | Up to 45 | 120 GB | For busy, high-volume practices and small groups. |
-| **Enterprise** | Custom | — | — | — | 45+ | Custom | For dental groups running large networks of clinics. |
+| **Enterprise** | Custom | n/a | n/a | n/a | 45+ | Custom | For dental groups running large networks of clinics. |
 
-- **Branches are unlimited on every plan**, including Starter — there is no
+- **Branches are unlimited on every plan**, including Starter, so there is no
   "Locations" column any more, and location count is never a paid differentiator.
 - Enterprise extra spec: **"Dedicated account manager & assisted onboarding."**
 - CTA: Starter/Growth/Clinic Pro → **Start Free Trial**; Enterprise → **Contact Sales**.
