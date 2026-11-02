@@ -77,21 +77,40 @@ Clean and synced. Last change: relocated `WEBSITE_DOCUMENTATION.md` in from the 
 
 ## 4. Outstanding
 
-### 4.1 Pricing is out of date — the significant one
-The site shows **Starter / Growth / Enterprise** with **no prices** ("contact us for pricing"). The app now has a **built, self-serve Stripe subscription system** with public pricing, and a **new 4th tier (Clinic Pro)** that doesn't exist here at all.
+### 4.1 Pricing is out of date — the significant one · ✅ RESOLVED 2026-07-22
+*Kept for context. The problem below was real when written and is long fixed —
+`/pricing` has shown four tiers with public figures since 2026-07-22, and the
+"contact us for pricing" positioning is gone. The prices quoted in this section
+are the original 2026 catalogue and are **superseded**; see the current table
+further down.*
 
-This is a **positioning change, not a missing card** — "contact us for pricing" is fundamentally incompatible with self-serve Checkout.
+~~The site shows **Starter / Growth / Enterprise** with **no prices** ("contact us for pricing"). The app now has a **built, self-serve Stripe subscription system** with public pricing, and a **new 4th tier (Clinic Pro)** that doesn't exist here at all.~~
 
-| Tier | Monthly | Yearly |
-|---|---|---|
-| Starter | $49 | $468 |
-| Growth | $99 | $948 |
-| **Clinic Pro** *(new)* | $199 | $1,908 |
-| Enterprise | contact sales | — |
+~~This is a **positioning change, not a missing card** — "contact us for pricing" is fundamentally incompatible with self-serve Checkout.~~
 
-Plus add-ons: Additional Staff Seat **$12/mo**, Storage Block (50 GB) **$10/mo** (both recurring), one-time SMS packs ($15 / $30 / $55). Every feature is on every tier — plans differ only by seats and storage.
+Original (superseded) catalogue, for the record: Starter $49/$468 · Growth
+$99/$948 · Clinic Pro $199/$1,908 · Enterprise contact sales, with the
+Additional Staff Seat at $12/mo and one-time SMS packs ($15/$30/$55, since
+retired along with SMS itself in 2026-07-24).
 
-**Do this only once the Stripe catalogue exists**, so published figures and Stripe can't disagree. Authoritative source: `dental-pms` → `docs/STRIPE_PAYMENTS.md` §2a.
+**Current catalogue (2026-11-02 re-pricing):**
+
+| Tier | Monthly | Yearly | Annual saving | Seats | Storage |
+|---|---|---|---|---|---|
+| Starter | $26.90 | $297 | ~8% | Up to 7 | 15 GB |
+| Growth | $54.90 | $560 | 15% | Up to 20 | 50 GB |
+| Clinic Pro | $99.90 | $960 | ~20% | Up to 45 | 120 GB |
+| Enterprise | contact sales | — | — | 45+ | Custom |
+
+Plus add-ons: Additional Staff Seat **$5/mo**, Storage Block (50 GB) **$10/mo**,
+both recurring. Every feature is on every tier and **branches are unlimited on
+every plan** — tiers differ only by seats and storage. The annual saving is
+**per-plan**, so customer-facing copy says "up to 20%".
+
+Authoritative source: `dental-pms` → `docs/STRIPE_PAYMENTS.md` §2 / §2a. Note
+that this repo does **not** read that catalogue — the figures are hardcoded in
+four places here (see `WEBSITE_DOCUMENTATION.md`) and must be changed by hand,
+unlike the app, whose billing screens now fetch `subscription_plans` directly.
 
 ### 4.2 Smaller items
 - Contact form has no submission target (needs a Worker or a form service).

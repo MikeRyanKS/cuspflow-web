@@ -10,7 +10,7 @@ it describes — click through to see it live.
 
 *(Build/architecture details live in [`WEBSITE_DOCUMENTATION.md`](./WEBSITE_DOCUMENTATION.md).)*
 
-**Last updated:** 2026-09-03
+**Last updated:** 2026-11-02
 
 ### Pages
 - Home — <https://cuspflow.co>
@@ -107,22 +107,33 @@ complete audit trail.
 ## Pricing page — <https://cuspflow.co/pricing>
 
 Header: **"Simple, transparent pricing."** "Every feature is included on every
-plan. You only pay for staff seats, storage, and branches. Every plan starts with a
+plan. You only pay for staff seats and storage, and every plan starts with a
 30-day free trial — no credit card required."
 
 **Billing switcher:** a Monthly / Annual toggle sits above the table and
 **defaults to Annual**, so the headline per-month figure shown by default is the
-annual-billing rate. Annual saves ~20%. Subscriptions are billed in USD.
+annual-billing rate. Subscriptions are billed in USD.
+
+**The annual saving is per-plan, not one figure** — ~8% / 15% / ~20%. The
+switcher badge says **"Save up to 20%"** (computed from the tier data, not
+hardcoded) and each annual card states its own saving. Never quote a single
+number as *the* annual discount.
 
 ### Plans
 
-| Plan | Monthly | Annual (per mo) | Annual (per yr) | Seats | Storage | Locations | Tagline |
-|---|---|---|---|---|---|---|---|
-| **Starter** | $49/mo | $39/mo | $468/yr | Up to 5 | 15 GB | 1 location | For a single-location clinic just getting started. |
-| **Growth** *(Most popular)* | $99/mo | $79/mo | $948/yr | Up to 15 | 50 GB | Multi-branch | For established clinics ready to scale their operations. |
-| **Clinic Pro** | $199/mo | $159/mo | $1,908/yr | Up to 35 | 120 GB | Multi-branch | For busy, high-volume practices and small groups. |
-| **Enterprise** | Custom | — | — | 35+ | Custom | Unlimited | For dental groups running large networks of clinics. |
+Figures as of the **2026-11-02 re-pricing**. Annual is the TOTAL yearly charge;
+the per-month column is derived from it (`annual ÷ 12`), never the reverse — the
+totals don't divide evenly ($560/yr is $46.67/mo, and $46.67 × 12 is $560.04).
 
+| Plan | Monthly | Annual (per mo) | Annual (per yr) | Saving | Seats | Storage | Tagline |
+|---|---|---|---|---|---|---|---|
+| **Starter** | $26.90/mo | $24.75/mo | $297/yr | ~8% | Up to 7 | 15 GB | For a clinic just getting started. |
+| **Growth** *(Most popular)* | $54.90/mo | $46.67/mo | $560/yr | 15% | Up to 20 | 50 GB | For established clinics ready to scale their operations. |
+| **Clinic Pro** | $99.90/mo | $80.00/mo | $960/yr | ~20% | Up to 45 | 120 GB | For busy, high-volume practices and small groups. |
+| **Enterprise** | Custom | — | — | — | 45+ | Custom | For dental groups running large networks of clinics. |
+
+- **Branches are unlimited on every plan**, including Starter — there is no
+  "Locations" column any more, and location count is never a paid differentiator.
 - Enterprise extra spec: **"Dedicated account manager & assisted onboarding."**
 - CTA: Starter/Growth/Clinic Pro → **Start Free Trial**; Enterprise → **Contact Sales**.
 
@@ -130,11 +141,13 @@ annual-billing rate. Annual saves ~20%. Subscriptions are billed in USD.
 
 | Add-on | Price | Notes |
 |---|---|---|
-| Additional staff seat | $12/mo | One extra login on top of the plan's seats. Add/remove any time. |
+| Additional staff seat | $5/mo | One extra login on top of the plan's seats. Add/remove any time. |
 | Storage block (50 GB) | $10/mo | Adds 50 GB imaging storage. Stack as many as needed. |
-| SMS Pack — Bronze | $15 | 500 SMS credits. One-time top-up. |
-| SMS Pack — Silver | $30 | 1,200 SMS credits. One-time top-up. |
-| SMS Pack — Gold | $55 | 2,500 SMS credits. One-time top-up. |
+
+> **SMS packs were removed in 2026-07-24** and are no longer sold or shown
+> anywhere. Reminders run on bring-your-own WhatsApp (clinics pay Meta directly)
+> with email fallback. This table listed the three retired Bronze/Silver/Gold
+> packs until 2026-11-02.
 
 ### "Included on every plan"
 

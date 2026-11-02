@@ -4,19 +4,31 @@
 **Location:** `/Users/mac/cuspflow-web/`  
 **Live Domain:** `cuspflow.co`  
 **App Domain:** `app.cuspflow.co` (the Dental PMS application)  
-**Last Updated:** 2026-09-03
+**Last Updated:** 2026-11-02
 
-> ### ✅ Pricing is now published (4 tiers + add-ons)
+> ### ✅ Pricing is published (4 tiers + add-ons) — figures as of 2026-11-02
 > `/pricing` shows the full self-serve pricing that matches the app's Stripe
-> catalogue: **Starter $49/$468 · Growth $99/$948 · Clinic Pro $199/$1,908 ·
-> Enterprise (contact sales)**, plus add-ons — **Additional Staff Seat $12/mo**,
-> **Storage Block (50 GB) $10/mo** (both recurring), and one-time SMS packs
-> ($15 / $30 / $55). Every feature is included on every tier; plans differ only
-> by staff seats, storage and branches.
+> catalogue: **Starter $26.90/$297 · Growth $54.90/$560 · Clinic Pro $99.90/$960 ·
+> Enterprise (contact sales)**, plus add-ons — **Additional Staff Seat $5/mo**
+> and **Storage Block (50 GB) $10/mo**, both recurring. Every feature is included
+> on every tier and **branches are unlimited on every plan**; tiers differ only by
+> staff seats and storage.
 >
-> Keep these figures in sync with the authoritative source: `dental-pms` →
-> `docs/STRIPE_PAYMENTS.md` §2a. If prices change there, update `/pricing` and
-> the docs FAQ/subscription articles here so all three agree.
+> **The annual discount is per-plan, not one number** — ~8% on Starter, 15% on
+> Growth, ~20% on Clinic Pro. Customer-facing copy says **"up to 20%"**, which is
+> truthful because 20% is the real saving on Clinic Pro. Any single figure quoted
+> as *the* annual discount is a bug.
+>
+> ⚠️ **This site does not read the price catalogue.** The app's two billing
+> screens fetch `subscription_plans` from the database, so a re-pricing reaches
+> them with no deploy. This repo hardcodes the figures in **four** places —
+> `components/pricing/PricingPlans.tsx`, `components/sections/PricingPreview.tsx`,
+> `app/pricing/page.tsx` (add-ons + FAQ), and the two help articles
+> (`choosing-and-managing-your-subscription.md`, `faq.md`) — plus the homepage
+> JSON-LD `offers.price` in `app/page.tsx`, which must quote the real cheapest
+> entry price. All of them have to be changed by hand.
+>
+> Authoritative source: `dental-pms` → `docs/STRIPE_PAYMENTS.md` §2 / §2a.
 
 > ### 📚 Documentation section added (`/docs`)
 > A full public docs system now lives under `app/docs/**`, driven by Markdown in
@@ -159,17 +171,26 @@ Full feature breakdown organised into 12 categories:
 
 ### Pricing Page (`/pricing`)
 
-Three tiers displayed in a card grid:
+**Four** tiers in a card grid, with a Monthly/Annual switcher. Figures as of the
+2026-11-02 re-pricing:
 
-| Tier | Target | Key limits |
-|------|--------|-----------|
-| **Starter** | Single-location clinic | 1 branch, up to 5 staff |
-| **Growth** | Established clinic | Up to 3 branches, up to 20 staff |
-| **Enterprise** | Dental group / multi-location | Unlimited branches + staff |
+| Tier | Target | Monthly | Annual | Seats | Storage |
+|------|--------|---------|--------|-------|---------|
+| **Starter** | Clinic just getting started | $26.90 | $297/yr (~8% off) | Up to 7 | 15 GB |
+| **Growth** *(Most popular)* | Established clinic scaling up | $54.90 | $560/yr (15% off) | Up to 20 | 50 GB |
+| **Clinic Pro** | Busy, high-volume practice | $99.90 | $960/yr (~20% off) | Up to 45 | 120 GB |
+| **Enterprise** | Dental group / large network | Custom | Custom | 45+ | Custom |
 
-Prices are not shown publicly — a "Contact us for pricing" link is shown instead, pointing to `/contact`. The **Growth** tier is highlighted as "Most popular."
+**Branches are unlimited on every tier, including Starter** — location count is
+not a paid differentiator (see the 2026-08-18 entry in
+`WEBSITE_UPDATES_from_app_dev.md`). Seats and storage are the only ones.
 
-Enterprise tier includes: custom integrations, dedicated account manager, SLA guarantee, on-site onboarding, white-label options.
+Prices **are** shown publicly; the three paid tiers link to the app signup and
+Enterprise links to `/contact`. Annual is the default view, and the switcher
+badge reads "Save up to 20%", computed from the tier data rather than hardcoded.
+
+Enterprise is described as: custom seats, custom storage, unlimited branches, and
+a dedicated account manager with assisted onboarding.
 
 ### Contact Page (`/contact`)
 
