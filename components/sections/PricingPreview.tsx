@@ -1,15 +1,19 @@
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
+// Figures must stay in step with components/pricing/PricingPlans.tsx (the full
+// pricing page) and with subscription_plans in the app's database. `annual` is
+// the per-month equivalent of the yearly total, which is what this card quotes;
+// the yearly totals themselves ($297 / $560 / $960) live on the pricing page.
 const tiers = [
   {
     name: "Starter",
-    price: "$49",
-    annual: "$39",
+    price: "$26.90",
+    annual: "$24.75",
     description: "For a clinic getting started.",
     highlight: false,
     specs: [
-      "Up to 5 staff seats",
+      "Up to 7 staff seats",
       "15 GB imaging storage",
       "Unlimited branches",
       "Full platform, every feature included",
@@ -17,12 +21,12 @@ const tiers = [
   },
   {
     name: "Growth",
-    price: "$99",
-    annual: "$79",
+    price: "$54.90",
+    annual: "$46.67",
     description: "For established clinics ready to scale.",
     highlight: true,
     specs: [
-      "Up to 15 staff seats",
+      "Up to 20 staff seats",
       "50 GB imaging storage",
       "Unlimited branches",
       "Full platform, every feature included",
@@ -30,12 +34,12 @@ const tiers = [
   },
   {
     name: "Clinic Pro",
-    price: "$199",
-    annual: "$159",
+    price: "$99.90",
+    annual: "$80.00",
     description: "For busy, high-volume practices.",
     highlight: false,
     specs: [
-      "Up to 35 staff seats",
+      "Up to 45 staff seats",
       "120 GB imaging storage",
       "Unlimited branches",
       "Full platform, every feature included",
@@ -113,7 +117,7 @@ export default function PricingPreview() {
         </div>
 
         <p className="text-center text-xs text-slate-400">
-          Running a group of 35+ seats?{" "}
+          Running a group of 45+ seats?{" "}
           <Link href="/pricing" className="text-brand-600 font-medium hover:underline">
             Enterprise
           </Link>{" "}

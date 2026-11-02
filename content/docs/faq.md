@@ -3,7 +3,7 @@ title: Frequently asked questions
 description: Answers to common questions about CuspFlow, trials, pricing, plans, seats, storage, data security, currencies and what happens if you cancel.
 category: reference
 order: 1
-updated: 2026-08-29
+updated: 2026-11-02
 ---
 
 The most common questions about CuspFlow, in one place. For anything else, [email support](mailto:support@cuspflow.co).
@@ -20,7 +20,7 @@ Yes. There's no feature gating in CuspFlow. Every plan unlocks the full product,
 
 ### What if I need more seats or storage than my plan includes?
 
-Add them without changing plans. Additional staff seats are $12/mo each and storage blocks are $10/mo per 50 GB. Add or remove them any time, changes are prorated automatically.
+Add them without changing plans. Additional staff seats are $5/mo each and storage blocks are $10/mo per 50 GB. Add or remove them any time, changes are prorated automatically.
 
 ### Can I change plans later?
 
@@ -28,7 +28,7 @@ Absolutely. You can upgrade or downgrade at any time and your data moves with yo
 
 ### How does annual billing work?
 
-Annual billing saves you roughly 20% versus paying monthly. You're billed once per year at the discounted rate shown on each plan.
+Annual billing saves you up to 20% versus paying monthly. The exact saving depends on the plan: about 8% on Starter, 15% on Growth and 20% on Clinic Pro. You're billed once per year at the discounted rate shown on each plan.
 
 ## Data, security & currencies
 

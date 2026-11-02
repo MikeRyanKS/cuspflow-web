@@ -3,7 +3,7 @@ title: Choosing & managing your subscription
 description: How CuspFlow plans, seats, storage and add-ons work, and how to change your plan, add capacity and view invoices under Settings → Billing.
 category: account-subscription
 order: 1
-updated: 2026-08-29
+updated: 2026-11-02
 video: https://youtu.be/hpMHEQuC8oI
 ---
 
@@ -11,20 +11,20 @@ CuspFlow is sold as a subscription, and you manage it yourself under **Settings 
 
 ## Plans
 
-| Plan | Staff seats | Imaging storage | Monthly | Annual |
-|---|---|---|---|---|
-| **Starter** | Up to 5 | 15 GB | $49 | $468/yr |
-| **Growth** | Up to 15 | 50 GB | $99 | $948/yr |
-| **Clinic Pro** | Up to 35 | 120 GB | $199 | $1,908/yr |
-| **Enterprise** | 35+ | Custom | Custom |, |
+| Plan | Staff seats | Imaging storage | Monthly | Annual | Annual saving |
+|---|---|---|---|---|---|
+| **Starter** | Up to 7 | 15 GB | $26.90 | $297/yr | ~8% |
+| **Growth** | Up to 20 | 50 GB | $54.90 | $560/yr | 15% |
+| **Clinic Pro** | Up to 45 | 120 GB | $99.90 | $960/yr | ~20% |
+| **Enterprise** | 45+ | Custom | Custom | Custom | — |
 
-Annual billing saves roughly 20% versus monthly. Subscriptions are billed in **USD**. (Your patient-facing invoices and receipts always use your own clinic [currency](/docs/getting-started/initial-clinic-setup), only the CuspFlow subscription itself is in USD.)
+Annual billing saves up to 20% versus monthly, and how much depends on the plan (see the table above). Subscriptions are billed in **USD**. (Your patient-facing invoices and receipts always use your own clinic [currency](/docs/getting-started/initial-clinic-setup), only the CuspFlow subscription itself is in USD.)
 
 ## Add-ons
 
 Need a bit more without changing plans? Add capacity that's billed alongside your subscription:
 
-- **Additional staff seat**, $12/mo each. Add or remove any time.
+- **Additional staff seat**, $5/mo each. Add or remove any time.
 - **Storage block (50 GB)**, $10/mo each. Stack as many as you need.
 
 Adding recurring capacity is charged only for the days left in the current period; removing it takes effect at the end of the period you've already paid for.

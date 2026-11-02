@@ -8,8 +8,14 @@ type Tier = {
   name: string;
   /** Monthly rate in USD. null = custom/enterprise. */
   monthly: number | null;
-  /** Per-month rate when billed annually. null = custom/enterprise. */
-  annualMonthly: number | null;
+  /**
+   * TOTAL charged once a year, not the per-month equivalent. The per-month
+   * figure on the card is derived from this, never multiplied back out of it:
+   * the annual prices don't divide evenly into twelve ($560/yr is $46.67/mo,
+   * and 46.67 x 12 is $560.04), so deriving the yearly total from a rounded
+   * monthly rate quoted a price we don't actually charge.
+   */
+  annualTotal: number | null;
   tagline: string;
   highlight: boolean;
   badge: string | null;
@@ -19,46 +25,68 @@ type Tier = {
 const tiers: Tier[] = [
   {
     name: "Starter",
-    monthly: 49,
-    annualMonthly: 39,
+    monthly: 26.9,
+    annualTotal: 297,
     tagline: "For a clinic just getting started.",
     highlight: false,
     badge: null,
-    specs: ["Up to 5 staff seats", "15 GB imaging storage", "Unlimited branches"],
+    specs: ["Up to 7 staff seats", "15 GB imaging storage", "Unlimited branches"],
   },
   {
     name: "Growth",
-    monthly: 99,
-    annualMonthly: 79,
+    monthly: 54.9,
+    annualTotal: 560,
     tagline: "For established clinics ready to scale their operations.",
     highlight: true,
     badge: "Most popular",
-    specs: ["Up to 15 staff seats", "50 GB imaging storage", "Unlimited branches"],
+    specs: ["Up to 20 staff seats", "50 GB imaging storage", "Unlimited branches"],
   },
   {
     name: "Clinic Pro",
-    monthly: 199,
-    annualMonthly: 159,
+    monthly: 99.9,
+    annualTotal: 960,
     tagline: "For busy, high-volume practices and small groups.",
     highlight: false,
     badge: null,
-    specs: ["Up to 35 staff seats", "120 GB imaging storage", "Unlimited branches"],
+    specs: ["Up to 45 staff seats", "120 GB imaging storage", "Unlimited branches"],
   },
   {
     name: "Enterprise",
     monthly: null,
-    annualMonthly: null,
+    annualTotal: null,
     tagline: "For dental groups running large networks of clinics.",
     highlight: false,
     badge: null,
     specs: [
-      "35+ staff seats",
+      "45+ staff seats",
       "Custom storage",
       "Unlimited branches",
       "Dedicated account manager & assisted onboarding",
     ],
   },
 ];
+
+/** Prices now carry cents, so every figure is shown to two decimals. */
+const money = (n: number) => n.toFixed(2);
+
+/** Per-month equivalent of the annual plan. */
+const annualMonthly = (tier: Tier) =>
+  tier.annualTotal === null ? null : tier.annualTotal / 12;
+
+/**
+ * Annual saving against twelve monthly payments. This is no longer one number
+ * for the whole table: it is ~8% on Starter, 15% on Growth and ~20% on Clinic
+ * Pro. Each card states its own, and the switcher says "up to", which stays
+ * truthful because 20% is the real saving on the top paid plan.
+ */
+const annualSavingPct = (tier: Tier) =>
+  tier.monthly === null || tier.annualTotal === null
+    ? null
+    : Math.round((1 - tier.annualTotal / (tier.monthly * 12)) * 100);
+
+const maxAnnualSavingPct = Math.max(
+  ...tiers.map((t) => annualSavingPct(t) ?? 0),
+);
 
 type Period = "annual" | "monthly";
 
@@ -89,7 +117,7 @@ export default function PricingPlans() {
                       active ? "bg-white/20 text-white" : "bg-brand-50 text-brand-600"
                     }`}
                   >
-                    Save ~20%
+                    Save up to {maxAnnualSavingPct}%
                   </span>
                 )}
               </button>
@@ -106,7 +134,9 @@ export default function PricingPlans() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-6">
         {tiers.map((tier) => {
           const isCustom = tier.monthly === null;
-          const shown = period === "annual" ? tier.annualMonthly : tier.monthly;
+          const perMonthAnnual = annualMonthly(tier);
+          const shown = period === "annual" ? perMonthAnnual : tier.monthly;
+          const savingPct = annualSavingPct(tier);
           return (
             <div
               key={tier.name}
@@ -131,7 +161,7 @@ export default function PricingPlans() {
               </p>
               <div className="mb-6">
                 <span className={`text-3xl font-bold ${tier.highlight ? "text-white" : "text-slate-900"}`}>
-                  {isCustom ? "Custom" : `$${shown}`}
+                  {isCustom ? "Custom" : `$${money(shown as number)}`}
                 </span>
                 {!isCustom && (
                   <span className={`text-sm font-medium ${tier.highlight ? "text-brand-100" : "text-slate-400"}`}>/mo</span>
@@ -140,8 +170,8 @@ export default function PricingPlans() {
                   {isCustom
                     ? "Tailored to your network"
                     : period === "annual"
-                      ? `billed annually, $${(tier.annualMonthly as number) * 12}/yr`
-                      : `or $${tier.annualMonthly}/mo billed annually`}
+                      ? `billed annually, $${money(tier.annualTotal as number)}/yr — save ${savingPct}%`
+                      : `or $${money(perMonthAnnual as number)}/mo billed annually`}
                 </p>
               </div>
               <ul className="space-y-2.5 flex-1 mb-8">

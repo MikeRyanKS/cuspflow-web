@@ -28,7 +28,7 @@ const includedFeatures = [
 ];
 
 const addons = [
-  { name: "Additional staff seat", price: "$12/mo", desc: "One extra staff login on top of your plan's seats. Add or remove any time." },
+  { name: "Additional staff seat", price: "$5/mo", desc: "One extra staff login on top of your plan's seats. Add or remove any time." },
   { name: "Storage block", price: "$10/mo", desc: "Adds 50 GB of diagnostic imaging storage. Stack as many blocks as you need." },
 ];
 
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     q: "What if I need more seats or storage than my plan includes?",
-    a: "Add them without changing plans. Additional staff seats are $12/mo each and storage blocks are $10/mo per 50 GB. Add or remove them any time, changes are prorated automatically.",
+    a: "Add them without changing plans. Additional staff seats are $5/mo each and storage blocks are $10/mo per 50 GB. Add or remove them any time, changes are prorated automatically.",
   },
   {
     q: "Can I change plans later?",
@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: "How does annual billing work?",
-    a: "Annual billing saves you roughly 20% versus paying monthly. You're billed once per year at the discounted rate shown on each plan.",
+    a: "Annual billing saves you up to 20% versus paying monthly, and the exact saving differs by plan: about 8% on Starter, 15% on Growth and 20% on Clinic Pro. You're billed once per year at the discounted rate shown on each plan.",
   },
 ];
 

@@ -44,10 +44,14 @@ const jsonLd = {
       description:
         "Cloud dental practice management software: live waiting room, appointments, treatment plans, billing, lab cases, inventory, HR/payroll and reporting. Multi-branch, every feature on every plan.",
       offers: {
+        // Lowest entry price we actually charge: Starter billed annually
+        // ($297/yr = $24.75/mo). Keep this in step with the pricing page —
+        // a price in structured data that undercuts the real one can get the
+        // rich result flagged as misleading.
         "@type": "Offer",
-        price: "39",
+        price: "24.75",
         priceCurrency: "USD",
-        description: "Plans from $39/mo per clinic. 30-day free trial, no card required.",
+        description: "Plans from $24.75/mo per clinic billed annually. 30-day free trial, no card required.",
       },
     },
   ],
