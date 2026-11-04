@@ -79,6 +79,14 @@ export const DOC_CATEGORIES: DocCategory[] = [
     title: "Reference",
     description: "FAQ, reporting and quick answers.",
   },
+  {
+    // Last on purpose: a clinic's receptionist never needs this, and a
+    // clinic's IT contact will arrive from a direct link or from search
+    // rather than by reading the sidebar top to bottom.
+    id: "developers",
+    title: "Developers",
+    description: "The REST API: keys, scopes, reading, writing and bulk import.",
+  },
 ];
 
 export interface TocEntry {

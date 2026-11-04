@@ -26,6 +26,8 @@ export function GET(): Response {
     `- Blog: ${SITE_URL}/blog`,
     `- Documentation: ${SITE_URL}/docs`,
     `- Video tutorials: ${SITE_URL}/docs/tutorials`,
+    `- REST API documentation: ${SITE_URL}/docs/developers/api-overview`,
+    `- OpenAPI 3.1 description: ${SITE_URL}/api/openapi.json`,
     `- Contact: ${SITE_URL}/contact`,
     `- App (login): https://app.cuspflow.co`,
     `- Support: support@cuspflow.co`,
