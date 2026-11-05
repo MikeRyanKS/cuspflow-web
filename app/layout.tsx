@@ -57,6 +57,12 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   metadataBase: new URL("https://cuspflow.co"),
+  // Google Search Console ownership for the https://cuspflow.co/ property.
+  // Verification is checked on an ongoing basis, not just once, so this tag has
+  // to stay. Removing it un-verifies the property and we lose the search data.
+  verification: {
+    google: "tvzeWcLFQGjFOujcBXKtREfi4le5Bjwx_HsaosQX3E4",
+  },
 };
 
 export default function RootLayout({
