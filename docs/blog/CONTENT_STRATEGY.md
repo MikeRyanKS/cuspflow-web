@@ -303,11 +303,52 @@ manual refresh and the CSV is the authoritative record.
 
 ## 13. Measurement
 
-As of 2026-11-05 the site has no analytics and no Search Console property. Until one
-exists, none of this is measurable. The tracker at `public/blog-tracker.csv` records what
-was published and when, which is necessary but not sufficient.
+Both halves are in place as of 2026-11-05.
 
-Next step when the owner is ready: add a `verification` entry to the root metadata in
-`app/layout.tsx` for Search Console, and a Cloudflare Web Analytics beacon. Then review
-monthly: impressions and clicks by query, which cluster is earning them, and whether the
-tier-1 country guides are ranking at all.
+### Google Search Console
+
+Property: `https://cuspflow.co/` (URL prefix), verified by the HTML tag method. The token
+lives in `metadata.verification.google` in `app/layout.tsx`.
+
+**Do not remove that tag.** Google re-checks ownership on an ongoing basis, so deleting it
+un-verifies the property and the search data goes with it.
+
+`sitemap.xml` is submitted and reading successfully (144 pages at submission). Nothing
+needs re-submitting when a post publishes: `app/sitemap.ts` regenerates from
+`getAllPosts()` on every build, and Google re-reads it on its own schedule. For a post you
+want crawled sooner, use URL Inspection on its URL and click Request indexing. That has a
+daily quota, so it is worth using on a launch post rather than on all five every week.
+
+Note the property covers `https://cuspflow.co/` only, not `app.cuspflow.co`. If the app
+subdomain ever needs its own search data, add a separate Domain property, which needs a
+DNS TXT record rather than a meta tag.
+
+### Analytics
+
+Cloudflare Web Analytics has been running on cuspflow.co since roughly April 2026, under
+the `Mike@keplify.com` Cloudflare account, in "Automatic setup" mode.
+
+This is why there is **no analytics script anywhere in this repo, and none should be
+added**. Cloudflare injects the beacon at the edge, so adding a second one in the page
+source would double-count every visit.
+
+One thing that will mislead you if you check it the wrong way: `curl https://cuspflow.co/`
+shows no beacon, because Cloudflare skips injection for non-browser user agents. Verify in
+a real browser instead. On a live page the DOM carries
+`script[src*="cloudflareinsights"]` and a `data-cf-beacon` attribute.
+
+Web Analytics is cookieless, which is part of why the site has no cookie banner. Keep it
+that way: switching to a cookie-setting analytics product would mean adding consent UI in
+every market we serve.
+
+### What to review monthly
+
+- Search Console, Performance: impressions and clicks by query, and which cluster is
+  earning them. Country guides should start showing impressions for `dental clinic
+  software <country>` style queries before they show clicks.
+- Search Console, Pages: whether new posts are moving from Discovered to Indexed. A post
+  stuck on "Discovered, currently not indexed" for weeks is a quality signal, not a
+  technical one.
+- Cloudflare Web Analytics: page views by path, and referrers.
+- Refill `TOPIC_BACKLOG.md` from the queries that actually earned impressions rather than
+  guessing a second time.
