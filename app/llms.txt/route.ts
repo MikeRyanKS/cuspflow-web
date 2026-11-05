@@ -1,6 +1,7 @@
 import { getArticlesByCategory } from "@/lib/docs";
 import { absoluteArticleUrl, SITE_URL } from "@/lib/docs-routes";
 import { getAllPosts } from "@/lib/blog";
+import { getGroups } from "@/lib/apiSpec";
 
 // Emitted as a static /llms.txt file at build time (output: "export").
 export const dynamic = "force-static";
@@ -26,7 +27,8 @@ export function GET(): Response {
     `- Blog: ${SITE_URL}/blog`,
     `- Documentation: ${SITE_URL}/docs`,
     `- Video tutorials: ${SITE_URL}/docs/tutorials`,
-    `- REST API documentation: ${SITE_URL}/docs/developers/api-overview`,
+    `- REST API guides: ${SITE_URL}/docs/developers/api-overview`,
+    `- REST API reference (every endpoint): ${SITE_URL}/docs/api-reference`,
     `- OpenAPI 3.1 description: ${SITE_URL}/api/openapi.json`,
     `- Contact: ${SITE_URL}/contact`,
     `- App (login): https://app.cuspflow.co`,
@@ -48,6 +50,25 @@ export function GET(): Response {
     lines.push(`### ${category.title}`);
     for (const a of articles) {
       lines.push(`- [${a.title}](${absoluteArticleUrl(a)}): ${a.description}`);
+    }
+    lines.push("");
+  }
+
+  lines.push("## API Reference");
+  lines.push("");
+  lines.push(
+    "Every endpoint of the CuspFlow REST API v1. Authentication is a clinic-scoped " +
+      "API key sent as `Authorization: Bearer cfk_live_...`. Machine-readable " +
+      `description: ${SITE_URL}/api/openapi.json`,
+  );
+  lines.push("");
+
+  for (const g of getGroups()) {
+    lines.push(`### ${g.title}`);
+    for (const op of g.operations) {
+      lines.push(
+        `- [${op.method} ${op.path}](${SITE_URL}/docs/api-reference/${op.slug}): ${op.summary}`,
+      );
     }
     lines.push("");
   }

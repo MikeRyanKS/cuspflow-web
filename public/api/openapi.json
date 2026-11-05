@@ -2492,7 +2492,7 @@
         }
       },
       "post": {
-        "summary": "Create a patients record",
+        "summary": "Create a patient",
         "operationId": "create_patients",
         "tags": [
           "patients"
@@ -2622,7 +2622,7 @@
     },
     "/v1/patients/{id}": {
       "get": {
-        "summary": "Fetch one patients row by id",
+        "summary": "Get a patient",
         "operationId": "get_patients",
         "tags": [
           "patients"
@@ -2723,7 +2723,7 @@
         }
       },
       "patch": {
-        "summary": "Update a patients record",
+        "summary": "Update a patient",
         "description": "Only the fields you send are changed.",
         "operationId": "update_patients",
         "tags": [
@@ -2865,7 +2865,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a patients record",
+        "summary": "Soft-delete a patient",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_patients",
         "tags": [
@@ -3255,7 +3255,7 @@
         }
       },
       "post": {
-        "summary": "Create a appointments record",
+        "summary": "Create an appointment",
         "operationId": "create_appointments",
         "tags": [
           "appointments"
@@ -3385,7 +3385,7 @@
     },
     "/v1/appointments/{id}": {
       "get": {
-        "summary": "Fetch one appointments row by id",
+        "summary": "Get an appointment",
         "operationId": "get_appointments",
         "tags": [
           "appointments"
@@ -3486,7 +3486,7 @@
         }
       },
       "patch": {
-        "summary": "Update a appointments record",
+        "summary": "Update an appointment",
         "description": "Only the fields you send are changed.",
         "operationId": "update_appointments",
         "tags": [
@@ -3628,7 +3628,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a appointments record",
+        "summary": "Soft-delete an appointment",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_appointments",
         "tags": [
@@ -3740,7 +3740,7 @@
     },
     "/v1/treatment_plans": {
       "get": {
-        "summary": "List treatment_plans",
+        "summary": "List treatment plans",
         "operationId": "list_treatment_plans",
         "tags": [
           "treatment_plans"
@@ -4029,7 +4029,7 @@
         }
       },
       "post": {
-        "summary": "Create a treatment_plans record",
+        "summary": "Create a treatment plan",
         "operationId": "create_treatment_plans",
         "tags": [
           "treatment_plans"
@@ -4159,7 +4159,7 @@
     },
     "/v1/treatment_plans/{id}": {
       "get": {
-        "summary": "Fetch one treatment_plans row by id",
+        "summary": "Get a treatment plan",
         "operationId": "get_treatment_plans",
         "tags": [
           "treatment_plans"
@@ -4260,7 +4260,7 @@
         }
       },
       "patch": {
-        "summary": "Update a treatment_plans record",
+        "summary": "Update a treatment plan",
         "description": "Only the fields you send are changed.",
         "operationId": "update_treatment_plans",
         "tags": [
@@ -4402,7 +4402,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a treatment_plans record",
+        "summary": "Soft-delete a treatment plan",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_treatment_plans",
         "tags": [
@@ -4514,7 +4514,7 @@
     },
     "/v1/treatment_items": {
       "get": {
-        "summary": "List treatment_items",
+        "summary": "List treatment items",
         "operationId": "list_treatment_items",
         "tags": [
           "treatment_items"
@@ -4765,7 +4765,7 @@
     },
     "/v1/treatment_items/{id}": {
       "get": {
-        "summary": "Fetch one treatment_items row by id",
+        "summary": "Get a treatment item",
         "operationId": "get_treatment_items",
         "tags": [
           "treatment_items"
@@ -4868,7 +4868,7 @@
     },
     "/v1/medical_history": {
       "get": {
-        "summary": "List medical_history",
+        "summary": "List medical history entries",
         "operationId": "list_medical_history",
         "tags": [
           "medical_history"
@@ -5097,7 +5097,7 @@
         }
       },
       "post": {
-        "summary": "Create a medical_history record",
+        "summary": "Create a medical history entry",
         "operationId": "create_medical_history",
         "tags": [
           "medical_history"
@@ -5227,7 +5227,7 @@
     },
     "/v1/medical_history/{id}": {
       "get": {
-        "summary": "Fetch one medical_history row by id",
+        "summary": "Get a medical history entry",
         "operationId": "get_medical_history",
         "tags": [
           "medical_history"
@@ -5328,7 +5328,7 @@
         }
       },
       "patch": {
-        "summary": "Update a medical_history record",
+        "summary": "Update a medical history entry",
         "description": "Only the fields you send are changed.",
         "operationId": "update_medical_history",
         "tags": [
@@ -5470,7 +5470,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a medical_history record",
+        "summary": "Soft-delete a medical history entry",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_medical_history",
         "tags": [
@@ -5582,7 +5582,7 @@
     },
     "/v1/patient_journey": {
       "get": {
-        "summary": "List patient_journey",
+        "summary": "List patient journey entries",
         "operationId": "list_patient_journey",
         "tags": [
           "patient_journey"
@@ -5843,7 +5843,7 @@
     },
     "/v1/patient_journey/{id}": {
       "get": {
-        "summary": "Fetch one patient_journey row by id",
+        "summary": "Get a patient journey entry",
         "operationId": "get_patient_journey",
         "tags": [
           "patient_journey"
@@ -6176,7 +6176,7 @@
         }
       },
       "post": {
-        "summary": "Create a families record",
+        "summary": "Create a family",
         "operationId": "create_families",
         "tags": [
           "families"
@@ -6306,7 +6306,7 @@
     },
     "/v1/families/{id}": {
       "get": {
-        "summary": "Fetch one families row by id",
+        "summary": "Get a family",
         "operationId": "get_families",
         "tags": [
           "families"
@@ -6407,7 +6407,7 @@
         }
       },
       "patch": {
-        "summary": "Update a families record",
+        "summary": "Update a family",
         "description": "Only the fields you send are changed.",
         "operationId": "update_families",
         "tags": [
@@ -6549,7 +6549,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a families record",
+        "summary": "Soft-delete a family",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_families",
         "tags": [
@@ -6661,7 +6661,7 @@
     },
     "/v1/patient_insurance": {
       "get": {
-        "summary": "List patient_insurance",
+        "summary": "List patient insurance policies",
         "operationId": "list_patient_insurance",
         "tags": [
           "patient_insurance"
@@ -6891,7 +6891,7 @@
         }
       },
       "post": {
-        "summary": "Create a patient_insurance record",
+        "summary": "Create a patient insurance policy",
         "operationId": "create_patient_insurance",
         "tags": [
           "patient_insurance"
@@ -7021,7 +7021,7 @@
     },
     "/v1/patient_insurance/{id}": {
       "get": {
-        "summary": "Fetch one patient_insurance row by id",
+        "summary": "Get a patient insurance policy",
         "operationId": "get_patient_insurance",
         "tags": [
           "patient_insurance"
@@ -7122,7 +7122,7 @@
         }
       },
       "patch": {
-        "summary": "Update a patient_insurance record",
+        "summary": "Update a patient insurance policy",
         "description": "Only the fields you send are changed.",
         "operationId": "update_patient_insurance",
         "tags": [
@@ -7264,7 +7264,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a patient_insurance record",
+        "summary": "Soft-delete a patient insurance policy",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_patient_insurance",
         "tags": [
@@ -7376,7 +7376,7 @@
     },
     "/v1/billing": {
       "get": {
-        "summary": "List billing",
+        "summary": "List billing records",
         "operationId": "list_billing",
         "tags": [
           "billing"
@@ -7646,7 +7646,7 @@
     },
     "/v1/billing/{id}": {
       "get": {
-        "summary": "Fetch one billing row by id",
+        "summary": "Get a billing record",
         "operationId": "get_billing",
         "tags": [
           "billing"
@@ -8039,7 +8039,7 @@
     },
     "/v1/payments/{id}": {
       "get": {
-        "summary": "Fetch one payments row by id",
+        "summary": "Get a payment",
         "operationId": "get_payments",
         "tags": [
           "payments"
@@ -8142,7 +8142,7 @@
     },
     "/v1/insurance_claims": {
       "get": {
-        "summary": "List insurance_claims",
+        "summary": "List insurance claims",
         "operationId": "list_insurance_claims",
         "tags": [
           "insurance_claims"
@@ -8383,7 +8383,7 @@
     },
     "/v1/insurance_claims/{id}": {
       "get": {
-        "summary": "Fetch one insurance_claims row by id",
+        "summary": "Get an insurance claim",
         "operationId": "get_insurance_claims",
         "tags": [
           "insurance_claims"
@@ -8486,7 +8486,7 @@
     },
     "/v1/insurance_carriers": {
       "get": {
-        "summary": "List insurance_carriers",
+        "summary": "List insurance carriers",
         "operationId": "list_insurance_carriers",
         "tags": [
           "insurance_carriers"
@@ -8695,7 +8695,7 @@
         }
       },
       "post": {
-        "summary": "Create a insurance_carriers record",
+        "summary": "Create an insurance carrier",
         "operationId": "create_insurance_carriers",
         "tags": [
           "insurance_carriers"
@@ -8825,7 +8825,7 @@
     },
     "/v1/insurance_carriers/{id}": {
       "get": {
-        "summary": "Fetch one insurance_carriers row by id",
+        "summary": "Get an insurance carrier",
         "operationId": "get_insurance_carriers",
         "tags": [
           "insurance_carriers"
@@ -8926,7 +8926,7 @@
         }
       },
       "patch": {
-        "summary": "Update a insurance_carriers record",
+        "summary": "Update an insurance carrier",
         "description": "Only the fields you send are changed.",
         "operationId": "update_insurance_carriers",
         "tags": [
@@ -9068,7 +9068,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a insurance_carriers record",
+        "summary": "Soft-delete an insurance carrier",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_insurance_carriers",
         "tags": [
@@ -9180,7 +9180,7 @@
     },
     "/v1/lab_cases": {
       "get": {
-        "summary": "List lab_cases",
+        "summary": "List lab cases",
         "operationId": "list_lab_cases",
         "tags": [
           "lab_cases"
@@ -9480,7 +9480,7 @@
     },
     "/v1/lab_cases/{id}": {
       "get": {
-        "summary": "Fetch one lab_cases row by id",
+        "summary": "Get a lab case",
         "operationId": "get_lab_cases",
         "tags": [
           "lab_cases"
@@ -9583,7 +9583,7 @@
     },
     "/v1/lab_case_procedures": {
       "get": {
-        "summary": "List lab_case_procedures",
+        "summary": "List lab case procedures",
         "operationId": "list_lab_case_procedures",
         "tags": [
           "lab_case_procedures"
@@ -9786,7 +9786,7 @@
     },
     "/v1/lab_case_procedures/{id}": {
       "get": {
-        "summary": "Fetch one lab_case_procedures row by id",
+        "summary": "Get a lab case procedure",
         "operationId": "get_lab_case_procedures",
         "tags": [
           "lab_case_procedures"
@@ -10108,7 +10108,7 @@
         }
       },
       "post": {
-        "summary": "Create a laboratories record",
+        "summary": "Create a laboratory",
         "operationId": "create_laboratories",
         "tags": [
           "laboratories"
@@ -10238,7 +10238,7 @@
     },
     "/v1/laboratories/{id}": {
       "get": {
-        "summary": "Fetch one laboratories row by id",
+        "summary": "Get a laboratory",
         "operationId": "get_laboratories",
         "tags": [
           "laboratories"
@@ -10339,7 +10339,7 @@
         }
       },
       "patch": {
-        "summary": "Update a laboratories record",
+        "summary": "Update a laboratory",
         "description": "Only the fields you send are changed.",
         "operationId": "update_laboratories",
         "tags": [
@@ -10481,7 +10481,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a laboratories record",
+        "summary": "Soft-delete a laboratory",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_laboratories",
         "tags": [
@@ -10593,7 +10593,7 @@
     },
     "/v1/inventory_items": {
       "get": {
-        "summary": "List inventory_items",
+        "summary": "List inventory items",
         "operationId": "list_inventory_items",
         "tags": [
           "inventory_items"
@@ -10831,7 +10831,7 @@
         }
       },
       "post": {
-        "summary": "Create a inventory_items record",
+        "summary": "Create an inventory item",
         "operationId": "create_inventory_items",
         "tags": [
           "inventory_items"
@@ -10961,7 +10961,7 @@
     },
     "/v1/inventory_items/{id}": {
       "get": {
-        "summary": "Fetch one inventory_items row by id",
+        "summary": "Get an inventory item",
         "operationId": "get_inventory_items",
         "tags": [
           "inventory_items"
@@ -11062,7 +11062,7 @@
         }
       },
       "patch": {
-        "summary": "Update a inventory_items record",
+        "summary": "Update an inventory item",
         "description": "Only the fields you send are changed.",
         "operationId": "update_inventory_items",
         "tags": [
@@ -11204,7 +11204,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a inventory_items record",
+        "summary": "Soft-delete an inventory item",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_inventory_items",
         "tags": [
@@ -11316,7 +11316,7 @@
     },
     "/v1/inventory_batches": {
       "get": {
-        "summary": "List inventory_batches",
+        "summary": "List inventory batches",
         "operationId": "list_inventory_batches",
         "tags": [
           "inventory_batches"
@@ -11568,7 +11568,7 @@
     },
     "/v1/inventory_batches/{id}": {
       "get": {
-        "summary": "Fetch one inventory_batches row by id",
+        "summary": "Get an inventory batch",
         "operationId": "get_inventory_batches",
         "tags": [
           "inventory_batches"
@@ -11671,7 +11671,7 @@
     },
     "/v1/inventory_transactions": {
       "get": {
-        "summary": "List inventory_transactions",
+        "summary": "List inventory transactions",
         "operationId": "list_inventory_transactions",
         "tags": [
           "inventory_transactions"
@@ -11893,7 +11893,7 @@
     },
     "/v1/inventory_transactions/{id}": {
       "get": {
-        "summary": "Fetch one inventory_transactions row by id",
+        "summary": "Get an inventory transaction",
         "operationId": "get_inventory_transactions",
         "tags": [
           "inventory_transactions"
@@ -11996,7 +11996,7 @@
     },
     "/v1/catalog_items": {
       "get": {
-        "summary": "List catalog_items",
+        "summary": "List catalog items",
         "operationId": "list_catalog_items",
         "tags": [
           "catalog_items"
@@ -12235,7 +12235,7 @@
         }
       },
       "post": {
-        "summary": "Create a catalog_items record",
+        "summary": "Create a catalog item",
         "operationId": "create_catalog_items",
         "tags": [
           "catalog_items"
@@ -12365,7 +12365,7 @@
     },
     "/v1/catalog_items/{id}": {
       "get": {
-        "summary": "Fetch one catalog_items row by id",
+        "summary": "Get a catalog item",
         "operationId": "get_catalog_items",
         "tags": [
           "catalog_items"
@@ -12466,7 +12466,7 @@
         }
       },
       "patch": {
-        "summary": "Update a catalog_items record",
+        "summary": "Update a catalog item",
         "description": "Only the fields you send are changed.",
         "operationId": "update_catalog_items",
         "tags": [
@@ -12608,7 +12608,7 @@
         }
       },
       "delete": {
-        "summary": "Soft-delete a catalog_items record",
+        "summary": "Soft-delete a catalog item",
         "description": "Sets `deleted_at`. There is no hard delete in this API: the row stays restorable from Trash in the app.",
         "operationId": "delete_catalog_items",
         "tags": [
@@ -12951,7 +12951,7 @@
     },
     "/v1/branches/{id}": {
       "get": {
-        "summary": "Fetch one branches row by id",
+        "summary": "Get a branch",
         "operationId": "get_branches",
         "tags": [
           "branches"
@@ -13054,7 +13054,7 @@
     },
     "/v1/dental_chairs": {
       "get": {
-        "summary": "List dental_chairs",
+        "summary": "List dental chairs",
         "operationId": "list_dental_chairs",
         "tags": [
           "dental_chairs"
@@ -13304,7 +13304,7 @@
     },
     "/v1/dental_chairs/{id}": {
       "get": {
-        "summary": "Fetch one dental_chairs row by id",
+        "summary": "Get a dental chair",
         "operationId": "get_dental_chairs",
         "tags": [
           "dental_chairs"
@@ -13657,7 +13657,7 @@
     },
     "/v1/staff/{id}": {
       "get": {
-        "summary": "Fetch one staff row by id",
+        "summary": "Get a staff member",
         "operationId": "get_staff",
         "tags": [
           "staff"

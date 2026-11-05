@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Obsidian editor workspace (local)
 .obsidian/
+
+# wrangler local dev state
+.wrangler/

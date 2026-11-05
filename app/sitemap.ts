@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllArticles, getCategories } from "@/lib/docs";
 import { articleHref, categoryHref } from "@/lib/docs-routes";
 import { getAllPosts } from "@/lib/blog";
+import { getOperations } from "@/lib/apiSpec";
 
 export const dynamic = "force-static";
 
@@ -63,5 +64,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...marketing, blogIndex, ...posts, docsIndex, tutorials, ...categories, ...articles];
+  // API reference - the index plus one crawlable URL per endpoint, generated
+  // from the OpenAPI description so a new endpoint is indexed automatically.
+  const apiRefIndex = {
+    url: `${base}/docs/api-reference`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  };
+
+  const endpoints = getOperations().map((op) => ({
+    url: `${base}/docs/api-reference/${op.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [
+    ...marketing,
+    blogIndex,
+    ...posts,
+    docsIndex,
+    tutorials,
+    ...categories,
+    ...articles,
+    apiRefIndex,
+    ...endpoints,
+  ];
 }

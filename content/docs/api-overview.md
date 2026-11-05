@@ -15,6 +15,8 @@ It is not a public partner platform. Keys are issued per clinic, there is no sel
 
 Everything the API can see, your clinic can already see. A key is scoped to one clinic and bound to a staff role, and it cannot do anything that role could not do by logging in.
 
+> **Looking for a specific endpoint?** These pages are the narrative: how keys work, how paging works, what the errors mean. For the per-endpoint detail, with every parameter, the scope each call needs, an example response and a console you can run the request from, go to the **[API Reference](/docs/api-reference)**.
+
 ## Base URL
 
 ```

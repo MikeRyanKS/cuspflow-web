@@ -63,6 +63,22 @@ export default function DocsSidebar({
                   </li>
                 );
               })}
+              {/* The generated endpoint reference is not an article, so it is not
+                  in getArticlesByCategory(). It belongs with the guides it
+                  complements rather than hidden behind the footer. */}
+              {category.id === "developers" ? (
+                <li>
+                  <Link
+                    href="/docs/api-reference"
+                    className="flex items-center justify-between gap-2 rounded-lg px-3 py-1.5 text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                  >
+                    API Reference
+                    <span aria-hidden="true" className="text-slate-400">
+                      &rarr;
+                    </span>
+                  </Link>
+                </li>
+              ) : null}
             </ul>
           </li>
         ))}

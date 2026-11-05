@@ -33,7 +33,7 @@ const cols: { heading: string; links: FooterLink[] }[] = [
     heading: "Developers",
     links: [
       { href: "/docs/developers/api-overview", label: "API Documentation" },
-      { href: "/docs/developers/api-resources", label: "API Reference" },
+      { href: "/docs/api-reference", label: "API Reference" },
       { href: "/docs/developers/api-errors", label: "Error Codes" },
       // public/api/openapi.json is a static file, not a route.
       { href: "/api/openapi.json", label: "OpenAPI Spec", raw: true },
