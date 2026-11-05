@@ -31,6 +31,7 @@ const REPO = path.resolve(import.meta.dirname, "..");
 const QUEUE_DIR = path.join(REPO, "content", "blog-queue");
 const BLOG_DIR = path.join(REPO, "content", "blog");
 const TRACKER = path.join(REPO, "public", "blog-tracker.csv");
+const BACKLOG = path.join(REPO, "docs", "blog", "TOPIC_BACKLOG.md");
 const SITE = "https://cuspflow.co";
 
 const TRACKER_HEADER =
@@ -148,6 +149,26 @@ function appendTrackerRow(post, publishDate) {
   return row;
 }
 
+/**
+ * Flips a topic's row from `queued` to `published` in the backlog ledger.
+ * The ledger is what stops the weekly writer picking a topic twice, so it has
+ * to stay in step with what is actually on the site. Best effort: a missing or
+ * already-updated row is not a reason to fail a publish that has succeeded.
+ */
+function markPublishedInBacklog(slug) {
+  if (!fs.existsSync(BACKLOG)) return false;
+  const lines = fs.readFileSync(BACKLOG, "utf8").split(/\r?\n/);
+  let changed = false;
+  for (let i = 0; i < lines.length; i += 1) {
+    if (lines[i].includes(`\`${slug}\``) && lines[i].includes("| queued |")) {
+      lines[i] = lines[i].replace("| queued |", "| published |");
+      changed = true;
+    }
+  }
+  if (changed) fs.writeFileSync(BACKLOG, lines.join("\n"), "utf8");
+  return changed;
+}
+
 function main() {
   const queue = readQueue();
   if (queue.length === 0) {
@@ -218,8 +239,14 @@ function main() {
   const rows = moved.map((post) => appendTrackerRow(post, publishDate));
   for (const row of rows) log(`Tracker: ${row}`);
 
+  for (const post of moved) {
+    if (markPublishedInBacklog(post.slug)) log(`Backlog: ${post.slug} marked published.`);
+    else log(`Backlog: no queued row found for ${post.slug}, left alone.`);
+  }
+
   const paths = [
     TRACKER,
+    BACKLOG,
     ...moved.flatMap((p) => [
       path.join(BLOG_DIR, `${p.slug}.md`),
       path.join(QUEUE_DIR, p.file),
