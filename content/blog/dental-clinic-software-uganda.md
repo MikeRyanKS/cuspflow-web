@@ -4,7 +4,6 @@ description: "Choosing dental clinic software in Uganda? What to check on shilli
 date: "2026-11-05"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-05T08:10"
 cluster: "A. Country/buying guide"
 market: "Uganda"
 primaryKeyword: "dental clinic software Uganda"
