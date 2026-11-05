@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
-import { getAllPostSlugs, getPostBySlug, formatDate } from "@/lib/blog";
+import { getAllPostSlugs, getPostBySlug, formatDate, getPostImages } from "@/lib/blog";
 import { SITE_URL } from "@/lib/docs-routes";
 
 export const dynamicParams = false;
@@ -22,6 +22,13 @@ export async function generateMetadata({
   const post = await getPostBySlug(slug);
   if (!post) return {};
   const url = `${SITE_URL}/blog/${post.slug}`;
+
+  // Prefer the post's own first raster image as the social card. SVG is not a
+  // valid Open Graph image, so a post illustrated only with diagrams keeps the
+  // shared site card.
+  const raster = getPostImages(post.slug).find((src) => /\.(webp|png|jpe?g)$/i.test(src));
+  const ogImage = `${SITE_URL}${raster ?? "/og.png"}`;
+
   return {
     title: `${post.title} | CuspFlow Blog`,
     description: post.description,
@@ -33,11 +40,13 @@ export async function generateMetadata({
       url,
       type: "article",
       publishedTime: post.date,
+      images: [ogImage],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: [ogImage],
     },
   };
 }

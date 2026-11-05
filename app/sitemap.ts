@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles, getCategories } from "@/lib/docs";
 import { articleHref, categoryHref } from "@/lib/docs-routes";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, getPostImages } from "@/lib/blog";
 import { getOperations, specModified } from "@/lib/apiSpec";
 
 export const dynamic = "force-static";
@@ -28,12 +28,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   };
 
-  const posts = getAllPosts().map((p) => ({
-    url: `${base}/blog/${p.slug}`,
-    lastModified: new Date(`${p.date}T00:00:00Z`),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  // Each post also declares its own images, so the diagrams and screenshots
+  // written into a post are discoverable rather than invisible to image search.
+  const posts = getAllPosts().map((p) => {
+    const images = getPostImages(p.slug).map((src) => `${base}${src}`);
+    return {
+      url: `${base}/blog/${p.slug}`,
+      lastModified: new Date(`${p.date}T00:00:00Z`),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      ...(images.length > 0 ? { images } : {}),
+    };
+  });
 
   // Docs — index, one entry per category, one per article. Real crawlable URLs.
   const docsIndex = {
