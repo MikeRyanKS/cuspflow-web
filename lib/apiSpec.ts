@@ -302,6 +302,110 @@ export function getOperations(): Operation[] {
   return out;
 }
 
+/**
+ * When the API contract last changed, used as the sitemap `lastmod` for all 80
+ * reference URLs and as `dateModified` in their structured data.
+ *
+ * Hand-maintained, which is unusual in this file, and the alternatives are
+ * both worse. The spec file's mtime looks right and is not: git does not store
+ * mtimes, so `actions/checkout` stamps every file with the checkout time and
+ * this would quietly collapse back to "build time" in CI while reading
+ * correctly on a laptop. Stamping a generated date into the spec upstream
+ * would break the api-contract job there, which regenerates and diffs.
+ *
+ * So: bump this line whenever a regenerated openapi.json is copied in. A
+ * lastmod that moves when nothing changed is a signal crawlers learn to
+ * discount, which is the whole reason for not just using `new Date()`.
+ */
+export const CONTRACT_UPDATED = "2026-11-05";
+
+export function specModified(): Date {
+  return new Date(`${CONTRACT_UPDATED}T00:00:00Z`);
+}
+
+/** Strip the Markdown a spec description may carry; this goes in a meta tag. */
+function plain(text: string): string {
+  return text.replace(/`/g, "").replace(/\s+/g, " ").trim();
+}
+
+function clip(text: string, max = 158): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  return `${cut.slice(0, cut.lastIndexOf(" "))}…`;
+}
+
+/**
+ * The subject noun, read back out of the summary rather than from a second
+ * map. The generator upstream already produced "List patients" and "Create a
+ * patient", so duplicating a singular/plural table here would be a second
+ * source of truth that silently drifts.
+ */
+function subject(op: Operation): string | undefined {
+  const m = /^(?:List|Create|Get|Update|Soft-delete) (?:an? )?(.+)$/.exec(op.summary);
+  return m?.[1];
+}
+
+/**
+ * A distinct meta description per operation.
+ *
+ * The first cut of this page used the spec's own `description`, which is
+ * written for the body copy and is identical across resources: "Only the
+ * fields you send are changed." was the meta description of all ten PATCH
+ * pages, and the `deleted_at` sentence of all ten DELETE pages. Everything
+ * else fell back to a template differing only in method and path. Both are
+ * duplicate-content signals and neither tells a reader anything.
+ */
+export function describeOperation(op: Operation): string {
+  const noun = subject(op);
+  const scope = op.scopes.length
+    ? ` Requires the ${op.scopes.join(" and ")} scope.`
+    : "";
+  const filters = op.params.filter((p) => p.in === "query").length;
+  const required = op.bodyFields.filter((f) => f.required).length;
+  const optional = op.bodyFields.length - required;
+
+  if (noun) {
+    if (op.method === "GET" && !op.path.includes("{id}")) {
+      return clip(
+        `List ${noun} from a CuspFlow clinic over the REST API: keyset pagination, ` +
+          `${filters} filters and sparse fieldsets.${scope}`,
+      );
+    }
+    if (op.method === "GET") {
+      return clip(
+        `Fetch one ${noun} by id from a CuspFlow clinic over the REST API. Returns an ` +
+          `ETag for a later conditional write.${scope}`,
+      );
+    }
+    if (op.method === "POST") {
+      return clip(
+        `Create ${/^[aeiou]/i.test(noun) ? "an" : "a"} ${noun} in a CuspFlow clinic over ` +
+          `the REST API: ${required} required ${required === 1 ? "field" : "fields"}, ` +
+          `${optional} optional, with idempotent replay.${scope}`,
+      );
+    }
+    if (op.method === "PATCH") {
+      return clip(
+        `Update ${/^[aeiou]/i.test(noun) ? "an" : "a"} ${noun} in a CuspFlow clinic over ` +
+          `the REST API. Partial update, with If-Match for optimistic concurrency.${scope}`,
+      );
+    }
+    if (op.method === "DELETE") {
+      return clip(
+        `Soft-delete ${/^[aeiou]/i.test(noun) ? "an" : "a"} ${noun} in a CuspFlow clinic ` +
+          `over the REST API. The row stays restorable from Trash.${scope}`,
+      );
+    }
+  }
+  // The handful of operations that are not CRUD (whoami, the import flow) have
+  // a hand-written description in the spec that is already specific.
+  return clip(
+    op.description
+      ? `${plain(op.description)}${scope}`
+      : `${op.method} ${op.path} in the CuspFlow REST API.${scope}`,
+  );
+}
+
 export function getOperation(slug: string): Operation | undefined {
   return getOperations().find((o) => o.slug === slug);
 }

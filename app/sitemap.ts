@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllArticles, getCategories } from "@/lib/docs";
 import { articleHref, categoryHref } from "@/lib/docs-routes";
 import { getAllPosts } from "@/lib/blog";
-import { getOperations } from "@/lib/apiSpec";
+import { getOperations, specModified } from "@/lib/apiSpec";
 
 export const dynamic = "force-static";
 
@@ -66,18 +66,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // API reference - the index plus one crawlable URL per endpoint, generated
   // from the OpenAPI description so a new endpoint is indexed automatically.
+  //
+  // lastModified is the spec file's own mtime, not build time: these 80 URLs
+  // change when the API contract changes and at no other moment, so stamping
+  // them "modified today" on every unrelated deploy would be a false signal
+  // across more than half the sitemap.
+  const apiChanged = specModified();
+
   const apiRefIndex = {
     url: `${base}/docs/api-reference`,
-    lastModified: now,
+    lastModified: apiChanged,
     changeFrequency: "weekly" as const,
-    priority: 0.8,
+    priority: 0.9,
   };
 
   const endpoints = getOperations().map((op) => ({
     url: `${base}/docs/api-reference/${op.slug}`,
-    lastModified: now,
+    lastModified: apiChanged,
     changeFrequency: "monthly" as const,
-    priority: 0.6,
+    priority: 0.7,
   }));
 
   return [

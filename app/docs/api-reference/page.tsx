@@ -2,28 +2,83 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ApiRefShell from "@/components/apiref/ApiRefShell";
 import MethodBadge from "@/components/apiref/MethodBadge";
-import { apiVersion, baseUrl, getGroups, getOperations } from "@/lib/apiSpec";
+import Breadcrumbs from "@/components/docs/Breadcrumbs";
+import { apiVersion, baseUrl, getGroups, getOperations, specModified } from "@/lib/apiSpec";
+import { SITE_URL } from "@/lib/docs-routes";
+
+const DESCRIPTION =
+  "Every endpoint in the CuspFlow REST API for dental practice management: patients, " +
+  "appointments, treatment plans, billing, inventory and bulk import. Parameters, scopes, " +
+  "example responses and a console you can run requests from.";
 
 export const metadata: Metadata = {
   title: "API Reference | CuspFlow",
-  description:
-    "Every endpoint in the CuspFlow REST API, with parameters, scopes, example responses and a console you can run requests from.",
-  alternates: { canonical: "https://cuspflow.co/docs/api-reference" },
+  description: DESCRIPTION,
+  alternates: { canonical: `${SITE_URL}/docs/api-reference` },
+  openGraph: {
+    title: "CuspFlow REST API Reference",
+    description: DESCRIPTION,
+    url: `${SITE_URL}/docs/api-reference`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CuspFlow REST API Reference",
+    description: DESCRIPTION,
+  },
 };
 
 export default function ApiReferenceIndex() {
   const groups = getGroups();
   const total = getOperations().length;
 
+  // One ItemList naming all 79 endpoints, so a crawler that reads only this
+  // page still comes away with the whole surface and a URL for each.
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebAPI",
+        name: `CuspFlow REST API v${apiVersion()}`,
+        description: DESCRIPTION,
+        documentation: `${SITE_URL}/docs/api-reference`,
+        termsOfService: `${SITE_URL}/terms`,
+        provider: { "@type": "Organization", name: "CuspFlow" },
+      },
+      {
+        "@type": "ItemList",
+        name: "CuspFlow REST API endpoints",
+        numberOfItems: total,
+        itemListElement: getOperations().map((op, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: `${op.method} ${op.path}`,
+          url: `${SITE_URL}/docs/api-reference/${op.slug}`,
+        })),
+      },
+    ],
+  };
+
   return (
     <ApiRefShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Breadcrumbs
+        trail={[
+          { label: "Home", href: "/" },
+          { label: "Documentation", href: "/docs" },
+          { label: "API Reference" },
+        ]}
+      />
       <header className="mb-10">
         <p className="text-xs font-semibold uppercase tracking-wider text-brand-600">
           CuspFlow API v{apiVersion()}
         </p>
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">API Reference</h1>
         <p className="mt-3 max-w-2xl leading-relaxed text-slate-600">
-          {total} endpoints across {groups.length} resources. Every page carries the parameters, the
+          {total} endpoints in {groups.length} sections. Every page carries the parameters, the
           scope the call needs, an example response, and a console that runs the request against
           your own clinic with your own key.
         </p>
@@ -31,7 +86,15 @@ export default function ApiReferenceIndex() {
           {baseUrl()}
         </p>
         <p className="mt-3 text-sm text-slate-500">
-          New here? Start with the{" "}
+          Contract last changed{" "}
+          <time dateTime={specModified().toISOString()}>
+            {specModified().toLocaleDateString("en-GB", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
+          </time>
+          . New here? Start with the{" "}
           <Link href="/docs/developers/api-overview" className="text-brand-600 hover:underline">
             developer guides
           </Link>{" "}

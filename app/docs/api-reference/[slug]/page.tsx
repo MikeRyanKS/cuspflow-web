@@ -4,7 +4,17 @@ import { notFound } from "next/navigation";
 import ApiRefShell from "@/components/apiref/ApiRefShell";
 import MethodBadge from "@/components/apiref/MethodBadge";
 import EndpointConsole from "@/components/apiref/EndpointConsole";
-import { baseUrl, getOperation, getOperations, type FieldDoc, type ParamDoc } from "@/lib/apiSpec";
+import Breadcrumbs from "@/components/docs/Breadcrumbs";
+import {
+  baseUrl,
+  describeOperation,
+  getOperation,
+  getOperations,
+  specModified,
+  type FieldDoc,
+  type ParamDoc,
+} from "@/lib/apiSpec";
+import { SITE_URL } from "@/lib/docs-routes";
 
 export function generateStaticParams() {
   return getOperations().map((op) => ({ slug: op.slug }));
@@ -18,12 +28,19 @@ export async function generateMetadata({
   const { slug } = await params;
   const op = getOperation(slug);
   if (!op) return {};
+  const url = `${SITE_URL}/docs/api-reference/${op.slug}`;
+  const title = `${op.summary} (${op.method} ${op.path})`;
+  const description = describeOperation(op);
   return {
     title: `${op.summary} | CuspFlow API`,
-    description:
-      op.description ??
-      `${op.method} ${op.path} in the CuspFlow REST API: parameters, scopes and example responses.`,
-    alternates: { canonical: `https://cuspflow.co/docs/api-reference/${op.slug}` },
+    description,
+    alternates: { canonical: url },
+    // Without these the root layout's defaults win, so all 79 endpoint pages
+    // shared one og:title: the homepage's "Dental Practice Management
+    // Software for Growing Clinics". Useless in a shared link and useless to
+    // a crawler reading og tags in preference to the <title>.
+    openGraph: { title, description, url, type: "article" },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 
@@ -109,8 +126,39 @@ export default async function EndpointPage({ params }: { params: Promise<{ slug:
   const success = op.responses.filter((r) => r.status.startsWith("2"));
   const errors = op.responses.filter((r) => !r.status.startsWith("2"));
 
+  // TechArticle rather than a bespoke API type: it is what the rest of the
+  // docs already emit, and it is the one Google actually consumes.
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    headline: `${op.summary} (${op.method} ${op.path})`,
+    description: describeOperation(op),
+    dateModified: specModified().toISOString(),
+    mainEntityOfPage: `${SITE_URL}/docs/api-reference/${op.slug}`,
+    isPartOf: {
+      "@type": "WebAPI",
+      name: "CuspFlow REST API v1",
+      documentation: `${SITE_URL}/docs/api-reference`,
+      termsOfService: `${SITE_URL}/terms`,
+    },
+    author: { "@type": "Organization", name: "CuspFlow" },
+    publisher: { "@type": "Organization", name: "CuspFlow" },
+  };
+
   return (
     <ApiRefShell activeSlug={op.slug}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <Breadcrumbs
+        trail={[
+          { label: "Home", href: "/" },
+          { label: "Documentation", href: "/docs" },
+          { label: "API Reference", href: "/docs/api-reference" },
+          { label: op.summary },
+        ]}
+      />
       <div className="xl:grid xl:grid-cols-[minmax(0,1fr)_26rem] xl:gap-10">
         <div className="min-w-0">
           <header>
