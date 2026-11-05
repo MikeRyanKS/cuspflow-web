@@ -225,8 +225,10 @@ export default function TermsPage() {
                 a payment processor, an email provider, and the WhatsApp Business Platform for messaging.
                 Your use of features that depend on these may be subject to the relevant third
                 party&apos;s terms, and we are not responsible for their acts, omissions or availability.
-                A current list of the categories of sub-processors we use is described in our Privacy
-                Policy.
+                A current list of the sub-processors we use is published on our{" "}
+                <a href="/sub-processors" className="text-brand-600 hover:underline">sub-processors page</a>,
+                and described in our{" "}
+                <a href="/privacy" className="text-brand-600 hover:underline">Privacy Policy</a>.
               </p>
             </section>
 

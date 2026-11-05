@@ -2,7 +2,14 @@ import Link from "next/link";
 
 const year = new Date().getFullYear();
 
-const cols = [
+type FooterLink = {
+  href: string;
+  label: string;
+  /** A static file served from the site root, not a Next route, so it needs a plain anchor. */
+  raw?: boolean;
+};
+
+const cols: { heading: string; links: FooterLink[] }[] = [
   {
     heading: "Product",
     links: [
@@ -23,22 +30,36 @@ const cols = [
     ],
   },
   {
+    heading: "Developers",
+    links: [
+      { href: "/docs/developers/api-overview", label: "API Documentation" },
+      { href: "/docs/developers/api-resources", label: "API Reference" },
+      { href: "/docs/developers/api-errors", label: "Error Codes" },
+      // public/api/openapi.json is a static file, not a route.
+      { href: "/api/openapi.json", label: "OpenAPI Spec", raw: true },
+    ],
+  },
+  {
     heading: "Company",
     links: [
       { href: "/about", label: "About" },
       { href: "/privacy", label: "Privacy Policy" },
       { href: "/terms", label: "Terms of Service" },
-      { href: "/sub-processors", label: "Sub-processors" },
+      // Sub-processors deliberately is not here. It is a disclosure that belongs
+      // beside the provider list it expands on, so it is linked from the Privacy
+      // Policy (section 6) and from Terms section 15 instead.
     ],
   },
 ];
 
+const linkClass = "text-sm text-slate-500 hover:text-brand-600 transition-colors";
+
 export default function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 py-10 sm:py-14 grid grid-cols-2 md:grid-cols-5 gap-8 sm:gap-10">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 py-10 sm:py-14 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-8 sm:gap-10 lg:gap-8">
         {/* Brand */}
-        <div className="col-span-2">
+        <div className="col-span-2 sm:col-span-4 lg:col-span-2">
           <Link href="/" className="flex items-center gap-2 font-semibold text-lg mb-3">
             <span className="w-7 h-7 rounded-lg bg-brand-600 flex items-center justify-center text-white text-sm font-bold">
               C
@@ -60,12 +81,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {col.links.map((l) => (
                 <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="text-sm text-slate-500 hover:text-brand-600 transition-colors"
-                  >
-                    {l.label}
-                  </Link>
+                  {l.raw ? (
+                    <a href={l.href} className={linkClass}>
+                      {l.label}
+                    </a>
+                  ) : (
+                    <Link href={l.href} className={linkClass}>
+                      {l.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
