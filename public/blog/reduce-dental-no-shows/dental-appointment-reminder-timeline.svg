@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="A reminder timeline for dental appointments: a reminder two days before, a confirm or reschedule prompt the day before, and a short call list on the day itself.">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#4361EE"/>
+  <text x="600" y="104" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#0f172a" text-anchor="middle">Ask for an answer, not just attention</text>
+
+  <line x1="140" y1="300" x2="1060" y2="300" stroke="#e2e8f0" stroke-width="6"/>
+
+  <g font-family="Inter, system-ui, -apple-system, sans-serif">
+    <circle cx="200" cy="300" r="30" fill="#4361EE"/>
+    <text x="200" y="240" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">2 days before</text>
+    <text x="200" y="382" font-size="28" fill="#475569" text-anchor="middle">A reminder goes out</text>
+
+    <circle cx="600" cy="300" r="30" fill="#4361EE"/>
+    <text x="600" y="240" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">1 day before</text>
+    <text x="600" y="382" font-size="28" fill="#475569" text-anchor="middle">Confirm, or move it</text>
+    <text x="600" y="420" font-size="28" fill="#475569" text-anchor="middle">to a day that works</text>
+
+    <circle cx="1000" cy="300" r="30" fill="#10b981"/>
+    <text x="1000" y="240" font-size="30" font-weight="700" fill="#0f172a" text-anchor="middle">On the day</text>
+    <text x="1000" y="382" font-size="28" fill="#475569" text-anchor="middle">You call four people,</text>
+    <text x="1000" y="420" font-size="28" fill="#475569" text-anchor="middle">not forty</text>
+  </g>
+</svg>

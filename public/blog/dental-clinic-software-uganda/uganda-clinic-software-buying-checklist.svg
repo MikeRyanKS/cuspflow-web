@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Five checks for dental clinic software in Uganda: shillings, VAT on the receipt, paper sizes, cash and mobile money recorded separately, and your own data export.">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#4361EE"/>
+  <text x="80" y="96" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="42" font-weight="700" fill="#0f172a">Five checks before you buy, in Uganda</text>
+
+  <g font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" fill="#0f172a">
+    <circle cx="112" cy="190" r="26" fill="#4361EE"/>
+    <text x="112" y="201" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="172" y="201">Prices and totals in Ugandan shillings, not converted dollars</text>
+
+    <circle cx="112" cy="282" r="26" fill="#4361EE"/>
+    <text x="112" y="293" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="172" y="293">VAT at 18% as its own line on the receipt</text>
+
+    <circle cx="112" cy="374" r="26" fill="#4361EE"/>
+    <text x="112" y="385" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="172" y="385">Prints to A4, A5 and an 80mm thermal roll</text>
+
+    <circle cx="112" cy="466" r="26" fill="#4361EE"/>
+    <text x="112" y="477" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="172" y="477">Cash and mobile money recorded as separate methods</text>
+
+    <circle cx="112" cy="558" r="26" fill="#10b981"/>
+    <text x="112" y="569" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+    <text x="172" y="569">You can export every record yourself, at any time</text>
+  </g>
+</svg>

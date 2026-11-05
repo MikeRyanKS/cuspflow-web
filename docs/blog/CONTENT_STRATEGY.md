@@ -274,7 +274,34 @@ the app repo's `docs/STRIPE_PAYMENTS.md` section 2, and ADR-014.
   `content/blog` only. That gives a review window: anything in `content/blog-queue/` can
   still be edited or deleted before it goes live
 
-## 12. Measurement
+## 12. The tracker
+
+Two places record what has been published.
+
+1. `public/blog-tracker.csv`, served live at <https://cuspflow.co/blog-tracker.csv>. This
+   is the source of truth. The publisher appends a row every time a post goes live, so it
+   is never stale. Columns: Post #, Title, URL, Date Published, Cluster, Target Market,
+   Primary Keyword, Status. No post content, by design.
+2. The Google Sheet "CuspFlow Blog Tracker" in the `CUSPFLOW SMC - 2026` Drive folder:
+   <https://docs.google.com/spreadsheets/d/1T1mzrmwjiid0AKyOoUl0jW_b6nPyMx1SM5MUq5410SU/edit>
+
+The Sheet currently holds a snapshot, because Drive's CSV import deliberately never
+evaluates formulas, so an auto-syncing sheet cannot be created programmatically. Verified
+twice: both a CSV-quoted and an unquoted `=IMPORTDATA(...)` upload land in the cell as
+literal text.
+
+**One-time upgrade to make the Sheet keep itself current.** In the Sheet: select all
+(Cmd+A) and delete, click cell A1, and paste
+
+```
+=IMPORTDATA("https://cuspflow.co/blog-tracker.csv")
+```
+
+From then on the Sheet pulls from the live CSV and refreshes roughly hourly on its own,
+with no further intervention and the same link. Until that is done, the Sheet needs a
+manual refresh and the CSV is the authoritative record.
+
+## 13. Measurement
 
 As of 2026-11-05 the site has no analytics and no Search Console property. Until one
 exists, none of this is measurable. The tracker at `public/blog-tracker.csv` records what

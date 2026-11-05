@@ -45,8 +45,8 @@ insurance carriers maintained by the clinic, and the country's data-protection l
 
 | # | Topic | Primary keyword | Status | Slug |
 | --- | --- | --- | --- | --- |
-| A1 | Uganda | dental clinic software Uganda | planned | |
-| A2 | Kenya | dental practice management software Kenya | planned | |
+| A1 | Uganda | dental clinic software Uganda | queued | `dental-clinic-software-uganda` |
+| A2 | Kenya | dental practice management software Kenya | queued | `dental-practice-management-software-kenya` |
 | A3 | Nigeria | dental clinic software Nigeria | planned | |
 | A4 | Ghana | dental clinic management software Ghana | planned | |
 | A5 | Tanzania | dental clinic software Tanzania | planned | |
@@ -84,8 +84,8 @@ We do not integrate with ZATCA and must not imply that we do.
 
 | # | Topic | Primary keyword | Module it maps to | Status | Slug |
 | --- | --- | --- | --- | --- | --- |
-| B1 | Cutting no-shows without phoning every patient | how to reduce dental no-shows | Reminders | planned | |
-| B2 | End-of-day cash reconciliation | dental clinic cash reconciliation | Cash Reconciliation | planned | |
+| B1 | Cutting no-shows without phoning every patient | how to reduce dental no-shows | Reminders | queued | `reduce-dental-no-shows` |
+| B2 | End-of-day cash reconciliation | dental clinic cash reconciliation | Cash Reconciliation | queued | `dental-clinic-cash-reconciliation` |
 | B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | planned | |
 | B4 | Stock expiry before it costs you | dental inventory expiry tracking | Inventory | planned | |
 | B5 | Paying associate dentist commission | dental associate commission calculation | Commissions | planned | |
@@ -131,7 +131,7 @@ live public pages, fetched at write time. No price comparisons, no disparagement
 
 | # | Topic | Primary keyword | Status | Slug |
 | --- | --- | --- | --- | --- |
-| D1 | The receptionist's opening and closing checklist | dental receptionist daily checklist | planned | |
+| D1 | The receptionist's opening and closing checklist | dental receptionist daily checklist | queued | `dental-receptionist-daily-checklist` |
 | D2 | Opening a second clinic | opening a second dental clinic checklist | planned | |
 | D3 | What a practice owner should check every Monday | dental practice owner weekly review | planned | |
 | D4 | Month-end in a dental clinic | dental clinic month end checklist | planned | |
