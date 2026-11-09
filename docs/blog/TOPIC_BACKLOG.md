@@ -84,7 +84,7 @@ We do not integrate with ZATCA and must not imply that we do.
 
 | # | Topic | Primary keyword | Module it maps to | Status | Slug |
 | --- | --- | --- | --- | --- | --- |
-| B1 | Cutting no-shows without phoning every patient | how to reduce dental no-shows | Reminders | queued | `reduce-dental-no-shows` |
+| B1 | Cutting no-shows without phoning every patient | how to reduce dental no-shows | Reminders | published | `reduce-dental-no-shows` |
 | B2 | End-of-day cash reconciliation | dental clinic cash reconciliation | Cash Reconciliation | queued | `dental-clinic-cash-reconciliation` |
 | B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | planned | |
 | B4 | Stock expiry before it costs you | dental inventory expiry tracking | Inventory | planned | |

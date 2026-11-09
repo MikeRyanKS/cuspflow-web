@@ -1,10 +1,9 @@
 ---
 title: "How to Cut Dental No-Shows Without Phoning Every Patient"
 description: "How to reduce dental no-shows using reminders that ask for an answer, a short call list for the real risks, and a record of who actually turns up."
-date: "2026-11-07"
+date: "2026-11-09"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-07T10:35"
 cluster: "B. Operational how-to"
 market: "All markets"
 primaryKeyword: "how to reduce dental no-shows"
