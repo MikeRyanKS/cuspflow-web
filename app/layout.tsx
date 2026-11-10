@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import UtmForwarder from "@/components/UtmForwarder";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
+// GA4 property "CuspFlow" (KEPLIFY LLC account), stream cuspflow.co. Marketing site
+// ONLY: nothing that profiles behaviour runs inside app.cuspflow.co, which holds
+// patient records. Google Signals and ads personalisation are off in the property.
+// Named in the privacy policy (sections 6 and 12) and on /sub-processors.
+const GA_MEASUREMENT_ID = "G-01DQWJG0H9";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -77,6 +84,7 @@ export default function RootLayout({
         {children}
         <UtmForwarder />
       </body>
+      <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
     </html>
   );
 }

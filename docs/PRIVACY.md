@@ -54,6 +54,7 @@ We rely on a small number of trusted providers (sub-processors) to run CuspFlow.
 - **Cloudflare**: hosting and content delivery for our websites and application.
 - **Stripe**: subscription billing and payment processing.
 - **Resend**: delivery of transactional emails such as reminders, receipts and confirmations.
+- **Google Analytics (Google LLC)**: measuring visits to our marketing website (cuspflow.co only, never inside the application), including which campaign or link brought a visitor.
 - **WhatsApp Business Platform (Meta)**: delivery of patient reminders and messages the clinic chooses to send over WhatsApp.
 
 We may also disclose information if required by law or valid legal process, to protect the rights, safety and security of clinics, patients, the public or CuspFlow, or in connection with a merger, acquisition or sale of assets, in which case we will require the recipient to honor this Policy. See our current list of sub-processors at <https://cuspflow.co/sub-processors>, which we update as our providers change.
@@ -82,7 +83,7 @@ Dental records often include minors and sensitive health information. Clinics ar
 
 ## 12. Cookies and local storage
 
-We use only the cookies and browser storage needed to keep users signed in, maintain security, and remember basic preferences. On our website, if you arrive through a link that names a campaign (for example a link in one of our emails), we keep that campaign label in your browser for the current session only and pass it along if you sign up or request a demo, so we know which of our messages reached you. It is never used to follow you across other sites. We do not use third-party advertising cookies or cross-site tracking.
+Inside the application we use only the cookies and browser storage needed to keep users signed in, maintain security, and remember basic preferences. No analytics or advertising tools run inside the application. On our marketing website (cuspflow.co) we use Google Analytics, which sets first-party cookies and receives your IP address, device and browser details, and the pages you view, so we can see how visitors find and use the site. We have not enabled Google Signals or ads personalisation, and we do not use this data for ad targeting. You can opt out with Google's browser add-on (<https://tools.google.com/dlpage/gaoptout>) or by blocking cookies for cuspflow.co. Also on our website, if you arrive through a link that names a campaign (for example a link in one of our emails), we keep that campaign label in your browser for the current session only and pass it along if you sign up or request a demo, so we know which of our messages reached you. It is never used to follow you across other sites. We do not use third-party advertising cookies or cross-site tracking.
 
 ## 13. Marketing and automated decisions
 

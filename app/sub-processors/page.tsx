@@ -35,6 +35,12 @@ const subProcessors = [
     location: "United States",
   },
   {
+    name: "Google LLC (Google Analytics)",
+    purpose: "Measuring visits to the CuspFlow marketing website (cuspflow.co only, never inside the application), including which campaign or link brought a visitor.",
+    data: "Website usage data: IP address, device and browser details, pages viewed and campaign parameters. No Clinic Data.",
+    location: "United States",
+  },
+  {
     name: "WhatsApp Business Platform (Meta)",
     purpose: "Delivery of patient reminders and messages a clinic chooses to send over WhatsApp.",
     data: "Recipient phone number and the content of the message being sent.",
@@ -50,7 +56,7 @@ export default function SubProcessorsPage() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="py-12 border-b border-slate-100 mb-10">
             <h1 className="text-3xl font-bold text-slate-900 mb-2">Sub-processors</h1>
-            <p className="text-sm text-slate-400">Last updated: September 2026</p>
+            <p className="text-sm text-slate-400">Last updated: November 2026</p>
           </div>
 
           <div className="max-w-none text-sm text-slate-600 leading-relaxed space-y-6">

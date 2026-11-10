@@ -107,6 +107,7 @@ export default function PrivacyPage() {
                 <li><strong>Cloudflare</strong>: hosting and content delivery for our websites and application.</li>
                 <li><strong>Stripe</strong>: subscription billing and payment processing.</li>
                 <li><strong>Resend</strong>: delivery of transactional emails such as reminders, receipts and confirmations.</li>
+                <li><strong>Google Analytics (Google LLC)</strong>: measuring visits to our marketing website (cuspflow.co only, never inside the application), including which campaign or link brought a visitor.</li>
                 <li><strong>WhatsApp Business Platform (Meta)</strong>: delivery of patient reminders and messages the clinic chooses to send over WhatsApp.</li>
               </ul>
               <p className="mt-3">
@@ -194,8 +195,17 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-lg font-semibold text-slate-900 mb-3">12. Cookies and local storage</h2>
               <p>
-                We use only the cookies and browser storage needed to keep users signed in, maintain
-                security, and remember basic preferences. On our website, if you arrive through a link
+                Inside the application we use only the cookies and browser storage needed to keep users
+                signed in, maintain security, and remember basic preferences. No analytics or advertising
+                tools run inside the application. On our marketing website (cuspflow.co) we use Google
+                Analytics, which sets first-party cookies and receives your IP address, device and browser
+                details, and the pages you view, so we can see how visitors find and use the site. We have
+                not enabled Google Signals or ads personalisation, and we do not use this data for ad
+                targeting. You can opt out with Google&apos;s{" "}
+                <a href="https://tools.google.com/dlpage/gaoptout" className="text-brand-600 hover:underline">
+                  browser add-on
+                </a>{" "}
+                or by blocking cookies for cuspflow.co. Also on our website, if you arrive through a link
                 that names a campaign (for example a link in one of our emails), we keep that campaign
                 label in your browser for the current session only and pass it along if you sign up or
                 request a demo, so we know which of our messages reached you. It is never used to follow
