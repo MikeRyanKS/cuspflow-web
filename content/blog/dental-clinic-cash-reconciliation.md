@@ -1,10 +1,9 @@
 ---
 title: "End-of-Day Cash Reconciliation for a Dental Clinic"
 description: "A simple end-of-day routine for dental clinic cash reconciliation: count the drawer against what each cashier took, and find the gap the same day."
-date: "2026-11-09"
+date: "2026-11-10"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-09T12:50"
 cluster: "B. Operational how-to"
 market: "All markets"
 primaryKeyword: "dental clinic cash reconciliation"
