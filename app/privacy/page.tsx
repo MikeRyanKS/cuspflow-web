@@ -108,6 +108,7 @@ export default function PrivacyPage() {
                 <li><strong>Stripe</strong>: subscription billing and payment processing.</li>
                 <li><strong>Resend</strong>: delivery of transactional emails such as reminders, receipts and confirmations.</li>
                 <li><strong>Google Analytics (Google LLC)</strong>: measuring visits to our marketing website (cuspflow.co only, never inside the application), including which campaign or link brought a visitor.</li>
+                <li><strong>Microsoft Clarity (Microsoft Corporation)</strong>: heatmaps and session replays of how visitors use our marketing website (cuspflow.co only, never inside the application), with text typed into forms masked.</li>
                 <li><strong>WhatsApp Business Platform (Meta)</strong>: delivery of patient reminders and messages the clinic chooses to send over WhatsApp.</li>
               </ul>
               <p className="mt-3">
@@ -205,7 +206,11 @@ export default function PrivacyPage() {
                 <a href="https://tools.google.com/dlpage/gaoptout" className="text-brand-600 hover:underline">
                   browser add-on
                 </a>{" "}
-                or by blocking cookies for cuspflow.co. Also on our website, if you arrive through a link
+                or by blocking cookies for cuspflow.co. We also use Microsoft Clarity on the marketing
+                website, which records how visitors move, scroll and click on its pages to produce
+                aggregated heatmaps and session replays, so we can see where the site is confusing. Text
+                typed into forms is masked before it leaves your browser, and we do not use Clarity to
+                identify individual visitors. Also on our website, if you arrive through a link
                 that names a campaign (for example a link in one of our emails), we keep that campaign
                 label in your browser for the current session only and pass it along if you sign up or
                 request a demo, so we know which of our messages reached you. It is never used to follow

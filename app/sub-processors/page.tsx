@@ -41,6 +41,12 @@ const subProcessors = [
     location: "United States",
   },
   {
+    name: "Microsoft Corporation (Microsoft Clarity)",
+    purpose: "Heatmaps and session replays of how visitors use the CuspFlow marketing website (cuspflow.co only, never inside the application).",
+    data: "Website interaction data: mouse movement, scrolling, clicks, pages viewed, device and browser details. Text typed into forms is masked. No Clinic Data.",
+    location: "United States",
+  },
+  {
     name: "WhatsApp Business Platform (Meta)",
     purpose: "Delivery of patient reminders and messages a clinic chooses to send over WhatsApp.",
     data: "Recipient phone number and the content of the message being sent.",

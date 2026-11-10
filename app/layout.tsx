@@ -3,11 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import UtmForwarder from "@/components/UtmForwarder";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Clarity from "@/components/Clarity";
 
 // GA4 property "CuspFlow" (KEPLIFY LLC account), stream cuspflow.co. Marketing site
 // ONLY: nothing that profiles behaviour runs inside app.cuspflow.co, which holds
 // patient records. Google Signals and ads personalisation are off in the property.
-// Named in the privacy policy (sections 6 and 12) and on /sub-processors.
+// Named in the privacy policy (sections 6 and 12) and on /sub-processors, as is
+// Microsoft Clarity (components/Clarity.tsx, project zbg4txno2p).
 const GA_MEASUREMENT_ID = "G-01DQWJG0H9";
 
 const inter = Inter({
@@ -83,6 +85,7 @@ export default function RootLayout({
       <body className="bg-white text-slate-900 font-sans">
         {children}
         <UtmForwarder />
+        <Clarity />
       </body>
       <GoogleAnalytics gaId={GA_MEASUREMENT_ID} />
     </html>
