@@ -17,7 +17,7 @@ export default function PrivacyPage() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="py-12 border-b border-slate-100 mb-10">
             <h1 className="text-3xl font-bold text-slate-900 mb-2">Privacy Policy</h1>
-            <p className="text-sm text-slate-400">Last updated: September 2026</p>
+            <p className="text-sm text-slate-400">Last updated: November 2026</p>
           </div>
 
           <div className="max-w-none text-sm text-slate-600 leading-relaxed space-y-8">
@@ -195,8 +195,12 @@ export default function PrivacyPage() {
               <h2 className="text-lg font-semibold text-slate-900 mb-3">12. Cookies and local storage</h2>
               <p>
                 We use only the cookies and browser storage needed to keep users signed in, maintain
-                security, and remember basic preferences. We do not use third-party advertising cookies
-                or cross-site tracking.
+                security, and remember basic preferences. On our website, if you arrive through a link
+                that names a campaign (for example a link in one of our emails), we keep that campaign
+                label in your browser for the current session only and pass it along if you sign up or
+                request a demo, so we know which of our messages reached you. It is never used to follow
+                you across other sites. We do not use third-party advertising cookies or cross-site
+                tracking.
               </p>
             </section>
 

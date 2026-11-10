@@ -4,7 +4,7 @@ Plain-Markdown mirror of the Privacy Policy published at
 <https://cuspflow.co/privacy>. Keep this in sync with `app/privacy/page.tsx`
 whenever the live page changes.
 
-**Last updated:** September 2026
+**Last updated:** November 2026
 
 ---
 
@@ -82,7 +82,7 @@ Dental records often include minors and sensitive health information. Clinics ar
 
 ## 12. Cookies and local storage
 
-We use only the cookies and browser storage needed to keep users signed in, maintain security, and remember basic preferences. We do not use third-party advertising cookies or cross-site tracking.
+We use only the cookies and browser storage needed to keep users signed in, maintain security, and remember basic preferences. On our website, if you arrive through a link that names a campaign (for example a link in one of our emails), we keep that campaign label in your browser for the current session only and pass it along if you sign up or request a demo, so we know which of our messages reached you. It is never used to follow you across other sites. We do not use third-party advertising cookies or cross-site tracking.
 
 ## 13. Marketing and automated decisions
 

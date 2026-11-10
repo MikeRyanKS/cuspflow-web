@@ -2,6 +2,7 @@
 
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
+import { currentAttribution } from "@/components/UtmForwarder";
 import { useState } from "react";
 import { Send, CheckCircle } from "lucide-react";
 
@@ -35,6 +36,9 @@ export default function ContactPage() {
     setLoading(true);
     const form = e.currentTarget;
     const data = new FormData(form);
+    // Campaign params ride along as extra fields, so the demo-request email
+    // names the campaign and touch that produced it.
+    for (const [key, value] of Object.entries(currentAttribution())) data.append(key, value);
     try {
       const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: data });
       if (res.ok) {
