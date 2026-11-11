@@ -4,7 +4,6 @@ description: "A practical look at dental practice management software for Kenya:
 date: "2026-11-11"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-11T14:25"
 cluster: "A. Country/buying guide"
 market: "Kenya"
 primaryKeyword: "dental practice management software Kenya"
