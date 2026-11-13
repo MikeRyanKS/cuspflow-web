@@ -71,6 +71,8 @@ export default function BrowserFrame({
             width={3840}
             height={1616}
             loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : undefined}
+            decoding="async"
             className="block w-full h-auto"
           />
           <span className="absolute top-2.5 right-2.5 flex items-center gap-1 rounded-lg bg-slate-900/60 px-2 py-1 text-xs font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity">
@@ -99,6 +101,9 @@ export default function BrowserFrame({
           <img
             src={src}
             alt={alt}
+            width={3840}
+            height={1616}
+            decoding="async"
             onClick={(e) => e.stopPropagation()}
             className="max-w-full max-h-full w-auto h-auto rounded-lg shadow-2xl cursor-default"
           />

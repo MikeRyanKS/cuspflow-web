@@ -10,14 +10,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://cuspflow.co";
   const now = new Date();
 
-  // Marketing pages
+  // Marketing pages. The app screenshots are the only images on these pages and
+  // they are the ones worth surfacing in image search, so each page declares the
+  // ones it actually renders — same reasoning as the blog entries below. A page
+  // only lists screenshots it really shows; an image on no page does not belong
+  // in here, because Google indexes images in the context of a page.
+  const MARKETING_IMAGES: Record<string, string[]> = {
+    "/": ["waiting-room", "treatment-plans", "financials", "data-migration"],
+    "/features": [
+      "waiting-room", "appointments", "treatment-plans", "financials", "patients",
+      "reports", "price-catalog", "hr", "data-migration",
+    ],
+    "/about": ["dashboard"],
+  };
+
   const marketing = ["/", "/features", "/pricing", "/about", "/contact", "/privacy", "/terms", "/sub-processors"].map(
-    (path) => ({
-      url: `${base}${path}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: path === "/" ? 1 : 0.8,
-    }),
+    (path) => {
+      const shots = MARKETING_IMAGES[path] ?? [];
+      return {
+        url: `${base}${path}`,
+        lastModified: now,
+        changeFrequency: "monthly" as const,
+        priority: path === "/" ? 1 : 0.8,
+        ...(shots.length > 0
+          ? { images: shots.map((name) => `${base}/screenshots/${name}.webp`) }
+          : {}),
+      };
+    },
   );
 
   // Blog — index + one entry per post
