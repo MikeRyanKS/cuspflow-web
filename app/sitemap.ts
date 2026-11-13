@@ -18,8 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const MARKETING_IMAGES: Record<string, string[]> = {
     "/": ["waiting-room", "treatment-plans", "financials", "data-migration"],
     "/features": [
-      "waiting-room", "appointments", "treatment-plans", "financials", "patients",
-      "reports", "price-catalog", "hr", "data-migration",
+      "waiting-room", "appointments", "treatment-plans", "financials", "claims",
+      "patients", "reports", "price-catalog", "inventory", "hr", "data-migration",
     ],
     "/about": ["dashboard"],
   };

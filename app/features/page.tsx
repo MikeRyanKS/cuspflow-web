@@ -16,6 +16,8 @@ import {
   FileText,
   Stethoscope,
   BarChart3,
+  ShieldCheck,
+  Package,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -75,6 +77,19 @@ const categories = [
     ],
   },
   {
+    name: "Insurance Claims",
+    icon: ShieldCheck,
+    color: "bg-sky-50 text-sky-600",
+    features: [
+      { title: "Claim Lifecycle", desc: "Draft, Submitted, Approved, Rejected, Paid. Every claim's stage is visible at a glance instead of living in someone's inbox." },
+      { title: "Claimed vs Approved", desc: "See what you billed the insurer and what they actually agreed to pay, side by side, so shortfalls are obvious." },
+      { title: "Per-Patient Insurance", desc: "Carrier, policy number and claim reference stored on the patient record, ready before they sit down." },
+      { title: "Carrier List", desc: "Keep your own list of insurers and reuse it across claims rather than retyping a provider name five different ways." },
+      { title: "Group by Provider", desc: "Roll claims up per insurer to see who is slowest to pay, and chase that one." },
+      { title: "Export and Print", desc: "Export to CSV for your accountant or print a claim report for the insurer's own paperwork." },
+    ],
+  },
+  {
     name: "Lab Cases",
     icon: FlaskConical,
     color: "bg-amber-50 text-amber-600",
@@ -131,12 +146,26 @@ const categories = [
     ],
   },
   {
-    name: "Inventory",
+    name: "Services & Prices",
     icon: Stethoscope,
     color: "bg-lime-50 text-lime-600",
     features: [
       { title: "Procedure Catalog", desc: "Maintain a global catalog of procedures with standard pricing. Override pricing per treatment item." },
       { title: "Prescription Catalog", desc: "Standard dosages and pricing for prescriptions. Dosage can be overridden per prescription item." },
+    ],
+  },
+  {
+    name: "Inventory",
+    icon: Package,
+    color: "bg-teal-50 text-teal-600",
+    features: [
+      { title: "Batch Tracking", desc: "Record stock in batches with supplier, unit cost and expiry date, so you always know which delivery a tube came from." },
+      { title: "Expiry Alerts", desc: "Anything expiring in the next 30, 60 or 90 days is surfaced before it turns into waste, with already-expired batches flagged separately." },
+      { title: "Deducted at Checkout", desc: "Link a procedure to the supplies it uses and stock comes off the shelf the moment the treatment is billed. No separate stock-take." },
+      { title: "Earliest Expiry First", desc: "Stock is drawn from the batch that expires soonest, which is how it should be leaving the cupboard anyway." },
+      { title: "Reorder Levels", desc: "Set a minimum per item and see what has dropped below it before you run out mid-procedure." },
+      { title: "Write-Offs", desc: "Record breakages and expired stock against a reason, so shrinkage shows up in your numbers instead of quietly disappearing." },
+      { title: "Stock Per Branch", desc: "Every branch holds its own stock and its own reorder levels. Transfers and counts stay where they happened." },
     ],
   },
   {
@@ -214,10 +243,20 @@ const CATEGORY_SHOTS: Record<string, { src: string; alt: string; url: string }> 
     alt: "CuspFlow reports with appointment status breakdown and busiest-day charts",
     url: "app.cuspflow.co/reports",
   },
-  Inventory: {
+  "Services & Prices": {
     src: "/screenshots/price-catalog.webp",
     alt: "CuspFlow price catalog of billable procedures and prescriptions",
     url: "app.cuspflow.co/settings/catalog",
+  },
+  "Insurance Claims": {
+    src: "/screenshots/claims.webp",
+    alt: "CuspFlow insurance claims dashboard showing each claim's status, insurer, and claimed against approved amounts",
+    url: "app.cuspflow.co/claims",
+  },
+  Inventory: {
+    src: "/screenshots/inventory.webp",
+    alt: "CuspFlow inventory dashboard showing stock levels against reorder thresholds and batch expiry alerts",
+    url: "app.cuspflow.co/inventory",
   },
   "Staff, Payroll & HR": {
     src: "/screenshots/hr.webp",
