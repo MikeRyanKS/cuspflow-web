@@ -45,3 +45,5 @@ next-env.d.ts
 
 # wrangler local dev state
 .wrangler/
+# locally-kept full-resolution screenshot originals (see components/ui/BrowserFrame.tsx)
+screenshots-src/

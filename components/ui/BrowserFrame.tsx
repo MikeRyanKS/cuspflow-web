@@ -6,7 +6,8 @@ import { X, Expand } from "lucide-react";
 /**
  * BrowserFrame — wraps a real app screenshot in a lightweight browser chrome so
  * marketing pages show the actual CuspFlow UI. Screenshots live in
- * /public/screenshots (WebP, ~1800px wide, captured from the running app).
+ * /public/screenshots (WebP, 3840x1616 — captured at 2x from the running app,
+ * so the click-to-expand lightbox stays sharp. Originals kept in screenshots-src/).
  *
  * Clicking the screenshot opens a full-screen lightbox at full image quality.
  * Every screenshot on the site renders through this component, so the
@@ -67,8 +68,8 @@ export default function BrowserFrame({
           <img
             src={src}
             alt={alt}
-            width={1800}
-            height={1125}
+            width={3840}
+            height={1616}
             loading={priority ? "eager" : "lazy"}
             className="block w-full h-auto"
           />

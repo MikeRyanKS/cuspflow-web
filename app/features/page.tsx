@@ -191,12 +191,12 @@ const CATEGORY_SHOTS: Record<string, { src: string; alt: string; url: string }> 
   },
   Appointments: {
     src: "/screenshots/appointments.webp",
-    alt: "CuspFlow appointments calendar with doctor and chair assignments",
+    alt: "CuspFlow appointments list showing the assigned provider, procedure and status for every booking",
     url: "app.cuspflow.co/appointments",
   },
   "Treatment Plans": {
     src: "/screenshots/treatment-plans.webp",
-    alt: "CuspFlow treatment plans list showing procedures, teeth and status",
+    alt: "CuspFlow treatment plans list showing provider, treatment status, payment status and balance due",
     url: "app.cuspflow.co/treatment-plans",
   },
   "Billing & Payments": {
@@ -226,7 +226,7 @@ const CATEGORY_SHOTS: Record<string, { src: string; alt: string; url: string }> 
   },
   "Data & Migration": {
     src: "/screenshots/data-migration.webp",
-    alt: "CuspFlow data migration wizard with column mapping and validation dry-run",
+    alt: "CuspFlow data migration wizard showing its five import steps and the record types you can bring across",
     url: "app.cuspflow.co/settings/data-migration",
   },
 };

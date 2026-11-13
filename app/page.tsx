@@ -104,7 +104,7 @@ export default function Home() {
           visual={
             <BrowserFrame
               src="/screenshots/treatment-plans.webp"
-              alt="CuspFlow treatment plans list showing patient plans, procedures and status"
+              alt="CuspFlow treatment plans list showing each plan's provider, treatment status, payment status and balance due"
               url="app.cuspflow.co/treatment-plans"
             />
           }
@@ -143,7 +143,7 @@ export default function Home() {
           visual={
             <BrowserFrame
               src="/screenshots/data-migration.webp"
-              alt="CuspFlow data migration wizard with column mapping and validation dry-run"
+              alt="CuspFlow data migration wizard showing its five import steps and the record types you can bring across"
               url="app.cuspflow.co/settings/data-migration"
             />
           }
