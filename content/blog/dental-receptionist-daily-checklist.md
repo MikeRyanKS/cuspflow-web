@@ -1,10 +1,9 @@
 ---
 title: "The Dental Receptionist's Opening and Closing Checklist"
 description: "A dental receptionist daily checklist: three things to do before the first patient arrives and three after the last one leaves, and why the order matters."
-date: "2026-11-12"
+date: "2026-11-13"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-12T16:40"
 cluster: "D. Role/checklist"
 market: "All markets"
 primaryKeyword: "dental receptionist daily checklist"

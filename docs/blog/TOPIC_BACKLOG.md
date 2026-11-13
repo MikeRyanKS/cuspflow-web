@@ -131,7 +131,7 @@ live public pages, fetched at write time. No price comparisons, no disparagement
 
 | # | Topic | Primary keyword | Status | Slug |
 | --- | --- | --- | --- | --- |
-| D1 | The receptionist's opening and closing checklist | dental receptionist daily checklist | queued | `dental-receptionist-daily-checklist` |
+| D1 | The receptionist's opening and closing checklist | dental receptionist daily checklist | published | `dental-receptionist-daily-checklist` |
 | D2 | Opening a second clinic | opening a second dental clinic checklist | planned | |
 | D3 | What a practice owner should check every Monday | dental practice owner weekly review | planned | |
 | D4 | Month-end in a dental clinic | dental clinic month end checklist | planned | |
