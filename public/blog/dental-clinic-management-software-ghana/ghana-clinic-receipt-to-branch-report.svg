@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="From a cedi payment at the Accra front desk to a numbered receipt and a branch total the owner reads, with Kumasi in the same roll-up.">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#4361EE"/>
+  <text x="600" y="98" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#0f172a" text-anchor="middle">One receipt at the desk, one figure the owner reads</text>
+
+  <g font-family="Inter, system-ui, -apple-system, sans-serif">
+    <rect x="60" y="178" width="300" height="176" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="2"/>
+    <text x="210" y="248" font-size="30" font-weight="600" fill="#0f172a" text-anchor="middle">Payment taken</text>
+    <text x="210" y="294" font-size="25" fill="#475569" text-anchor="middle">in cedis, by a</text>
+    <text x="210" y="328" font-size="25" fill="#475569" text-anchor="middle">named cashier</text>
+
+    <path d="M372 266 H 444" stroke="#475569" stroke-width="4" fill="none"/>
+    <path d="M444 266 l -16 -11 v 22 z" fill="#475569"/>
+
+    <rect x="456" y="178" width="300" height="176" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="2"/>
+    <text x="606" y="248" font-size="30" font-weight="600" fill="#0f172a" text-anchor="middle">Receipt printed</text>
+    <text x="606" y="294" font-size="25" fill="#475569" text-anchor="middle">thermal or A4,</text>
+    <text x="606" y="328" font-size="25" fill="#475569" text-anchor="middle">numbered in order</text>
+
+    <path d="M768 266 H 840" stroke="#475569" stroke-width="4" fill="none"/>
+    <path d="M840 266 l -16 -11 v 22 z" fill="#475569"/>
+
+    <rect x="852" y="178" width="288" height="176" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="996" y="248" font-size="30" font-weight="600" fill="#0f172a" text-anchor="middle">Branch total</text>
+    <text x="996" y="294" font-size="25" fill="#475569" text-anchor="middle">Accra and Kumasi</text>
+    <text x="996" y="328" font-size="25" fill="#475569" text-anchor="middle">side by side</text>
+
+    <rect x="60" y="430" width="1080" height="140" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="600" y="488" font-size="28" fill="#0f172a" text-anchor="middle">The chain holds only if the branch is stamped on the payment</text>
+    <text x="600" y="532" font-size="28" fill="#475569" text-anchor="middle">as it is taken. Worked out later, it is a guess.</text>
+  </g>
+</svg>

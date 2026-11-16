@@ -47,8 +47,8 @@ insurance carriers maintained by the clinic, and the country's data-protection l
 | --- | --- | --- | --- | --- |
 | A1 | Uganda | dental clinic software Uganda | published | `dental-clinic-software-uganda` |
 | A2 | Kenya | dental practice management software Kenya | published | `dental-practice-management-software-kenya` |
-| A3 | Nigeria | dental clinic software Nigeria | planned | |
-| A4 | Ghana | dental clinic management software Ghana | planned | |
+| A3 | Nigeria | dental clinic software Nigeria | queued | `dental-clinic-software-nigeria` |
+| A4 | Ghana | dental clinic management software Ghana | queued | `dental-clinic-management-software-ghana` |
 | A5 | Tanzania | dental clinic software Tanzania | planned | |
 | A6 | Rwanda | dental clinic software Rwanda | planned | |
 | A7 | Zambia | dental practice software Zambia | planned | |
@@ -86,8 +86,8 @@ We do not integrate with ZATCA and must not imply that we do.
 | --- | --- | --- | --- | --- | --- |
 | B1 | Cutting no-shows without phoning every patient | how to reduce dental no-shows | Reminders | published | `reduce-dental-no-shows` |
 | B2 | End-of-day cash reconciliation | dental clinic cash reconciliation | Cash Reconciliation | published | `dental-clinic-cash-reconciliation` |
-| B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | planned | |
-| B4 | Stock expiry before it costs you | dental inventory expiry tracking | Inventory | planned | |
+| B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | queued | `dental-treatment-plan-patient-acceptance` |
+| B4 | Stock expiry before it costs you | dental inventory expiry tracking | Inventory | queued | `dental-inventory-expiry-tracking` |
 | B5 | Paying associate dentist commission | dental associate commission calculation | Commissions | planned | |
 | B6 | Keeping lab cases from going missing | dental lab case tracking | Lab Cases | planned | |
 | B7 | Payroll in a small clinic | dental clinic payroll | Payroll | planned | |
@@ -115,7 +115,7 @@ live public pages, fetched at write time. No price comparisons, no disparagement
 
 | # | Topic | Primary keyword | Status | Slug |
 | --- | --- | --- | --- | --- |
-| C1 | Cloud or desktop dental software | cloud vs desktop dental software | planned | |
+| C1 | Cloud or desktop dental software | cloud vs desktop dental software | queued | `cloud-vs-desktop-dental-software` |
 | C2 | Choosing software when the internet is unreliable | dental software unreliable internet | planned | |
 | C3 | Alternatives to desktop-only dental software | desktop dental software alternatives | planned | |
 | C4 | Moving off spreadsheets and paper | dental clinic spreadsheet to software | planned | |

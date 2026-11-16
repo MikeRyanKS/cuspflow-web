@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Four checks for dental clinic software in Nigeria: naira on the printed receipt, how tax is shown, who holds the patient data, and whether you can export it yourself.">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#4361EE"/>
+  <text x="600" y="98" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#0f172a" text-anchor="middle">Four checks the feature grid will not answer</text>
+
+  <g font-family="Inter, system-ui, -apple-system, sans-serif">
+    <rect x="70" y="160" width="510" height="190" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="2"/>
+    <text x="112" y="230" font-size="32" font-weight="700" fill="#3451D1">1</text>
+    <text x="158" y="230" font-size="30" font-weight="600" fill="#0f172a">Naira on the printout</text>
+    <text x="158" y="280" font-size="25" fill="#475569">Print one and check the</text>
+    <text x="158" y="316" font-size="25" fill="#475569">thousands separator.</text>
+
+    <rect x="620" y="160" width="510" height="190" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="2"/>
+    <text x="662" y="230" font-size="32" font-weight="700" fill="#3451D1">2</text>
+    <text x="708" y="230" font-size="30" font-weight="600" fill="#0f172a">How tax is shown</text>
+    <text x="708" y="280" font-size="25" fill="#475569">A line you control, and</text>
+    <text x="708" y="316" font-size="25" fill="#475569">the case with no line.</text>
+
+    <rect x="70" y="382" width="510" height="190" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="112" y="452" font-size="32" font-weight="700" fill="#059669">3</text>
+    <text x="158" y="452" font-size="30" font-weight="600" fill="#0f172a">Who holds the records</text>
+    <text x="158" y="502" font-size="25" fill="#475569">Your clinic is the controller.</text>
+    <text x="158" y="538" font-size="25" fill="#475569">Get that in writing.</text>
+
+    <rect x="620" y="382" width="510" height="190" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="662" y="452" font-size="32" font-weight="700" fill="#059669">4</text>
+    <text x="708" y="452" font-size="30" font-weight="600" fill="#0f172a">Export without asking</text>
+    <text x="708" y="502" font-size="25" fill="#475569">Every patient, every</text>
+    <text x="708" y="538" font-size="25" fill="#475569">payment, run by you.</text>
+  </g>
+</svg>

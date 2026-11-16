@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Stock booked in as batches with expiry dates, the nearest-dated batch used first, an alert window before expiry, and anything left written off on the record.">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#4361EE"/>
+  <text x="600" y="98" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#0f172a" text-anchor="middle">Expiry is a sorting problem, not a memory problem</text>
+
+  <g font-family="Inter, system-ui, -apple-system, sans-serif">
+    <rect x="70" y="168" width="310" height="176" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="2"/>
+    <text x="225" y="238" font-size="30" font-weight="600" fill="#0f172a" text-anchor="middle">Book it in</text>
+    <text x="225" y="284" font-size="25" fill="#475569" text-anchor="middle">batch number and</text>
+    <text x="225" y="318" font-size="25" fill="#475569" text-anchor="middle">expiry, on arrival</text>
+
+    <path d="M392 256 H 434" stroke="#475569" stroke-width="4" fill="none"/>
+    <path d="M434 256 l -16 -11 v 22 z" fill="#475569"/>
+
+    <rect x="446" y="168" width="310" height="176" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="2"/>
+    <text x="601" y="238" font-size="30" font-weight="600" fill="#0f172a" text-anchor="middle">Nearest date first</text>
+    <text x="601" y="284" font-size="25" fill="#475569" text-anchor="middle">off the shelf, every</text>
+    <text x="601" y="318" font-size="25" fill="#475569" text-anchor="middle">single time</text>
+
+    <path d="M768 256 H 810" stroke="#475569" stroke-width="4" fill="none"/>
+    <path d="M810 256 l -16 -11 v 22 z" fill="#475569"/>
+
+    <rect x="822" y="168" width="310" height="176" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="2"/>
+    <text x="977" y="238" font-size="30" font-weight="600" fill="#0f172a" text-anchor="middle">Alert window</text>
+    <text x="977" y="284" font-size="25" fill="#475569" text-anchor="middle">long enough to use</text>
+    <text x="977" y="318" font-size="25" fill="#475569" text-anchor="middle">it or move it</text>
+
+    <path d="M601 356 V 418" stroke="#475569" stroke-width="4" fill="none"/>
+    <path d="M601 418 l -11 -16 h 22 z" fill="#475569"/>
+
+    <rect x="140" y="430" width="920" height="140" rx="16" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="600" y="488" font-size="30" font-weight="600" fill="#0f172a" text-anchor="middle">Whatever still expires is written off on the record</text>
+    <text x="600" y="532" font-size="26" fill="#475569" text-anchor="middle">with a reason, so next month you order less of it</text>
+  </g>
+</svg>
