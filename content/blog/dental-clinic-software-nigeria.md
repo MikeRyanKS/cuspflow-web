@@ -4,7 +4,6 @@ description: "Choosing dental clinic software in Nigeria: naira on the printed r
 date: "2026-11-17"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-17T10:35"
 cluster: "A. Country/buying guide"
 market: "Nigeria"
 primaryKeyword: "dental clinic software Nigeria"
