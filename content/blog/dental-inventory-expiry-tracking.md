@@ -1,10 +1,9 @@
 ---
 title: "Dental Inventory Expiry Tracking That Actually Catches Things"
 description: "Dental inventory expiry tracking fails for one reason: stock arrives without a date on it. What to record at goods-in, when to alert, and how to write off properly."
-date: "2026-11-18"
+date: "2026-11-19"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-18T16:40"
 cluster: "B. Operational how-to"
 market: "Global"
 primaryKeyword: "dental inventory expiry tracking"
