@@ -296,12 +296,51 @@ async function handleTry(request: Request, env: Env): Promise<Response> {
   );
 }
 
+/**
+ * Serve the static 404 page, with a 404 status.
+ *
+ * Workers Assets with no `not_found_handling` answers an unmatched path with a
+ * zero-byte 404, which is what cuspflow.co did for every mistyped or retired
+ * URL: no content type, no body, so the visitor saw the browser's own blank
+ * error screen and had no way back into the site. `next build` renders
+ * `app/not-found.tsx` into `out/404.html`, and this hands that file back.
+ *
+ * Done here rather than with `not_found_handling = "404-page"` on the binding
+ * because that setting decides what an unmatched path gets *before* this
+ * Worker's own routing runs, and `/api/try` is itself an unmatched path. The
+ * Try It console must keep reaching `handleTry`, not the 404 page.
+ *
+ * `no-store` because a URL that 404s today may be a real page next week (a blog
+ * post about to be queued, a docs page being written), and a cached 404 in the
+ * reader's browser would outlive the fix.
+ */
+async function serveNotFound(request: Request, env: Env): Promise<Response> {
+  const page = await env.ASSETS.fetch(
+    new Request(new URL("/404.html", request.url).toString(), { method: "GET" }),
+  );
+  const headers = {
+    "content-type": "text/html; charset=utf-8",
+    "cache-control": "no-store",
+  };
+  // A missing 404.html (a build that did not emit one) is still a 404, not a
+  // 200 and not a 500. Say so in text rather than serving nothing.
+  if (!page.ok) {
+    return new Response(request.method === "HEAD" ? null : "Page not found.", {
+      status: 404,
+      headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store" },
+    });
+  }
+  return new Response(request.method === "HEAD" ? null : page.body, { status: 404, headers });
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const { pathname } = new URL(request.url);
     if (pathname === "/api/try") return handleTry(request, env);
     // Everything else is the static site. Assets that exist are served by the
     // platform before this Worker runs; this covers the 404 path.
-    return env.ASSETS.fetch(request);
+    const asset = await env.ASSETS.fetch(request);
+    if (asset.status === 404) return serveNotFound(request, env);
+    return asset;
   },
 };
