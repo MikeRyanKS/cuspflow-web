@@ -48,7 +48,7 @@ insurance carriers maintained by the clinic, and the country's data-protection l
 | A1 | Uganda | dental clinic software Uganda | published | `dental-clinic-software-uganda` |
 | A2 | Kenya | dental practice management software Kenya | published | `dental-practice-management-software-kenya` |
 | A3 | Nigeria | dental clinic software Nigeria | published | `dental-clinic-software-nigeria` |
-| A4 | Ghana | dental clinic management software Ghana | queued | `dental-clinic-management-software-ghana` |
+| A4 | Ghana | dental clinic management software Ghana | published | `dental-clinic-management-software-ghana` |
 | A5 | Tanzania | dental clinic software Tanzania | planned | |
 | A6 | Rwanda | dental clinic software Rwanda | planned | |
 | A7 | Zambia | dental practice software Zambia | planned | |

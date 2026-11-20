@@ -1,10 +1,9 @@
 ---
 title: "Dental Clinic Management Software in Ghana: A Buyer's Checklist"
 description: "What to check in dental clinic management software for Ghana: cedis on the printed receipt, the 2026 VAT change, registering as a data controller, and two branches."
-date: "2026-11-19"
+date: "2026-11-20"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-19T14:25"
 cluster: "A. Country/buying guide"
 market: "Ghana"
 primaryKeyword: "dental clinic management software Ghana"
