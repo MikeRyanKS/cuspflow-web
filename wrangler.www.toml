@@ -1,0 +1,23 @@
+# The www.cuspflow.co redirect, deployed as its own Worker.
+#
+#   npx wrangler deploy -c wrangler.www.toml
+#
+# Separate from wrangler.toml on purpose: see the comment at the top of
+# worker/www-redirect.ts. In short, a host check inside the main Worker never
+# runs for a path that matches a built asset, and the config that would make it
+# run (`run_worker_first`) bills every asset request on the apex as a Worker
+# invocation.
+#
+# The `custom_domain = true` route is the half of the fix that matters: it is
+# what creates the proxied DNS record for www and provisions its certificate.
+# Deploying the script without it changes nothing a visitor can see.
+#
+# No [assets] block. This Worker serves no files; it answers every request with
+# a 301 and nothing else.
+name = "cuspflow-www-redirect"
+main = "worker/www-redirect.ts"
+compatibility_date = "2024-09-23"
+
+routes = [
+  { pattern = "www.cuspflow.co", custom_domain = true },
+]
