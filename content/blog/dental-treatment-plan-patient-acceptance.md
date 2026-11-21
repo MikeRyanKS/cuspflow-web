@@ -4,7 +4,6 @@ description: "Dental treatment plan patient acceptance is mostly a paperwork pro
 date: "2026-11-21"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-21T08:10"
 cluster: "B. Operational how-to"
 market: "Global"
 primaryKeyword: "dental treatment plan patient acceptance"

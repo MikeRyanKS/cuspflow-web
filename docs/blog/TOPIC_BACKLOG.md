@@ -86,7 +86,7 @@ We do not integrate with ZATCA and must not imply that we do.
 | --- | --- | --- | --- | --- | --- |
 | B1 | Cutting no-shows without phoning every patient | how to reduce dental no-shows | Reminders | published | `reduce-dental-no-shows` |
 | B2 | End-of-day cash reconciliation | dental clinic cash reconciliation | Cash Reconciliation | published | `dental-clinic-cash-reconciliation` |
-| B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | queued | `dental-treatment-plan-patient-acceptance` |
+| B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | published | `dental-treatment-plan-patient-acceptance` |
 | B4 | Stock expiry before it costs you | dental inventory expiry tracking | Inventory | published | `dental-inventory-expiry-tracking` |
 | B5 | Paying associate dentist commission | dental associate commission calculation | Commissions | planned | |
 | B6 | Keeping lab cases from going missing | dental lab case tracking | Lab Cases | planned | |
