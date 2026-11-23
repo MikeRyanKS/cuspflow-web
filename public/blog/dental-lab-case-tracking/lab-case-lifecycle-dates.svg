@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="The five stages of a dental lab case from draft to fitted, each with the date it records, and a note that nothing happens between sent and received">
+  <rect x="0" y="0" width="1200" height="630" fill="#f8fafc"/>
+  <text x="60" y="80" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#0f172a">Five stages, and the one that goes quiet</text>
+
+  <rect x="60" y="120" width="1080" height="62" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="3"/>
+  <text x="100" y="160" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Draft<tspan x="420" font-size="28" font-weight="400" fill="#475569">Teeth in FDI codes, the lab, the doctor who needs it</tspan></text>
+
+  <rect x="60" y="198" width="1080" height="62" rx="12" fill="#eef2ff" stroke="#4361EE" stroke-width="3"/>
+  <text x="100" y="238" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#3451D1">Sent<tspan x="420" font-size="28" font-weight="400" fill="#475569">The date it physically left the clinic, and with whom</tspan></text>
+
+  <rect x="60" y="276" width="1080" height="62" rx="12" fill="#eef2ff" stroke="#4361EE" stroke-width="3"/>
+  <text x="100" y="316" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#3451D1">In production<tspan x="420" font-size="28" font-weight="400" fill="#475569">The date the lab promised. This is what you chase</tspan></text>
+
+  <rect x="60" y="354" width="1080" height="62" rx="12" fill="#ffffff" stroke="#10b981" stroke-width="3"/>
+  <text x="100" y="394" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#059669">Received<tspan x="420" font-size="28" font-weight="400" fill="#475569">The date it came in, which proves it is in the building</tspan></text>
+
+  <rect x="60" y="432" width="1080" height="62" rx="12" fill="#ffffff" stroke="#10b981" stroke-width="3"/>
+  <text x="100" y="472" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#059669">Fitted<tspan x="420" font-size="28" font-weight="400" fill="#475569">The chair time you booked weeks ago, finally used</tspan></text>
+
+  <text x="60" y="552" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#475569">Between Sent and Received nothing happens for days, and nobody notices until a
+    <tspan x="60" dy="40">patient is in the chair. Recording that promised date apart is what breaks the habit.</tspan>
+  </text>
+</svg>

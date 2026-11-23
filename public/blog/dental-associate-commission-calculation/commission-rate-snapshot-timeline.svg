@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Four steps showing a commission rate copied onto a treatment item when it is added, then earned pro rata as the invoice is paid, with old periods unchanged by a later rate change">
+  <rect x="0" y="0" width="1200" height="630" fill="#f8fafc"/>
+  <text x="60" y="88" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#0f172a">The rate is fixed on the day, not at payday</text>
+
+  <rect x="60" y="140" width="520" height="200" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="3"/>
+  <text x="96" y="206" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#3451D1">1. Item added to the plan
+    <tspan x="96" dy="52" font-size="28" font-weight="400" fill="#475569">The applicable rate is copied</tspan>
+    <tspan x="96" dy="40" font-size="28" font-weight="400" fill="#475569">onto that line, there and then.</tspan>
+  </text>
+
+  <rect x="620" y="140" width="520" height="200" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="3"/>
+  <text x="656" y="206" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#0f172a">2. Invoice raised
+    <tspan x="656" dy="52" font-size="28" font-weight="400" fill="#475569">The patient pays part of the</tspan>
+    <tspan x="656" dy="40" font-size="28" font-weight="400" fill="#475569">total at the desk today.</tspan>
+  </text>
+
+  <rect x="60" y="370" width="520" height="200" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="3"/>
+  <text x="96" y="436" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#059669">3. Commission earned
+    <tspan x="96" dy="52" font-size="28" font-weight="400" fill="#475569">Pro rata on what was actually</tspan>
+    <tspan x="96" dy="40" font-size="28" font-weight="400" fill="#475569">paid, not on the full invoice.</tspan>
+  </text>
+
+  <rect x="620" y="370" width="520" height="200" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="3"/>
+  <text x="656" y="436" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#059669">4. Rate changed later
+    <tspan x="656" dy="52" font-size="28" font-weight="400" fill="#475569">Old periods rebuild from the</tspan>
+    <tspan x="656" dy="40" font-size="28" font-weight="400" fill="#475569">snapshot, figures unchanged.</tspan>
+  </text>
+</svg>

@@ -49,8 +49,8 @@ insurance carriers maintained by the clinic, and the country's data-protection l
 | A2 | Kenya | dental practice management software Kenya | published | `dental-practice-management-software-kenya` |
 | A3 | Nigeria | dental clinic software Nigeria | published | `dental-clinic-software-nigeria` |
 | A4 | Ghana | dental clinic management software Ghana | published | `dental-clinic-management-software-ghana` |
-| A5 | Tanzania | dental clinic software Tanzania | planned | |
-| A6 | Rwanda | dental clinic software Rwanda | planned | |
+| A5 | Tanzania | dental clinic software Tanzania | queued | `dental-clinic-software-tanzania` |
+| A6 | Rwanda | dental clinic software Rwanda | queued | `dental-clinic-software-rwanda` |
 | A7 | Zambia | dental practice software Zambia | planned | |
 | A8 | Bangladesh | dental clinic software Bangladesh | planned | |
 | A9 | Sri Lanka | dental clinic management software Sri Lanka | planned | |
@@ -88,8 +88,8 @@ We do not integrate with ZATCA and must not imply that we do.
 | B2 | End-of-day cash reconciliation | dental clinic cash reconciliation | Cash Reconciliation | published | `dental-clinic-cash-reconciliation` |
 | B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | published | `dental-treatment-plan-patient-acceptance` |
 | B4 | Stock expiry before it costs you | dental inventory expiry tracking | Inventory | published | `dental-inventory-expiry-tracking` |
-| B5 | Paying associate dentist commission | dental associate commission calculation | Commissions | planned | |
-| B6 | Keeping lab cases from going missing | dental lab case tracking | Lab Cases | planned | |
+| B5 | Paying associate dentist commission | dental associate commission calculation | Commissions | queued | `dental-associate-commission-calculation` |
+| B6 | Keeping lab cases from going missing | dental lab case tracking | Lab Cases | queued | `dental-lab-case-tracking` |
 | B7 | Payroll in a small clinic | dental clinic payroll | Payroll | planned | |
 | B8 | Setting a price list and holding it | dental treatment price list | Price Catalog | planned | |
 | B9 | Chasing overdue patient balances | dental overdue patient balance | Overdue Payments | planned | |
@@ -132,7 +132,7 @@ live public pages, fetched at write time. No price comparisons, no disparagement
 | # | Topic | Primary keyword | Status | Slug |
 | --- | --- | --- | --- | --- |
 | D1 | The receptionist's opening and closing checklist | dental receptionist daily checklist | published | `dental-receptionist-daily-checklist` |
-| D2 | Opening a second clinic | opening a second dental clinic checklist | planned | |
+| D2 | Opening a second clinic | opening a second dental clinic checklist | queued | `opening-a-second-dental-clinic-checklist` |
 | D3 | What a practice owner should check every Monday | dental practice owner weekly review | planned | |
 | D4 | Month-end in a dental clinic | dental clinic month end checklist | planned | |
 | D5 | Onboarding a new staff member | dental clinic new staff onboarding | planned | |

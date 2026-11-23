@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Two columns dividing the work between a dental clinic system and an RRA-certified electronic billing machine in Rwanda">
+  <rect x="0" y="0" width="1200" height="630" fill="#f8fafc"/>
+  <text x="60" y="86" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="40" font-weight="700" fill="#0f172a">Who does what, before you buy either one</text>
+
+  <rect x="60" y="134" width="520" height="420" rx="16" fill="#eef2ff" stroke="#4361EE" stroke-width="3"/>
+  <text x="100" y="196" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#3451D1">Your clinic system</text>
+  <text x="100" y="258" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#475569">Patient record and balance
+    <tspan x="100" dy="56">Treatment plan and agreed price</tspan>
+    <tspan x="100" dy="56">Payment, cashier, branch</tspan>
+    <tspan x="100" dy="56">Francs on the printed slip</tspan>
+    <tspan x="100" dy="56">Stock deducted as you bill</tspan>
+  </text>
+
+  <rect x="620" y="134" width="520" height="420" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="3"/>
+  <text x="660" y="196" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#0f172a">The certified EBM</text>
+  <text x="660" y="258" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#475569">The invoice the RRA accepts
+    <tspan x="660" dy="56">Its own numbering and codes</tspan>
+    <tspan x="660" dy="56">Sales data sent onward</tspan>
+    <tspan x="660" dy="56">Issued for every taxable sale</tspan>
+    <tspan x="660" dy="56" fill="#059669" font-weight="700">Not a job your software does</tspan>
+  </text>
+</svg>
