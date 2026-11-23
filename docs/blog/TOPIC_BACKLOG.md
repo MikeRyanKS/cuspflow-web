@@ -115,7 +115,7 @@ live public pages, fetched at write time. No price comparisons, no disparagement
 
 | # | Topic | Primary keyword | Status | Slug |
 | --- | --- | --- | --- | --- |
-| C1 | Cloud or desktop dental software | cloud vs desktop dental software | queued | `cloud-vs-desktop-dental-software` |
+| C1 | Cloud or desktop dental software | cloud vs desktop dental software | published | `cloud-vs-desktop-dental-software` |
 | C2 | Choosing software when the internet is unreliable | dental software unreliable internet | planned | |
 | C3 | Alternatives to desktop-only dental software | desktop dental software alternatives | planned | |
 | C4 | Moving off spreadsheets and paper | dental clinic spreadsheet to software | planned | |

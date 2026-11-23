@@ -4,7 +4,6 @@ description: "Cloud vs desktop dental software, decided by what breaks: a dead f
 date: "2026-11-23"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-23T12:50"
 cluster: "C. Switching/alternatives"
 market: "Global"
 primaryKeyword: "cloud vs desktop dental software"
