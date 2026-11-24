@@ -4,7 +4,6 @@ description: "Dental clinic software for Tanzania, judged on four things: shilli
 date: "2026-11-24"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-24T08:10"
 cluster: "A. Country/buying guide"
 market: "Tanzania"
 primaryKeyword: "dental clinic software Tanzania"
