@@ -4,7 +4,6 @@ description: "Dental associate commission calculation, settled in advance: work 
 date: "2026-11-26"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-26T10:35"
 cluster: "B. Operational how-to"
 market: "Global"
 primaryKeyword: "dental associate commission calculation"
