@@ -4,7 +4,6 @@ description: "Dental lab case tracking that holds up in a busy clinic: the four 
 date: "2026-11-28"
 author: "The CuspFlow Team"
 readingTime: "3 min read"
-publishAt: "2026-11-28T14:25"
 cluster: "B. Operational how-to"
 market: "Global"
 primaryKeyword: "dental lab case tracking"

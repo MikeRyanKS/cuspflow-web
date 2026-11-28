@@ -89,7 +89,7 @@ We do not integrate with ZATCA and must not imply that we do.
 | B3 | Treatment plans patients actually accept | dental treatment plan patient acceptance | Treatment Plans | published | `dental-treatment-plan-patient-acceptance` |
 | B4 | Stock expiry before it costs you | dental inventory expiry tracking | Inventory | published | `dental-inventory-expiry-tracking` |
 | B5 | Paying associate dentist commission | dental associate commission calculation | Commissions | published | `dental-associate-commission-calculation` |
-| B6 | Keeping lab cases from going missing | dental lab case tracking | Lab Cases | queued | `dental-lab-case-tracking` |
+| B6 | Keeping lab cases from going missing | dental lab case tracking | Lab Cases | published | `dental-lab-case-tracking` |
 | B7 | Payroll in a small clinic | dental clinic payroll | Payroll | planned | |
 | B8 | Setting a price list and holding it | dental treatment price list | Price Catalog | planned | |
 | B9 | Chasing overdue patient balances | dental overdue patient balance | Overdue Payments | planned | |
